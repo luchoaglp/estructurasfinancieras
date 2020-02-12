@@ -1,0 +1,542 @@
+body {
+    background-color: $secondary;
+}
+input[type=text] {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    color: black !important;
+}
+
+.btn {
+    color: $white;
+}
+
+.divider hr {
+    border-top: none;
+    border-bottom: 10px $primary solid;
+}
+
+.banner {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    color: $white;
+}
+.quote1 {
+    position: relative;
+}
+.description {
+    position: absolute;
+}
+
+.invest {
+    background: url(../img/invest-banner.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+.invest h2 {
+    text-align: center;
+}
+.invest h2 span {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+}
+.invest div.invest-links {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+}
+.invest div.invest-links a {
+    display: block;
+    margin: auto;
+}
+
+.members {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.start {
+    background-color: black;
+}
+.start h3 {
+    color: $white;
+}
+.start h4 {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    color: $primary;
+}
+
+.cards {
+    background: url(../img/cards.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+.cards .card h5.card-title {
+    text-align: left;
+}
+.cards .card p.card-text {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    text-align: left;
+}
+
+.about {
+    background: url(../img/about.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: $white;
+}
+.about h2 span {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+}
+.about p span {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+}
+
+@include media-breakpoint-up(xs) {
+    .btn {
+        padding: 0.5rem 0.75rem 0.25rem 0.75rem;
+    }
+    .quote1 img {
+        width: 106px;
+    }
+    .description {
+        top: 1.4em;
+        left: 1.6em;
+        font-size: 1.05rem;
+        padding-right: 1.5em;
+    }
+    .arrows {
+        max-width: 50px;
+    }
+    .members h2 {
+        font-size: 1.05rem;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+    .members h3 {
+        font-size: 0.75rem;
+        padding: 1.5em 0;
+        margin-bottom: 0;
+    }
+    .invest {
+        min-height: 240px;
+    }
+    .invest img {
+        padding-top: 0.75em;
+        width: 40%;
+    }
+    .invest h2 {
+        margin-top: 20px;
+        font-size: 1.25rem;
+    }
+    .invest div.invest-links {
+        margin-top: 1rem;
+    }
+    .invest div.invest-links a {
+        padding: 0.375rem 0.75rem;
+        margin-top: 0.5em;
+        width: 300px;
+    }
+    .start h3 {
+        font-size: 1.3rem;
+        padding-top: 1.2em;
+        margin-top: 1em;
+    }
+    .start h4 {
+        font-size: 1.3rem;
+        margin-bottom: 0.6em;
+    }
+    .start .form-group {
+        margin-bottom: 0.5rem;
+    }
+    .start .btn {
+        width: 100%;
+        margin: 1.5em 0 2.5em 0;
+    }
+    .start .btn img {
+        width: 0.5rem;
+        margin-left: 5px;
+    }
+    .cards {
+        padding-bottom: 15px;
+    }
+    .cards .card {
+        margin-top: 15px;
+        min-height: 300px;
+    }
+    .cards .card .card-body {
+        padding: 1em 2.7em 1em 3.25em;
+    } 
+    .cards .card .card-body > img {
+        height: 100px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .cards .card h5.card-title {
+        margin-bottom: 0;
+    }
+    .cards .card p.card-text {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+    .cards .card a.btn {
+        margin: 0 6em 1.5em 3.25em;
+    }
+    .cards .card a.btn img {
+        width: 1rem;
+        margin-left: 5px;
+    }
+    .about {
+        padding-top: 150px;
+        /*padding-bottom: 50px;*/
+    }
+    .about h2 {
+        margin-bottom: 0.4em;
+    }
+    .about p {
+        padding: 0 1em;
+        margin-bottom: 2.25em;
+    }
+    .about img {
+        width: 40%;
+        margin-bottom: 4.75em;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .quote1 img {
+        width: 152px;
+    }
+    .description {
+        top: 1.4em;
+        left: 3.2em;
+        font-size: 1.55rem;
+        padding-right: 0;
+    }
+    .arrows {
+        max-width: 60px;
+    }
+    .members h2 {
+        font-size: 1.35rem;
+    }
+    .members h3 {
+        font-size: 1rem;
+    }
+    .invest {
+        min-height: 290px;
+    }
+    .invest h2 {
+        font-size: 1.8rem;
+    }
+    .invest div.invest-links a {
+        margin-top: 0.35em;
+    }
+    .cards {
+        padding-bottom: 30px;
+    }
+    .cards .card {
+        margin-top: 30px;
+        min-height: 250px;
+    }
+    .about {
+        padding-top: 170px;
+        /*padding-bottom: 50px;*/
+    }
+    .about h2 {
+        margin-bottom: 0.4em;
+    }
+    .about p {
+        padding: 0 2.25em;
+        margin-bottom: 2.25em;
+    }
+    .about img {
+        width: 30%;
+        margin-bottom: 5em;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .quote1 img {
+        width: 164px;
+    }
+    .description {
+        top: 1em;
+        left: 2.75em;
+        font-size: 1.9rem;
+    }
+    .arrows {
+        padding-bottom: 26px;
+    }
+    .members h2 {
+        font-size: 1.75rem;
+    }
+    .members h3 {
+        font-size: 1.2rem;
+    }
+    .invest {
+        min-height: 320px;
+    }
+    .invest img {
+        padding-top: 0.85em;
+        width: 33%;
+    }
+    .invest h2 {
+        font-size: 1.9rem;
+        letter-spacing: 1.3px;
+    }
+    .invest div.invest-links {
+        letter-spacing: 1.3px;
+    }
+    .invest div.invest-links a {
+        padding: 0.5em 0;
+        margin-top: 0.4em;
+        width: 350px;
+    }
+    .start h3 {
+        font-size: 1.6rem;
+        padding-top: 1.2em;
+        margin-top: 1.5em;
+        margin-bottom: 0;
+    }
+    .start h4 {
+        font-size: 1.6rem;
+        margin-bottom: 0.6em;
+    }
+    .start .form-group {
+        margin-bottom: 0.65rem;
+    }
+    .start input[type=text] { 
+        font-size: 1.27rem;
+        padding: 1.7rem 1rem;
+    }
+    .start .btn {
+        font-size: 1.4rem;
+        width: 228px; 
+        margin: 0.5em 0 3em 0;
+    }
+    .start .btn img {
+        width: 0.65rem;
+    }
+    .cards .card {
+        min-height: 298px;
+    }
+    .about {
+        padding-top: 160px;
+        /*padding-bottom: 50px;*/
+    }
+    .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0.1em;
+    }
+    .about p {
+        font-size: 1.1rem;
+        padding: 0 4em;
+        margin-bottom: 2.5em;
+    }
+    .about img {
+        width: 20%;
+        margin-bottom: 4.9em;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .quote1 img {
+        width: 220px;
+    }
+    .description {
+        top: 1.1em;
+        left: 2.75em;
+        font-size: 2.5rem;
+    }
+    .arrows {
+        max-width: 84px;
+    }
+    .members h2 {
+        font-size: 2em;
+    }
+    .members h3 {
+        font-size: 1.3rem;
+        padding: 1.75em 0;
+    }
+    .invest {
+        min-height: 400px;
+    }
+    .invest img {
+        padding-top: 2.5em;
+        width: 28%;
+    }
+    .invest h2 {
+        letter-spacing: 1.5px;
+        font-size: 2.5rem;
+    }
+    .invest div.invest-links a {
+        padding: 0.5em 0;
+        margin-top: 0.4em;
+        /*width: 335px;*/
+    }
+    .start h3 {
+        font-size: 1.9rem;
+        padding-top: 1.2em;
+        margin-top: 1.5em;
+        margin-bottom: 0;
+    }
+    .start h4 {
+        font-size: 1.9rem;
+        margin-bottom: 0.8em;
+    }
+    .start .form-group {
+        margin-bottom: 0.7rem;
+    }
+    .start input[type=text] { 
+        font-size: 1.6rem;
+    }
+    .start .btn {
+        font-size: 1.6rem;
+        width: 266px; 
+        margin: 0.5em 0 3em 0;
+    }
+    .start .btn img {
+        margin-left: 10px;
+        width: 0.7rem;
+    }
+    .about {
+        padding-top: 165px;
+        /*padding: 120px 0 70px 0;*/
+    }
+    .about h2 {
+        font-size: 3.1rem;
+        margin-bottom: 0.1em;
+    }
+    .about p {
+        font-size: 1.1rem;
+        padding: 0 8.5em;
+        margin-bottom: 3em;
+        line-height: 30px;
+    }
+    .about img {
+        width: 18%;
+        margin-bottom: 5em;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .quote1 img {
+        width: 268px;
+    }
+    .description {
+        font-size: 3rem;
+    }
+    .arrows {
+        max-width: 88px;
+        padding-bottom: 36px;
+    }
+    .members h2 {
+        font-size: 2.6rem;
+        letter-spacing: 1.4px;
+    }
+    .members h3 {
+        font-size: 1.6rem;
+        letter-spacing: 1.1px;
+        padding: 2em 0;
+    }
+    .invest {
+        min-height: 550px;
+    }
+    .invest img {
+        padding-top: 3.5em;
+        width: 350px;
+    }
+    .invest h2 {
+        margin-top: 50px;
+        font-size: 3.85rem;
+    }
+    
+    .invest div.invest-links {
+        margin-top: 20px;
+    }
+    .invest div.invest-links a {
+        font-size: 1.2rem;
+        padding: 0.7em 0;
+        margin-top: 0.5em;
+        width: 434px;
+    }
+    .start h3 {
+        font-size: 2.65rem;
+        padding-top: 1.4em;
+        margin-top: 1.5em;
+        margin-bottom: 0;
+    }
+    .start h4 {
+        font-size: 2.65rem;
+        margin-bottom: 0.5em;
+    }
+    .start .form-group {
+        margin-bottom: 0.9rem;
+    }
+    .start input[type=text] { 
+        font-size: 2rem;
+        padding: 1.9rem 2.25rem 1.5rem 2.4rem;
+    }
+    .start .btn {
+        font-size: 1.9rem;
+        width: 292px; 
+        margin: 0.6em 0 3.35em 0;
+    }
+    .start .btn img {
+        width: 0.8rem;
+        margin-left: 8px;
+    }
+    .cards {
+        padding-bottom: 140px;
+        padding-top: 120px;
+    }
+    .cards .card {
+        min-height: 368px;
+    }
+    .cards .container .row .col-lg-4 {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+    .cards .card .card-body {
+        padding: 1em 2em 1em 3.25em;
+    } 
+    .cards .card .card-body > img {
+        margin-bottom: 30px;
+        margin-top: 46px;
+    }
+    .cards .card h5.card-title {
+        margin-bottom: 0.1em;
+        font-size: 1.5rem;
+    }
+    .cards .card p.card-text {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    .cards .card a.btn {
+        margin: 0.3em 4.5em 1.3em 2.25em;
+        font-size: 1.4rem;
+    }
+    .about {
+        padding-top: 212px;
+    }
+    .about h2 {
+        font-size: 4.2rem;
+        margin-bottom: 0.2em;
+    }
+    .about p {
+        font-size: 1.3rem;
+        padding: 0 14.5em;
+        line-height: 38px;
+        margin-bottom: 3em;
+    }
+    .about img {
+        width: 18%;
+        margin-bottom: 6em;
+        /*margin-top: 3em;*/
+        /*padding-bottom: 4em;*/
+    }
+}
