@@ -8067,8 +8067,7 @@ input[type=text] {
   margin-left: 5px; }
 
 .about {
-  padding-top: 150px;
-  /*padding-bottom: 50px;*/ }
+  padding-top: 150px; }
 
 .about h2 {
   margin-bottom: 0.4em; }
@@ -8081,14 +8080,14 @@ input[type=text] {
   width: 40%;
   margin-bottom: 4.75em; }
 
-.quote2 img {
+.quote2 > img {
   width: 190px; }
 
 .consult .description {
-  top: 1.5em;
+  top: 1.6em;
   left: 4.5em;
   font-size: 1.4rem;
-  padding-right: 3em; }
+  padding-right: 1.8em; }
 
 .consult .btn {
   left: 6.2em;
@@ -8134,8 +8133,7 @@ input[type=text] {
     min-height: 250px; }
 
   .about {
-    padding-top: 170px;
-    /*padding-bottom: 50px;*/ }
+    padding-top: 170px; }
 
   .about h2 {
     margin-bottom: 0.4em; }
@@ -8146,7 +8144,25 @@ input[type=text] {
 
   .about img {
     width: 30%;
-    margin-bottom: 5em; } }
+    margin-bottom: 5em; }
+
+  .quote2 > img {
+    margin-left: 9em;
+    width: 190px; }
+
+  .consult .description {
+    top: 1.6em;
+    left: 11em;
+    font-size: 1.4rem;
+    padding-right: 4em; }
+
+  .consult .btn {
+    left: 15.4em;
+    top: 7.6em; }
+
+  .consult .btn img {
+    width: 0.5rem;
+    margin-left: 5px; } }
 @media (min-width: 768px) {
   .quote1 img {
     width: 164px; }
@@ -8213,8 +8229,7 @@ input[type=text] {
     min-height: 298px; }
 
   .about {
-    padding-top: 160px;
-    /*padding-bottom: 50px;*/ }
+    padding-top: 160px; }
 
   .about h2 {
     font-size: 2.5rem;
@@ -8227,7 +8242,26 @@ input[type=text] {
 
   .about img {
     width: 20%;
-    margin-bottom: 4.9em; } }
+    margin-bottom: 4.9em; }
+
+  .quote2 > img {
+    margin-left: 9em;
+    width: 250px; }
+
+  .consult .description {
+    top: 1.4em;
+    left: 8.5em;
+    font-size: 2rem;
+    padding-right: 2em; }
+
+  .consult .btn {
+    font-size: 1.4rem;
+    left: 12.2em;
+    top: 7.3em; }
+
+  .consult .btn img {
+    width: 0.7rem;
+    margin-left: 5px; } }
 @media (min-width: 992px) {
   .quote1 img {
     width: 220px; }
@@ -8289,8 +8323,7 @@ input[type=text] {
     width: 0.7rem; }
 
   .about {
-    padding-top: 165px;
-    /*padding: 120px 0 70px 0;*/ }
+    padding-top: 165px; }
 
   .about h2 {
     font-size: 3.1rem;
@@ -8304,7 +8337,28 @@ input[type=text] {
 
   .about img {
     width: 18%;
-    margin-bottom: 5em; } }
+    margin-bottom: 5em; }
+
+  .quote2 > img {
+    margin-left: 13em;
+    width: 340px; }
+
+  .consult .description {
+    top: 1.6em;
+    left: 8.6em;
+    font-size: 2.7rem;
+    padding-right: 1.5em; }
+
+  .consult .btn {
+    font-size: 1.7rem;
+    left: 13.7em;
+    top: 8.5em;
+    padding-left: 30px;
+    padding-right: 30px; }
+
+  .consult .btn img {
+    width: 0.7rem;
+    margin-left: 5px; } }
 @media (min-width: 1200px) {
   .quote1 img {
     width: 268px; }
@@ -8416,8 +8470,27 @@ input[type=text] {
 
   .about img {
     width: 18%;
-    margin-bottom: 6em;
-    /*margin-top: 3em;*/
-    /*padding-bottom: 4em;*/ } }
+    margin-bottom: 6em; }
+
+  .quote2 > img {
+    margin-top: 2.2em;
+    margin-left: 20em;
+    width: 410px; }
+
+  .consult .description {
+    top: 2em;
+    left: 9.4em;
+    font-size: 3.4rem;
+    padding-right: 2.5em; }
+
+  .consult .btn {
+    font-size: 1.9rem;
+    left: 17em;
+    top: 10.2em;
+    padding: 14px 30px 8px 34px; }
+
+  .consult .btn img {
+    width: 0.9rem;
+    margin-left: 8.7px; } }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
