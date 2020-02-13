@@ -7958,13 +7958,28 @@ input[type=text] {
 .about p span {
   font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif; }
 
+.consult {
+  background: url(../img/consult.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff; }
+
+.quote2 {
+  position: relative; }
+
+.consult .btn {
+  font-family: "BambinoHS-Heavy", Helvetica, Arial, sans-serif;
+  position: absolute; }
+
 .btn {
   padding: 0.5rem 0.75rem 0.25rem 0.75rem; }
 
 .quote1 img {
   width: 106px; }
 
-.description {
+.banner .description {
   top: 1.4em;
   left: 1.6em;
   font-size: 1.05rem;
@@ -8065,11 +8080,28 @@ input[type=text] {
   width: 40%;
   margin-bottom: 4.75em; }
 
+.quote2 img {
+  width: 180px; }
+
+.consult .description {
+  top: 1.5em;
+  left: 4.2em;
+  font-size: 1.4rem;
+  padding-right: 3em; }
+
+.consult .btn {
+  left: 5.9em;
+  top: 7.1em; }
+
+.consult .btn img {
+  width: 0.5rem;
+  margin-left: 5px; }
+
 @media (min-width: 576px) {
   .quote1 img {
     width: 152px; }
 
-  .description {
+  .banner .description {
     top: 1.4em;
     left: 3.2em;
     font-size: 1.55rem;
@@ -8118,7 +8150,7 @@ input[type=text] {
   .quote1 img {
     width: 164px; }
 
-  .description {
+  .banner .description {
     top: 1em;
     left: 2.75em;
     font-size: 1.9rem; }
@@ -8199,7 +8231,7 @@ input[type=text] {
   .quote1 img {
     width: 220px; }
 
-  .description {
+  .banner .description {
     top: 1.1em;
     left: 2.75em;
     font-size: 2.5rem; }
@@ -8276,7 +8308,7 @@ input[type=text] {
   .quote1 img {
     width: 268px; }
 
-  .description {
+  .banner .description {
     font-size: 3rem; }
 
   .arrows {
