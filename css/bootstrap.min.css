@@ -7964,7 +7964,8 @@ input[type=text] {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 0; }
 
 .quote2 {
   position: relative; }
