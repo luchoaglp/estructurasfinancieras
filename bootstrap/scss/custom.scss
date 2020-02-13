@@ -129,6 +129,7 @@ input[type=text] {
     font-family: $font-family-base;
 }
 
+/* 1 */
 @include media-breakpoint-up(xs) {
     .btn {
         padding: 0.5rem 0.75rem 0.25rem 0.75rem;
@@ -238,16 +239,18 @@ input[type=text] {
     }
     .quote2 > img {
         width: 190px;
+        margin-left: 0.9em;
     }
     .consult .description {
         top: 1.6em;
         left: 4.5em;
         font-size: 1.4rem;
-        padding-right: 1.8em;
+        padding-right: 0.5em;
     }
     .consult .btn {
         left: 6.2em;
         top: 7.6em;
+        width: 130px;
     }
     .consult .btn img {
         width: 0.5rem;
@@ -262,6 +265,7 @@ input[type=text] {
     }
 }
 
+/* 2 */
 @include media-breakpoint-up(sm) {
     .quote1 img {
         width: 152px;
@@ -317,20 +321,44 @@ input[type=text] {
     }
     .consult .description {
         top: 1.6em;
-        left: 11em;
+        left: 10.3em;
         font-size: 1.4rem;
-        padding-right: 4em;
+        padding-right: 3.5em;
     }
     .consult .btn {
-        left: 15.4em;
+        left: 14.5em;
         top: 7.6em;
     }
     .consult .btn img {
         width: 0.5rem;
         margin-left: 5px;
     }
+    .download .row > div {
+        text-align: left;
+    }
+    .download .row > div > img {
+        width: 5em;
+        margin-left: 13em;
+        margin-bottom: 1.4em;
+    }
+    .download .row > div h3 {
+        font-size: 1.3rem;
+        margin-left: 10.1em;
+        margin-bottom: 0;
+    }
+    .download .row .social {
+        margin-left: 13em;
+    }
+    .download .row .social a {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .download .row .social a img {
+        width: 100px;
+    }
 }
 
+/* 3 */
 @include media-breakpoint-up(md) {
     .quote1 img {
         width: 164px;
@@ -413,26 +441,47 @@ input[type=text] {
         margin-bottom: 4.9em;
     }
     .quote2 > img {
-        margin-left: 9em;
+        margin-left: 13.5em;
         width: 250px;
     }
     .consult .description {
         top: 1.4em;
-        left: 8.5em;
+        left: 10.2em;
         font-size: 2rem;
-        padding-right: 2em;
+        padding-right: 3em;
     }
     .consult .btn {
         font-size: 1.4rem;
-        left: 12.2em;
-        top: 7.3em;
+        left: 14.65em;
+        top: 7.25em;
+        width: 170px;
     }
     .consult .btn img {
         width: 0.7rem;
         margin-left: 5px;
     }
+    .download .row > div > img {
+        width: 5em;
+        margin-left: 19em;
+        margin-bottom: 1.4em;
+    }
+    .download .row > div h3 {
+        font-size: 1.5rem;
+        margin-left: 12.8em;
+        margin-bottom: 0;
+    }
+    .download .row .social {
+        margin-left: 19em;
+    }
+    .download .row .social a {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .download .row .social a img {
+        width: 100px;
+    }
 }
-
+/* 4 */
 @include media-breakpoint-up(lg) {
     .quote1 img {
         width: 220px;
@@ -511,25 +560,49 @@ input[type=text] {
         margin-bottom: 5em;
     }
     .quote2 > img {
-        margin-left: 13em;
+        margin-left: 18em;
         width: 340px;
     }
     .consult .description {
         top: 1.6em;
-        left: 8.6em;
+        left: 10.1em;
         font-size: 2.7rem;
-        padding-right: 1.5em;
+        padding-right: 3em;
     }
     .consult .btn {
         font-size: 1.7rem;
-        left: 13.7em;
+        left: 16em;
         top: 8.5em;
         padding-left: 30px;
         padding-right: 30px;
+        width: 230px;
     }
     .consult .btn img {
         width: 0.7rem;
         margin-left: 5px;
+    }
+    .download {
+        padding: 6em;
+    }
+    .download .row > div > img {
+        width: 5em;
+        margin-left: 20.5em;
+        margin-bottom: 1.4em;
+    }
+    .download .row > div h3 {
+        font-size: 1.7rem;
+        margin-left: 12em;
+        margin-bottom: 0.2em;
+    }
+    .download .row .social {
+        margin-left: 20.4em;
+    }
+    .download .row .social a {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .download .row .social a img {
+        width: 100px;
     }
 }
 
@@ -649,23 +722,48 @@ input[type=text] {
     }
     .quote2 > img {
         margin-top: 2.2em;
-        margin-left: 20em;
+        margin-left: 27em;
         width: 410px;
     }
     .consult .description {
         top: 2em;
-        left: 9.4em;
+        left: 11.1em;
         font-size: 3.4rem;
-        padding-right: 2.5em;
+        padding-right: 3.8em;
     }
     .consult .btn {
         font-size: 1.9rem;
-        left: 17em;
+        left: 20em;
         top: 10.2em;
         padding: 14px 30px 8px 34px;
+        width: 270px;
     }
     .consult .btn img {
         width: 0.9rem;
         margin-left: 8.7px;
+    }
+    .download {
+        padding: 10em;
+    }
+    .download .row > div > img {
+        width: 6.5em;
+        margin-left: 28em;
+        margin-bottom: 2em;
+        
+    }
+    .download .row > div h3 {
+        font-size: 2.2rem;
+        margin-left: 12.6em;
+        margin-bottom: 0.5em;
+    }
+    .download .row .social {
+        margin-left: 27.6em;
+    }
+    .download .row .social a {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .download .row .social a img {
+        width: 130px;
     }
 }
