@@ -3871,7 +3871,7 @@ input[type="button"].btn-block {
   margin-bottom: 2rem;
   /*background-color: $jumbotron-bg;*/
   background-color: transparent;
-  border-radius: 0.3rem; }
+  border-radius: 0; }
   @media (min-width: 576px) {
     .jumbotron {
       padding: 4rem 2rem; } }
@@ -7974,6 +7974,21 @@ input[type=text] {
   font-family: "BambinoHS-Heavy", Helvetica, Arial, sans-serif;
   position: absolute; }
 
+.download {
+  background: url(../img/download.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 0; }
+
+.download .row > div {
+  text-align: center; }
+
+.download .row > div h3 span {
+  font-family: "BambinoHS-Heavy", Helvetica, Arial, sans-serif; }
+
 .btn {
   padding: 0.5rem 0.75rem 0.25rem 0.75rem; }
 
@@ -8096,6 +8111,13 @@ input[type=text] {
 .consult .btn img {
   width: 0.5rem;
   margin-left: 5px; }
+
+.download .row > div > img {
+  width: 5em;
+  margin-bottom: 1.5em; }
+
+.download .row > div h3 {
+  margin-left: 1em; }
 
 @media (min-width: 576px) {
   .quote1 img {
