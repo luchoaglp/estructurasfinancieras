@@ -277,6 +277,28 @@ input[type=text] {
     .download .row > div h3 {
         margin-left: 1em;
     }
+    .location h2 {
+        margin-top: 2.5rem;
+        font-size: 1.75rem;
+        padding: 0 1rem;
+    }
+    .location h4 { 
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+    /*
+    .location h4:last-child {
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+    }
+    */
+    .location > img {
+        margin-top: 1.7em;
+        /*
+        max-width: 500px;
+        margin-left: -110px;
+        */
+    }
 }
 
 /* 2 */
@@ -737,18 +759,18 @@ input[type=text] {
     }
     .quote2 > img {
         margin-top: 2.2em;
-        margin-left: 27em;
+        margin-left: 33.5%;
         width: 410px;
     }
     .consult .description {
         top: 2em;
-        left: 11.1em;
+        left: 47%;
         font-size: 3.4rem;
-        padding-right: 3.8em;
+        padding-right: 19%;
     }
     .consult .btn {
         font-size: 1.9rem;
-        left: 20em;
+        left: 47.3%;
         top: 10.2em;
         padding: 14px 30px 8px 34px;
         width: 270px;
