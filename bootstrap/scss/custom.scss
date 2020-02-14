@@ -146,6 +146,12 @@ input[type=text] {
     font-family: $font-family-base;
 }
 
+.location input[type=text]::placeholder, 
+.location input[type=email]::placeholder,
+.location textarea::placeholder {
+    color: #a8a8a8;
+}
+
 /* 1 */
 @include media-breakpoint-up(xs) {
     .btn {
@@ -539,10 +545,21 @@ input[type=text] {
         margin-bottom: 1em;
     }
     */
+    .location input[type=text], 
+    .location input[type=email] {
+        padding-top: 1.7em;
+        padding-bottom: 1.3em;
+    }
+    .location textarea {
+        padding: 1em;
+        height: 11em;
+    }
     .location .btn {
-        font-size: 1.4rem;
-        width: 228px; 
-        margin: 0.5em 0 3em 0;
+        font-size: 1.5rem;
+        width: 190px;
+        margin: 0.4em 0 3em 0;
+        padding-top: 0.4em;
+        padding-bottom: 0.3em;
     }
     .location .btn img {
         width: 0.65rem;
