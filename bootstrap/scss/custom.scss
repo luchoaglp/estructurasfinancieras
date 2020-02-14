@@ -534,6 +534,19 @@ input[type=text] {
     .download .row .social a img {
         width: 100px;
     }
+    /*
+    .location h2:nth-child(6) {
+        margin-bottom: 1em;
+    }
+    */
+    .location .btn {
+        font-size: 1.4rem;
+        width: 228px; 
+        margin: 0.5em 0 3em 0;
+    }
+    .location .btn img {
+        width: 0.65rem;
+    }
 }
 /* 4 */
 @include media-breakpoint-up(lg) {
