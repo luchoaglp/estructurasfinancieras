@@ -142,6 +142,9 @@ input[type=text] {
 .location h4 {
     color: $primary;
 }
+.location .btn {
+    font-family: $font-family-base;
+}
 
 /* 1 */
 @include media-breakpoint-up(xs) {
@@ -297,6 +300,17 @@ input[type=text] {
     */
     .location > img {
         margin-top: 1.7em;
+    }
+    .location h2:nth-child(6) {
+        margin-bottom: 1em;
+    }
+    .location .btn {
+        width: 100%;
+        margin: 1.5em 0 2.5em 0;
+    }
+    .location .btn img {
+        width: 0.5rem;
+        margin-left: 5px;
     }
 }
 
