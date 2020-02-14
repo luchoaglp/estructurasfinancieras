@@ -11,6 +11,7 @@ input[type=text] {
 }
 
 .divider hr {
+    margin-top: 0;
     border-top: none;
     border-bottom: 10px $primary solid;
 }
@@ -24,6 +25,9 @@ input[type=text] {
 }
 .description {
     position: absolute;
+}
+.arrows {
+    margin-bottom: 16px;
 }
 
 .invest {
@@ -127,6 +131,16 @@ input[type=text] {
 }
 .download .row > div h3 span { 
     font-family: $font-family-base;
+}
+
+.location {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    background-color: black;
+    text-align: center;
+    color: $white;
+}
+.location h4 {
+    color: $primary;
 }
 
 /* 1 */
@@ -747,17 +761,17 @@ input[type=text] {
     }
     .download .row > div > img {
         width: 6.5em;
-        margin-left: 28em;
+        margin-left: 43%;
         margin-bottom: 2em;
         
     }
     .download .row > div h3 {
         font-size: 2.2rem;
-        margin-left: 12.6em;
+        margin-left: 42.5%;
         margin-bottom: 0.5em;
     }
     .download .row .social {
-        margin-left: 27.6em;
+        margin-left: 42.5%;
     }
     .download .row .social a {
         padding-left: 0;
