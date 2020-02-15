@@ -157,13 +157,11 @@ input[type=text] {
     background-color: #0f0f0f;
     text-align: center;
     color: #959595;
-    /*padding-bottom: 0;*/
 }
-/*
-.footer hr {
+.footer p:last-child {
     margin-bottom: 0;
 }
-*/
+
 
 /* 1 */
 @include media-breakpoint-up(xs) {
@@ -308,15 +306,6 @@ input[type=text] {
         font-size: 1.5rem;
         padding: 0 1rem;
     }
-    /*
-    .location h4:nth-child(3) {
-        margin-bottom: 1em;
-    }
-    .location h4:last-child {
-        padding-bottom: 3rem;
-        margin-bottom: 0;
-    }
-    */
     .location > img {
         margin-top: 1.7em;
     }
@@ -330,6 +319,14 @@ input[type=text] {
     .location .btn img {
         width: 0.5rem;
         margin-left: 5px;
+    }
+    .footer p {
+        font-size: 0.7em;
+        padding: 1em;
+    }
+    .footer img {
+        padding-bottom: 1.1em;
+        width: 20%;
     }
 }
 
@@ -428,6 +425,13 @@ input[type=text] {
     .location h4 { 
         font-size: 1.4rem;
         padding: 0 1rem;
+    }
+    .footer p {
+        padding: 1.9em 1em;
+    }
+    .footer img {
+        padding-bottom: 1.1em;
+        width: 15%;
     }
 }
 
@@ -553,11 +557,6 @@ input[type=text] {
     .download .row .social a img {
         width: 100px;
     }
-    /*
-    .location h2:nth-child(6) {
-        margin-bottom: 1em;
-    }
-    */
     .location input[type=text], 
     .location input[type=email] {
         padding-top: 1.7em;
@@ -576,6 +575,13 @@ input[type=text] {
     }
     .location .btn img {
         width: 0.65rem;
+    }
+    .footer p {
+        padding: 2.4em 1.4em;
+    }
+    .footer img {
+        padding-bottom: 1.1em;
+        width: 12%;
     }
 }
 /* 4 */
@@ -710,11 +716,6 @@ input[type=text] {
     .location h4:nth-child(4) {
         margin-bottom: 0;
     }
-    /*
-    .location h2:nth-child(6) {
-        margin-bottom: 1em;
-    }
-    */
     .location form .col-md-6 {
         padding-right: 10px;
         padding-left: 10px;
@@ -739,6 +740,13 @@ input[type=text] {
     }
     .location .btn img {
         width: 0.65rem;
+    }
+    .footer p {
+        padding: 3.5em 11.5em;
+    }
+    .footer img {
+        padding-bottom: 1.1em;
+        width: 10%;
     }
 }
 
@@ -912,11 +920,6 @@ input[type=text] {
     .location h4:nth-child(4) {
         margin-bottom: 0.3em;
     }
-     /*
-    .location h2:nth-child(6) {
-        margin-bottom: 1em;
-    }
-    */
     .location form .col-md-6 {
         padding-right: 10px;
         padding-left: 10px;
@@ -942,5 +945,12 @@ input[type=text] {
     }
     .location .btn img {
         width: 0.8rem;
+    }
+    .footer p {
+        padding: 2.7em 28em 3em 28em;
+    }
+    .footer img {
+        padding-bottom: 1.1em;
+        width: 7%;
     }
 }
