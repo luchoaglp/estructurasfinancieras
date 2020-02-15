@@ -152,6 +152,19 @@ input[type=text] {
     color: #a8a8a8;
 }
 
+.footer {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    background-color: #0f0f0f;
+    text-align: center;
+    color: #959595;
+    /*padding-bottom: 0;*/
+}
+/*
+.footer hr {
+    margin-bottom: 0;
+}
+*/
+
 /* 1 */
 @include media-breakpoint-up(xs) {
     .btn {
@@ -698,26 +711,35 @@ input[type=text] {
         margin-bottom: 0;
     }
     /*
-    .location h2 {
-        margin-top: 2.5rem;
-        font-size: 1.75rem;
-        padding: 0 1rem;
-    }
-    .location h4 { 
-        font-size: 1.5rem;
-        padding: 0 1rem;
-    }
-    .location h4:nth-child(3) {
+    .location h2:nth-child(6) {
         margin-bottom: 1em;
     }
-    .location h4:last-child {
-        padding-bottom: 3rem;
-        margin-bottom: 0;
-    }
-    .location > img {
-        margin-top: 1.7em;
-    }
     */
+    .location form .col-md-6 {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .location form {
+        padding: 0 5em;
+    }
+    .location input[type=text], 
+    .location input[type=email] {
+        padding-top: 1.9em;
+        padding-bottom: 1.5em;
+    }
+    .location textarea {
+        padding: 1.2em;
+        height: 12.2em;
+    }
+    .location .btn {
+        width: 200px;
+        margin: 0.5em 0 4em 2em;
+        padding-top: 0.5em;
+        padding-bottom: 0.3em;
+    }
+    .location .btn img {
+        width: 0.65rem;
+    }
 }
 
 @include media-breakpoint-up(xl) {
@@ -889,5 +911,36 @@ input[type=text] {
     }
     .location h4:nth-child(4) {
         margin-bottom: 0.3em;
+    }
+     /*
+    .location h2:nth-child(6) {
+        margin-bottom: 1em;
+    }
+    */
+    .location form .col-md-6 {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .location form {
+        padding: 0 8em;
+    }
+    .location input[type=text], 
+    .location input[type=email] {
+        padding-top: 2em;
+        padding-bottom: 1.6em;
+    }
+    .location textarea {
+        padding: 1.3em;
+        height: 12.8em;
+    }
+    .location .btn {
+        font-size: 1.8rem;
+        width: 230px;
+        margin: 0.5em 0 4em 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.3em;
+    }
+    .location .btn img {
+        width: 0.8rem;
     }
 }
