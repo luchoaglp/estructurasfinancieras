@@ -393,7 +393,6 @@ input[type=text] {
         font-size: 1.4rem;
         padding-right: 16%;
     }
-
     .consult .btn {
         left: 46%;
         top: 7.6em;
@@ -621,7 +620,6 @@ input[type=text] {
     .invest div.invest-links a {
         padding: 0.5em 0;
         margin-top: 0.4em;
-        /*width: 335px;*/
     }
     .start h3 {
         font-size: 1.9rem;
@@ -719,11 +717,11 @@ input[type=text] {
     .location h4:nth-child(4) {
         margin-bottom: 0;
     }
-    .location form .col-md-6 {
+    .location .row .col-md-6 {
         padding-right: 10px;
         padding-left: 10px;
     }
-    .location form {
+    .location .row {
         padding: 0 5em;
     }
     .location input[type=text], 
@@ -875,7 +873,7 @@ input[type=text] {
     .consult .description {
         top: 2em;
         left: 47%;
-        font-size: 3.4rem;
+        font-size: 3.3rem;
         padding-right: 19%;
     }
     .consult .btn {
@@ -923,11 +921,11 @@ input[type=text] {
     .location h4:nth-child(4) {
         margin-bottom: 0.3em;
     }
-    .location form .col-md-6 {
+    .location .row .col-md-6 {
         padding-right: 10px;
         padding-left: 10px;
     }
-    .location form {
+    .location .row {
         padding: 0 8em;
     }
     .location input[type=text], 
