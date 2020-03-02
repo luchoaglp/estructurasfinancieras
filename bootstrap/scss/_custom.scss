@@ -9,6 +9,9 @@ input[type=text] {
 .navbar {
     font-size: 1.3rem;
 }
+#navbar-ef ul li.nav-item {
+    width: 250px;
+}
 .btn {
     color: $white;
 }
@@ -773,6 +776,10 @@ input[type=text] {
 }
 
 @include media-breakpoint-up(xl) {
+    #navbar-ef ul li a.nav-link {
+        padding-right: 0;
+        padding-left: 0; 
+    }
     .quote1 img {
         width: 268px;
     }
