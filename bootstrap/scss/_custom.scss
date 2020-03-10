@@ -18,6 +18,7 @@ input[type=text] {
 
 .divider hr {
     margin-top: 0;
+    margin-bottom: 0;
     border-top: none;
     border-bottom: 10px $primary solid;
 }
@@ -33,7 +34,7 @@ input[type=text] {
     position: absolute;
 }
 .arrows {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 }
 
 .invest {
@@ -784,7 +785,7 @@ input[type=text] {
         width: 268px;
     }
     .banner {
-        padding-bottom: 12px;
+        padding-bottom: 5px;
     }
     .banner .description {
         font-size: 3rem;
