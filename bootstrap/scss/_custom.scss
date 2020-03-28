@@ -23,6 +23,23 @@ input[type=text] {
     border-top: none;
     border-bottom: 10px $primary solid;
 }
+.background-container {
+    background: url(../img/background.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*
+.banner {
+    background: url(../img/banner.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
 /*
 .banner {
     font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
