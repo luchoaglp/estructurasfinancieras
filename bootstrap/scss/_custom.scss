@@ -10,9 +10,6 @@ input[type=text] {
 .navbar {
     font-size: 1.3rem;
 }
-#navbar-ef ul li.nav-item {
-    width: 250px;
-}
 .btn {
     color: $white;
 }
@@ -21,7 +18,7 @@ input[type=text] {
     margin-top: 0;
     margin-bottom: 0;
     border-top: none;
-    border-bottom: 10px $primary solid;
+    border-bottom: 15px $primary solid;
 }
 .background-container {
     background: url(../img/background.png) no-repeat center center; 
@@ -39,7 +36,10 @@ input[type=text] {
     background-size: cover;
     text-align: center;
 }
-
+*/
+.banner {
+    margin-bottom: -15px;
+}
 /*
 .banner {
     font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
@@ -57,7 +57,7 @@ input[type=text] {
     position: absolute;
 }
 .arrows {
-    margin-bottom: 13px;
+    margin: 13px 0;
 }
 
 .invest {
@@ -641,12 +641,15 @@ input[type=text] {
 }
 /* 4 */
 @include media-breakpoint-up(lg) {
+    #navbar-ef ul li.nav-item {
+        width: 190px;
+    }
     .quote1 img {
         width: 220px;
     }
     .banner .description {
         top: 1.1em;
-        left: 2.75em;
+        left: 2em;
         font-size: 2.5rem;
     }
     .arrows {
@@ -805,6 +808,9 @@ input[type=text] {
 }
 
 @include media-breakpoint-up(xl) {
+    #navbar-ef ul li.nav-item {
+        width: 250px;
+    }
     #navbar-ef ul li a.nav-link {
         padding-right: 0;
         padding-left: 0; 
@@ -819,17 +825,18 @@ input[type=text] {
         font-size: 3rem;
     }
     .arrows {
-        max-width: 80px;
-        padding-bottom: 18px;
+        max-width: 86px;
+        padding-bottom: 20px;
     }
     .members h2 {
+        padding: 1.25em 1em 0.5em 1em;
         font-size: 2.6rem;
         letter-spacing: 1.4px;
     }
     .members h3 {
         font-size: 1.6rem;
         letter-spacing: 1.1px;
-        padding: 2em 0;
+        padding: 2em 0 3em 0;
     }
     .invest {
         min-height: 550px;
