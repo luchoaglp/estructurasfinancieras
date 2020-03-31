@@ -309,7 +309,7 @@ input[type=text] {
         padding: 1em 2.7em 1em 3.25em;
     } 
     .cards .card .card-body > img {
-        height: 100px;
+        height: 105px;
         margin-bottom: 30px;
         margin-top: 10px;
     }
@@ -321,7 +321,7 @@ input[type=text] {
         line-height: 1.3rem;
     }
     .cards .card a.btn {
-        margin: 0 6em 1.5em 3.25em;
+        margin: 0 3em 1.5em 3em;
     }
     .cards .card a.btn img {
         width: 1rem;
@@ -716,6 +716,9 @@ input[type=text] {
         margin-left: 10px;
         width: 0.7rem;
     }
+    .cards .card {
+        min-height: 316px;
+    }
     .about {
         padding-top: 165px;
     }
@@ -863,7 +866,6 @@ input[type=text] {
         margin-top: 50px;
         font-size: 3.85rem;
     }
-    
     .invest div.invest-links, .links div.navigation-links {
         margin-top: 20px;
     }
@@ -904,7 +906,7 @@ input[type=text] {
         padding-top: 120px;
     }
     .cards .card {
-        min-height: 368px;
+        min-height: 374px;
     }
     .cards .container .row .col-lg-4 {
         padding-right: 8px;
