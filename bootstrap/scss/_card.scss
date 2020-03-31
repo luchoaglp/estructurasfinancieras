@@ -9,7 +9,7 @@
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
   height: $card-height;
   word-wrap: break-word;
-  background-color: #151515;
+  background-color: #e0e0e0;
   background-clip: border-box;
   /*border: $card-border-width solid $card-border-color;*/
   /*@include border-radius($card-border-radius);*/
@@ -40,7 +40,7 @@
   // See: https://github.com/twbs/bootstrap/pull/28855
   min-height: 1px;
   padding: $card-spacer-x;
-  color: $white;
+  color: #151515;
 }
 
 .card-title {
