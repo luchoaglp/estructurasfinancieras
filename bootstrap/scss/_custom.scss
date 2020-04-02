@@ -137,13 +137,12 @@ input[type=text] {
     -o-background-size: cover;
     background-size: cover;
     text-align: center;
-    color: $white;
 }
 .about h2 span {
-    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
 .about p span {
-    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
 .consult {
     background: url(../img/consult.png) no-repeat center center; 
