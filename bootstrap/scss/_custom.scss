@@ -150,14 +150,13 @@ input[type=text] {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: $white;
     margin-bottom: 0;
 }
 .quote2 {
     position: relative;
 }
 .consult .btn {
-    /*font-family: $font-family-base;*/
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     position: absolute;
 }
 
@@ -167,14 +166,13 @@ input[type=text] {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: $white;
     margin-bottom: 0;
 }
 .download .row > div {
     text-align: center;
 }
 .download .row > div h3 span { 
-    /*font-family: $font-family-base;*/
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
 
 .location {
@@ -184,7 +182,7 @@ input[type=text] {
     /*color: $white;*/
 }
 .location h2 {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     color: #0f1b29;
 }
 .location h4 {
@@ -934,14 +932,14 @@ input[type=text] {
         padding-top: 212px;
     }
     .about h2 {
-        font-size: 4.2rem;
+        font-size: 4.1rem;
         margin-bottom: 0.2em;
     }
     .about p {
-        font-size: 1.3rem;
-        padding: 0 14.5em;
+        font-size: 1.5rem;
+        padding: 0 10.1em;
         line-height: 38px;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
     }
     .about img {
         width: 18%;
@@ -949,20 +947,20 @@ input[type=text] {
     }
     .quote2 > img {
         margin-top: 2.2em;
-        margin-left: 33.5%;
+        margin-left: 31.5%;
         width: 410px;
     }
     .consult .description {
-        top: 2em;
-        left: 47%;
+        top: 2.1em;
+        left: 37.5%;
         font-size: 3.3rem;
-        padding-right: 19%;
+        padding-right: 24.5%;
     }
     .consult .btn {
         font-size: 1.9rem;
-        left: 47.3%;
-        top: 10.2em;
-        padding: 14px 30px 8px 34px;
+        left: 37.5%;
+        top: 10em;
+        padding: 16px 28px 10px 34px;
         width: 270px;
     }
     .consult .btn img {
@@ -973,14 +971,14 @@ input[type=text] {
         padding: 10em;
     }
     .download .row > div > img {
-        width: 6.5em;
+        width: 6.9em;
         margin-left: 43%;
         margin-bottom: 2em;
     }
     .download .row > div h3 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         margin-left: 42.5%;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.4em;
     }
     .download .row .social {
         margin-left: 42.5%;
@@ -993,14 +991,14 @@ input[type=text] {
         width: 130px;
     }
     .location h2 {
-        font-size: 2.7rem;
-        margin-top: 3rem;
+        font-size: 2.4rem;
+        margin-top: 4rem;
     }
     .location h4 {
         font-size: 1.91rem;
     }
     .location h4:nth-child(4) {
-        margin-bottom: 0.3em;
+        margin-bottom: 0.6em;
     }
     .location .row .col-md-6 {
         padding-right: 10px;
