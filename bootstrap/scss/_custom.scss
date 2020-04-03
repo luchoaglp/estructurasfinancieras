@@ -33,25 +33,11 @@ input[type=text] {
     -o-background-size: cover;
     background-size: cover;
 }
-/*
-.banner {
-    background: url(../img/banner.png) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-}
-*/
+
 .banner {
     margin-bottom: -15px;
 }
-/*
-.banner {
-    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
-    color: $white;
-}
-*/
+
 .banner h1 span {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
@@ -80,16 +66,13 @@ input[type=text] {
 .invest h2 span {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
-.invest div.invest-links, .links div.navigation-links {
-    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
-}
+
 .invest div.invest-links a, .links div.navigation-links {
     display: block;
     margin: auto;
 }
 
 .members {
-    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
     background-color: #f6f6f6;
     text-align: center;
 }
@@ -172,7 +155,6 @@ input[type=text] {
 }
 
 .location {
-    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
     background-color: #e0e0e0;
     text-align: center;
 }
@@ -200,7 +182,6 @@ input[type=text] {
 }
 
 .footer {
-    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
     background-color: #0f0f0f;
     text-align: center;
     color: #959595;
@@ -210,7 +191,6 @@ input[type=text] {
 }
 
 #ef-form {
-    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
     color: $secondary;
 }
 
@@ -237,11 +217,11 @@ input[type=text] {
     }
     .members h2 {
         font-size: 1.05rem;
-        padding: 0.5em 1em 0.5em 1em;
+        padding: 0.5em 1em 0.7em 1em;
     }
     .members h3 {
         font-size: 0.75rem;
-        padding: 0.4em 0 1.7em 0;
+        padding: 2em 0 0.8em 0;
         margin-bottom: 0;
     }
     .members img {
@@ -323,7 +303,6 @@ input[type=text] {
     }
     .about p {
         padding: 0 1em 8em 1em;
-        /*margin-bottom: 2.25em;*/
         margin-bottom: 0;
     }
     .about img {
@@ -661,10 +640,11 @@ input[type=text] {
     }
     .members h2 {
         font-size: 2em;
+        padding-bottom: 1em;
     }
     .members h3 {
         font-size: 1.3rem;
-        padding: 1.75em 0;
+        padding: 3em 0 1em 0;
     }
     .members img {
         padding-bottom: 55px;
@@ -723,7 +703,6 @@ input[type=text] {
         font-size: 1.1rem;
         padding: 0 8.5em;
         padding: 0 1em 11em 1em;
-        /*margin-bottom: 3em;*/
         line-height: 30px;
     }
     .about img {
@@ -840,14 +819,14 @@ input[type=text] {
         padding-bottom: 20px;
     }
     .members h2 {
-        padding: 1.35em 1em 0.5em 1em;
+        padding: 1em 1em 1em 1em;
         font-size: 2.6rem;
         letter-spacing: 1.4px;
     }
     .members h3 {
         font-size: 1.6rem;
         letter-spacing: 1.1px;
-        padding: 1.7em 0 2.8em 0;
+        padding: 2.7em 0 0 0;
     }
     .members img {
         padding-bottom: 66px;
