@@ -102,6 +102,9 @@ input[type=text] {
     text-align: left;
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
+.cards .card h5.card-title span {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+}
 .cards .card p.card-text {
     text-align: left;
 }
@@ -194,9 +197,17 @@ input[type=text] {
     color: $secondary;
 }
 
-#ef-form label {
-    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
+#efModal .modal-content {
+    background-color: #e0e0e0;
 }
+
+#efModal .modal-title {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+}
+
+#efModal button {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+} 
 
 /* 1 */
 @include media-breakpoint-up(xs) {
