@@ -228,10 +228,10 @@
               </button>
             </div>
             <div class="modal-body">
-                <div class="row location location">
+                <div class="row location">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nombre">
+                            <input type="text" id="efName" class="form-control" placeholder="Nombre">
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email">
@@ -256,6 +256,9 @@ $(function() {
         speed: 20,
         responsive: true,
         pauseonhover: false
+    });
+    $('#efModal').on('shown.bs.modal', function() {
+        $(this).find("#efName").focus();
     });
 });
 </script>
