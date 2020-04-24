@@ -86,13 +86,13 @@
 <script>
 $(function() {
 
-  $.getJSON("https://financialmodelingprep.com/api/v3/company/profile/SPY,AAPL,SNP", function(data) {
+  $.getJSON("https://financialmodelingprep.com/api/v3/quote/DOW,CMCSA,SPY,AAPL,JPXN,SNDX,GOOG", function(data) {
 
     //console.log(data)
     
-    data.companyProfiles.forEach(company => {
+    data.forEach(company => {
 
-      let changesPercentage = parseFloat(company.profile.changesPercentage.replace(/[\(\)%]/g, ''));
+      let changesPercentage = parseFloat(company.changesPercentage);
 
       let color = '#28b0a3';
 
@@ -106,8 +106,8 @@ $(function() {
 
       $('#bt').append(`
         <li>
-            <div>${company.symbol}<span>${company.profile.mktCap}</span></div>
-            <div>${chp}<span style="color:${color}">${company.profile.price}</span></div>
+            <div>${company.symbol}<span>${company.dayHigh}</span></div>
+            <div>${chp}<span style="color:${color}">${company.price}</span></div>
           </li>
         `);
       });
