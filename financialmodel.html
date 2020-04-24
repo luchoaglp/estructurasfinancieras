@@ -36,7 +36,6 @@
     font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
     padding-top: 3px;
     font-weight: 800;
-    color: #28b0a3;
   }
  
   ul#bt li div:nth-child(2) span:first-child {
@@ -95,12 +94,20 @@ $(function() {
 
       let changesPercentage = parseFloat(company.profile.changesPercentage.replace(/[\(\)%]/g, ''));
 
-      let chp = `<span><i class="fa fa-angle-up"></i>${changesPercentage}%</span>`;
+      let color = '#28b0a3';
+
+      let chp = `<span style="color:${color}"><i class="fa fa-angle-up"></i>${changesPercentage}%</span>`;
+
+      if(changesPercentage < 0) {
+        changesPercentage *= -1;
+        color = '#f65652';
+        chp = `<span style="color:${color}"><i class="fa fa-angle-down"></i>${changesPercentage}%</span>`;
+      }
 
       $('#bt').append(`
         <li>
             <div>${company.symbol}<span>${company.profile.mktCap}</span></div>
-            <div>${chp}<span>${company.profile.price}</span></div>
+            <div>${chp}<span style="color:${color}">${company.profile.price}</span></div>
           </li>
         `);
       });
