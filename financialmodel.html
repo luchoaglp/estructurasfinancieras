@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>Estructuras Financieras</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+<style>
+  body {
+    background-color: #f9fafa;
+  }
+  .bt-container {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    padding: 7px 0;
+    margin: 0;
+    color: #fff;
+    background-color: #111420;
+  }
+  ul#bt {
+    margin-bottom: 0;
+    font-size: 0.65rem;
+  }
+  ul#bt li {
+    padding: 5px 20px 0 20px;
+    border-left: 1px solid #292d38;
+    border-right: 1px solid #292d38;
+  }
+
+  ul#bt li div:first-child span {
+    padding-left: 100px;
+  }
+ 
+  ul#bt li div:nth-child(2) {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    padding-top: 3px;
+    font-weight: 800;
+    color: #28b0a3;
+  }
+ 
+  ul#bt li div:nth-child(2) span:first-child {
+    font-size: 1.25rem;
+  }
+
+  ul#bt li div:nth-child(2) span:first-child i {
+    font-size: 1.55rem;
+    padding-right: 5px;
+  }
+
+  ul#bt li div:nth-child(2) span:nth-child(2) {
+    margin-left: 10px;
+  }
+</style>
+
+  </head>
+  <body>
+
+    <br>
+
+    <div class="bt-container">
+      <ul id="bt">
+        <!--
+        <li>
+          <div>XXXX<span>1234.5</span></div>
+          <div><span><i class="fa fa-angle-up"></i>0.02%</span><span>279.08</span></div>
+        </li>
+        <li>
+          <div>YYYY<span>66.25</span></div>
+          <div><span><i class="fa fa-angle-down"></i>1.07%</span><span>275.03</span></div>
+        </li>
+        <li>
+          <div>ZZZZ<span>44489.5</span></div>
+          <div><span><i class="fa fa-angle-down"></i>0.843%</span><span>1.68</span></div>
+        </li>
+        -->
+       
+      </ul>
+    </div>
+
+    <br>
+      
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/infiniteslidev2.min.js"></script>
+<script>
+$(function() {
+
+  $.getJSON("https://financialmodelingprep.com/api/v3/company/profile/AAPL,WLL,SPY", function(data) {
+    
+    data.companyProfiles.forEach(company => {
+      console.log(company)
+
+      let changesPercentage = parseFloat(company.profile.changesPercentage.replace(/[\(\)%]/g, ''));
+
+      let chp = `<span><i class="fa fa-angle-up"></i>${changesPercentage}%</span>`;
+
+      $('#bt').append(`
+        <li>
+            <div>${company.symbol}<span>1234.5</span></div>
+            <div>${chp}<span>279.08</span></div>
+          </li>
+        `);
+      });
+
+    $('#bt').infiniteslide({
+      speed: 20,
+      responsive: true,
+      pauseonhover: false,
+      clone: 4
+    });
+  });
+ 
+});
+</script>
+    </body>
+</html>
+
+<!--
+https://financialmodelingprep.com/developer/docs/
+https://financialmodelingprep.com/api/v3/company/stock/list
+https://financialmodelingprep.com/api/v3/company/profile/AAPL,WLL,SPY
+-->
