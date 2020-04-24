@@ -87,10 +87,11 @@
 <script>
 $(function() {
 
-  $.getJSON("https://financialmodelingprep.com/api/v3/company/profile/AAPL,WLL,SPY", function(data) {
+  $.getJSON("https://financialmodelingprep.com/api/v3/company/profile/SPY,ZWA.TO,ONEQ", function(data) {
+
+    console.log(data)
     
     data.companyProfiles.forEach(company => {
-      console.log(company)
 
       let changesPercentage = parseFloat(company.profile.changesPercentage.replace(/[\(\)%]/g, ''));
 
@@ -98,8 +99,8 @@ $(function() {
 
       $('#bt').append(`
         <li>
-            <div>${company.symbol}<span>1234.5</span></div>
-            <div>${chp}<span>279.08</span></div>
+            <div>${company.symbol}<span>${company.profile.mktCap}</span></div>
+            <div>${chp}<span>${company.profile.price}</span></div>
           </li>
         `);
       });
