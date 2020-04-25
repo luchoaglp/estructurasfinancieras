@@ -24,13 +24,16 @@
   }
   ul#bt li {
     padding: 5px 20px 0 20px;
-    border-left: 1px solid #292d38;
-    border-right: 1px solid #292d38;
+    min-width: 178px;
+    border-left: 1px solid #353a46;
+    border-right: 1px solid #353a46;
   }
 
+  /*
   ul#bt li div:first-child span {
     padding-left: 100px;
   }
+  */
  
   ul#bt li div:nth-child(2) {
     font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
@@ -55,29 +58,9 @@
   </head>
   <body>
 
-    <br>
-
     <div class="bt-container">
-      <ul id="bt">
-        <!--
-        <li>
-          <div>XXXX<span>1234.5</span></div>
-          <div><span><i class="fa fa-angle-up"></i>0.02%</span><span>279.08</span></div>
-        </li>
-        <li>
-          <div>YYYY<span>66.25</span></div>
-          <div><span><i class="fa fa-angle-down"></i>1.07%</span><span>275.03</span></div>
-        </li>
-        <li>
-          <div>ZZZZ<span>44489.5</span></div>
-          <div><span><i class="fa fa-angle-down"></i>0.843%</span><span>1.68</span></div>
-        </li>
-        -->
-       
-      </ul>
+      <ul id="bt"></ul>
     </div>
-
-    <br>
       
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -89,7 +72,7 @@ $(function() {
 
   let arr = [];
 
-  for(let i = 0; i < 8; i++) {
+  for(let i = 0; i < 7; i++) {
     arr.push(symbols[Math.floor(Math.random() * symbols.length)]);
   }
 
@@ -104,8 +87,6 @@ $(function() {
       if(company.name !== null) {
 
         let changesPercentage = parseFloat(company.changesPercentage);
-
-        //const dayHigh = company.dayHigh == null ? 0 : company.dayHigh;
 
         let color = '#fff';
 
@@ -133,7 +114,8 @@ $(function() {
     $('#bt').infiniteslide({
       speed: 20,
       responsive: true,
-      pauseonhover: false
+      pauseonhover: false,
+      clone: 2
     });
   });
  
