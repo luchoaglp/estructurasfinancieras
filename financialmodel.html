@@ -83,40 +83,57 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="js/infiniteslidev2.min.js"></script>
+<script src="js/symbols.js"></script>
 <script>
 $(function() {
 
-  $.getJSON("https://financialmodelingprep.com/api/v3/quote/DOW,CMCSA,SPY,AAPL,JPXN,SNDX,GOOG", function(data) {
+  let arr = [];
 
-    //console.log(data)
+  for(let i = 0; i < 8; i++) {
+    arr.push(symbols[Math.floor(Math.random() * symbols.length)]);
+  }
+
+  function trim(str, len) {
+    return str.length > len ? str.substring(0, len - 3) + "..." : str;
+  }
+
+  $.getJSON("https://financialmodelingprep.com/api/v3/quote/" + arr.join(','), function(data) {
     
     data.forEach(company => {
 
-      let changesPercentage = parseFloat(company.changesPercentage);
+      if(company.name !== null) {
 
-      let color = '#28b0a3';
+        let changesPercentage = parseFloat(company.changesPercentage);
 
-      let chp = `<span style="color:${color}"><i class="fa fa-angle-up"></i>${changesPercentage}%</span>`;
+        //const dayHigh = company.dayHigh == null ? 0 : company.dayHigh;
 
-      if(changesPercentage < 0) {
-        changesPercentage *= -1;
-        color = '#f65652';
-        chp = `<span style="color:${color}"><i class="fa fa-angle-down"></i>${changesPercentage}%</span>`;
-      }
+        let color = '#fff';
 
-      $('#bt').append(`
-        <li>
-            <div>${company.symbol}<span>${company.dayHigh}</span></div>
+        let chp = `<span style="color:${color}"> = ${changesPercentage}%</span>`;
+
+        if(changesPercentage < 0) {
+          changesPercentage *= -1;
+          color = '#f65652';
+          chp = `<span style="color:${color}"><i class="fa fa-angle-down"></i>${changesPercentage}%</span>`;
+        } else if(changesPercentage > 0) {
+          color = '#28b0a3';
+          chp = `<span style="color:${color}"><i class="fa fa-angle-up"></i>${changesPercentage}%</span>`;
+        }
+
+        $('#bt').append(`
+          <li>
+            <div>${trim(company.name, 25)}</div>
             <div>${chp}<span style="color:${color}">${company.price}</span></div>
           </li>
         `);
-      });
+      }
+    });
+
 
     $('#bt').infiniteslide({
       speed: 20,
       responsive: true,
-      pauseonhover: false,
-      clone: 4
+      pauseonhover: false
     });
   });
  
@@ -128,5 +145,5 @@ $(function() {
 <!--
 https://financialmodelingprep.com/developer/docs/
 https://financialmodelingprep.com/api/v3/company/stock/list
-https://financialmodelingprep.com/api/v3/company/profile/AAPL,WLL,SPY
+https://financialmodelingprep.com/api/v3/quote/DOW,CMCSA,SPY,AAPL,JPXN,SNDX,GOOG
 -->
