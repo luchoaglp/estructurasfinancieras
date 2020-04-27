@@ -57,12 +57,17 @@
         <div class="divider container"><hr></div>
     </div>
 
+    <div class="bt-container">
+        <ul id="bt"></ul>
+    </div>
+    <!--
     <div id="bt" class="module">
         <img src="./img/bt.png" class="img-fluid" alt="BT">
     </div>
+    -->
 
     <div class="members">
-        <h6 class="text-center text-muted pt-1 mb-0 px-2"><small>El gráfico es solo un diseño. Los valores expresados en el mismo no son actuales.</h6>
+        <!--<h6 class="text-center text-muted pt-1 mb-0 px-2"><small>El gráfico es solo un diseño. Los valores expresados en el mismo no son actuales.</h6>-->
         <h3 class="text-primary">DIVISAS - ACCIONES - ÍNDICES - FUTUROS - BONOS</h3>
         <h2>Somos miembros y participamos<br>
         de los mercados más importantes del mundo.</h2>
@@ -257,13 +262,56 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="js/infiniteslidev2.min.js"></script>
+<script src="js/symbols.js"></script>
 <script>
 $(function() {
-    $('#bt').infiniteslide({
-        speed: 20,
-        responsive: true,
-        pauseonhover: false
+    let arr = [];
+
+  for(let i = 0; i < 7; i++) {
+    arr.push(symbols[Math.floor(Math.random() * symbols.length)]);
+  }
+
+  function trim(str, len) {
+    return str.length > len ? str.substring(0, len - 3) + "..." : str;
+  }
+
+  $.getJSON("https://financialmodelingprep.com/api/v3/quote/" + arr.join(','), function(data) {
+    
+    data.forEach(company => {
+
+        if(company.name !== null) {
+
+            let changesPercentage = parseFloat(company.changesPercentage);
+
+            let color = '#fff';
+
+            let chp = `<span style="color:${color}"> = ${changesPercentage}%</span>`;
+
+            if(changesPercentage < 0) {
+            changesPercentage *= -1;
+            color = '#f65652';
+            chp = `<span style="color:${color}"><i class="fa fa-angle-down"></i>${changesPercentage}%</span>`;
+            } else if(changesPercentage > 0) {
+            color = '#28b0a3';
+            chp = `<span style="color:${color}"><i class="fa fa-angle-up"></i>${changesPercentage}%</span>`;
+            }
+
+            $('#bt').append(`
+            <li>
+                <div>${trim(company.name, 25)}</div>
+                <div>${chp}<span style="color:${color}">${company.price}</span></div>
+            </li>
+            `);
+        }
     });
+
+    $('#bt').infiniteslide({
+      speed: 20,
+      responsive: true,
+      pauseonhover: false,
+      clone: 2
+    });
+  });
     $('#efModal').on('shown.bs.modal', function() {
         $(this).find("#efName").focus();
     });

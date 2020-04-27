@@ -256,6 +256,49 @@ input[type=text] {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+// End Checkbox
+// Slider BT
+.bt-container {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    /*padding: 7px 0;*/
+    margin: 0;
+    color: #fff;
+    background-color: #111420;
+  }
+  ul#bt {
+    margin-bottom: 0;
+    /*font-size: 0.65rem;*/
+  }
+  ul#bt li {
+    /*
+    padding: 5px 20px 0 20px;
+    min-width: 178px;
+    */
+    border-left: 1px solid #353a46;
+    border-right: 1px solid #353a46;
+  }
+ 
+  ul#bt li div:nth-child(2) {
+    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    /*padding-top: 3px;*/
+    font-weight: 800;
+  }
+ 
+  /*
+  ul#bt li div:nth-child(2) span:first-child {
+    font-size: 1.25rem;
+  }
+  */
+
+  ul#bt li div:nth-child(2) span:first-child i {
+    /*font-size: 1.55rem;*/
+    padding-right: 5px;
+  }
+
+  ul#bt li div:nth-child(2) span:nth-child(2) {
+    margin-left: 10px;
+  }
+// End Slider BT
 
 /* 1 */
 @include media-breakpoint-up(xs) {
@@ -424,6 +467,23 @@ input[type=text] {
     .footer img {
         padding-bottom: 1.1em;
         width: 20%;
+    }
+
+    ul#bt {
+        font-size: 0.5rem;
+    }
+    ul#bt li {
+        padding: 5px 5px 0 5px;
+        min-width: 125px;
+    }
+    ul#bt li div:nth-child(2) {
+        /*padding-top: 3px;*/
+    }
+    ul#bt li div:nth-child(2) span:first-child {
+        font-size: 0.9rem;
+    }
+    ul#bt li div:nth-child(2) span:first-child i {
+        font-size: 1.2rem;
     }
 }
 
@@ -1074,4 +1134,28 @@ input[type=text] {
         padding-bottom: 1.7em;
         width: 10%;
     }
+
+    .bt-container {
+        padding: 7px 0;
+    }
+    ul#bt {
+        font-size: 0.65rem;
+    }
+    ul#bt li {
+        padding: 5px 20px 0 20px;
+        min-width: 178px;
+    }
+    ul#bt li div:nth-child(2) {
+        padding-top: 3px;
+    }
+    ul#bt li div:nth-child(2) span:first-child {
+        font-size: 1.25rem;
+    }
+    ul#bt li div:nth-child(2) span:first-child i {
+        font-size: 1.55rem;
+    }
+    ul#bt li div:nth-child(2) span:nth-child(2) {
+        margin-left: 10px;
+    }
+    
 }
