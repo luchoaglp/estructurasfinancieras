@@ -209,7 +209,7 @@ input[type=text] {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 } 
 
-// Checkbox
+// MODAL
 #efModal .new {
     padding-top: 5px;
     text-align: left;
@@ -256,7 +256,19 @@ input[type=text] {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-// End Checkbox
+
+#efModal .location button {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+#efModal .modal-footer {
+    padding-top: 0;
+}
+#efModal .modal-footer a.disabled {
+    color: #fff;
+}
+// End MODAL
+
 // Slider BT
 .bt-container {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
