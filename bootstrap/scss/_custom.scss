@@ -260,6 +260,8 @@ input[type=text] {
 // Slider BT
 .bt-container {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    max-height: 68px;
+    overflow: hidden;
     /*padding: 7px 0;*/
     margin: 0;
     color: #fff;
@@ -267,7 +269,7 @@ input[type=text] {
   }
   ul#bt {
     margin-bottom: 0;
-    /*font-size: 0.65rem;*/
+    list-style-type: none;
   }
   ul#bt li {
     /*

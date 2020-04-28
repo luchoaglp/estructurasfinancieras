@@ -58,7 +58,7 @@
     </div>
 
     <div class="bt-container">
-        <ul id="bt"></ul>
+        <ul id="bt" class="d-none"></ul>
     </div>
     <!--
     <div id="bt" class="module">
@@ -149,7 +149,7 @@
                             <h5 class="card-title"><span>Obten&eacute; el</span> an&aacute;lisis del mercado.</h5>
                             <p class="card-text">Powered by Delphos.</p>
                         </div>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#efModal">Ingreso clientes <img src="./img/more.png" class="img-fluid" alt="Más"></a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#efModal">Ingresar <img src="./img/more.png" class="img-fluid" alt="Más"></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -252,7 +252,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Bajar PDF Informe diario <i class="fa fa-download"></i>
+                <a href="https://clientes.estructurasfinancieras.com.ar/docs/informe.pdf" class="btn btn-primary" target="_blank" download>Bajar PDF Informe diario <i class="fa fa-download"></i></a>
             </div>
         </div>
     </div>
@@ -266,52 +266,43 @@
 <script>
 $(function() {
     let arr = [];
+    for(let i = 0; i < 7; i++) {
+        arr.push(symbols[Math.floor(Math.random() * symbols.length)]);
+    }
+    $.getJSON("https://financialmodelingprep.com/api/v3/quote/" + arr.join(','), function(data) {
 
-  for(let i = 0; i < 7; i++) {
-    arr.push(symbols[Math.floor(Math.random() * symbols.length)]);
-  }
+        let slideHtml = '';
 
-  function trim(str, len) {
-    return str.length > len ? str.substring(0, len - 3) + "..." : str;
-  }
-
-  $.getJSON("https://financialmodelingprep.com/api/v3/quote/" + arr.join(','), function(data) {
-    
-    data.forEach(company => {
-
-        if(company.name !== null) {
-
-            let changesPercentage = parseFloat(company.changesPercentage);
-
-            let color = '#fff';
-
-            let chp = `<span style="color:${color}"> = ${changesPercentage}%</span>`;
-
-            if(changesPercentage < 0) {
-            changesPercentage *= -1;
-            color = '#f65652';
-            chp = `<span style="color:${color}"><i class="fa fa-angle-down"></i>${changesPercentage}%</span>`;
-            } else if(changesPercentage > 0) {
-            color = '#28b0a3';
-            chp = `<span style="color:${color}"><i class="fa fa-angle-up"></i>${changesPercentage}%</span>`;
+        data.forEach(company => {
+            let {name} = company;
+            if(name !== null) {
+                name = name.length > 25 ? name.substring(0, 25 - 3) + "..." : name;
+                let changesPercentage = parseFloat(company.changesPercentage);
+                let color = '#fff';
+                let chp = '<span style="color:' + color + '"> = ' + changesPercentage + '</span>';   
+                if(changesPercentage < 0) {
+                    changesPercentage *= -1;
+                    color = '#f65652';
+                    chp = '<span style="color:' + color + '"><i class="fa fa-angle-down"></i>' + changesPercentage + '%</span>';
+                } else if(changesPercentage > 0) {
+                    color = '#28b0a3';
+                    chp = '<span style="color:' + color + '"><i class="fa fa-angle-up"></i>' + changesPercentage + '%</span>';
+                }
+                slideHtml += '<li><div>' + name + '</div><div>' + chp + '<span style="color:' + color + '">' + company.price + '</span></div></li>';
+                
             }
+            $('#bt').html(slideHtml);
+        });
 
-            $('#bt').append(`
-            <li>
-                <div>${trim(company.name, 25)}</div>
-                <div>${chp}<span style="color:${color}">${company.price}</span></div>
-            </li>
-            `);
-        }
-    });
+        $('#bt').removeClass('d-none');
 
-    $('#bt').infiniteslide({
-      speed: 20,
-      responsive: true,
-      pauseonhover: false,
-      clone: 2
+        $('#bt').infiniteslide({
+            speed: 20,
+            responsive: true,
+            pauseonhover: false,
+            clone: 2
+        });
     });
-  });
     $('#efModal').on('shown.bs.modal', function() {
         $(this).find("#efName").focus();
     });
