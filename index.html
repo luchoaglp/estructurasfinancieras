@@ -252,6 +252,7 @@
                                     <label for="efCheck">Quiero recibir el An&aacute;lisis de mercado diariamente por email.</label>
                                 </div>
                             </div>
+                            <hr>
                             <button type="submit" id="efSubmit" class="btn btn-primary disabled" disabled="true">Suscribirte</button>
                         </form>
                     </div>
@@ -312,10 +313,10 @@ $(function() {
         });
     });
 
-    const $efSubmit = $('#efSubmit');
     const $efName = $("#efName");
     const $efEmail = $("#efEmail");
     const $efCheck = $('#efCheck');
+    const $efSubmit = $('#efSubmit');
 
     $('#efModal').on('shown.bs.modal', function() {
         
