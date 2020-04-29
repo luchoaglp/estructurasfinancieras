@@ -204,11 +204,11 @@ input[type=text], input[type=email] {
 #efModal .modal-title {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
-
+/*
 #efModal button {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 } 
-
+*/
 // MODAL
 #efModal .new {
     padding-top: 5px;
@@ -263,9 +263,10 @@ input[type=text], input[type=email] {
 }
 
 #efModal .location button.btn {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     color: #fff;
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     opacity: 1;
 }
 /*

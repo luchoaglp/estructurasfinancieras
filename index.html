@@ -236,7 +236,7 @@
             <div class="modal-body">
                 <div class="row location">
                     <div class="col-md-12">
-                        <form action="#">
+                        <form action="#" method="post">
                             <div class="form-group">
                                 <input type="text" name="efName" id="efName" class="form-control" placeholder="Nombre" required>
                             </div>
@@ -311,35 +311,39 @@ $(function() {
             clone: 2
         });
     });
+
+    const $efSubmit = $('#efSubmit');
+    const $efName = $("#efName");
+    const $efEmail = $("#efEmail");
+    const $efCheck = $('#efCheck');
+
     $('#efModal').on('shown.bs.modal', function() {
         
         $(this).find("#efName").focus();
 
-        $("#efName").keyup(function() {
+        $efName.keyup(function() {
             toggleEfSubmit();
         });
-
-        $("#efEmail").keyup(function() {
+        $efEmail.keyup(function() {
             toggleEfSubmit();
         });
-
-        $('#efCheck').change(function() {
+        $efCheck.change(function() {
             toggleEfSubmit();      
         });
     });
 
     function toggleEfSubmit() {
         if(isFormFilled()) {
-            $('#efSubmit').removeClass('disabled');
-            $('#efSubmit').attr('disabled', 'false');
+            $efSubmit.removeClass('disabled');
+            $efSubmit.attr('disabled', false);
         } else {
-            $('#efSubmit').addClass('disabled');
-            $('#efSubmit').attr('disabled', 'true');
+            $efSubmit.addClass('disabled');
+            $efSubmit.attr('disabled', true);
         }
     }
 
     function isFormFilled() {
-        return $("#efName").val().length > 6 && $("#efEmail").val().length > 6 && $('#efCheck').prop('checked');
+        return $efName.val().length > 6 && $efEmail.val().length > 6 && $efCheck.prop('checked');
     }
 });
 </script>
