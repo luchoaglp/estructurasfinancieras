@@ -188,7 +188,7 @@
         <div class="divider container"><hr></div>
         <h2>Estamos en el centro financiero de Buenos Aires.</h2>
         <h4>Paraguay 346, Piso 14°, CABA, Argentina.</h4>
-        <h4>+54 11 5032-1684</h4>
+        <h4>+5411 3988-6375</h4>
         <img src="./img/map.png" class="img-fluid" alt="Ubicación">
         <h2>Contáctanos</h2>
         <div class="container-fluid">
@@ -238,26 +238,30 @@
                     <div class="col-md-12">
                         <form action="#">
                             <div class="form-group">
-                                <input type="text" id="efName" class="form-control" placeholder="Nombre">
+                                <input type="text" name="efName" id="efName" class="form-control" placeholder="Nombre" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="efEmail" class="form-control" placeholder="Email">
+                                <input type="email" name="efEmail" id="efEmail" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="efPhone" id="efPhone" class="form-control" placeholder="Teléfono" maxlength="10">
                             </div>
                             <div class="new">
                                 <div class="form-group">
-                                    <input type="checkbox" id="receive">
-                                    <label for="receive">Quiero recibir el An&aacute;lisis de mercado diariamente por email.</label>
+                                    <input type="checkbox" name="efCheck" id="efCheck">
+                                    <label for="efCheck">Quiero recibir el An&aacute;lisis de mercado diariamente por email.</label>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Aceptar</button>
+                            <button type="submit" id="efSubmit" class="btn btn-primary disabled" disabled="true">Suscribirte</button>
                         </form>
-                        <hr>
                     </div>
                 </div>
             </div>
+            <!--
             <div class="modal-footer">
                 <a href="https://clientes.estructurasfinancieras.com.ar/docs/informe.pdf" id="efDownload" class="btn btn-primary disabled" target="_blank" download disabled="true">Bajar PDF Informe diario <i class="fa fa-download"></i></a>
             </div>
+            -->
         </div>
     </div>
 </div>
@@ -312,26 +316,30 @@ $(function() {
         $(this).find("#efName").focus();
 
         $("#efName").keyup(function() {
-            toggleEfDownload();
+            toggleEfSubmit();
         });
 
         $("#efEmail").keyup(function() {
-            toggleEfDownload();
+            toggleEfSubmit();
+        });
+
+        $('#efCheck').change(function() {
+            toggleEfSubmit();      
         });
     });
 
-    function toggleEfDownload() {
+    function toggleEfSubmit() {
         if(isFormFilled()) {
-            $('#efDownload').removeClass('disabled');
-            $('#efDownload').attr('disabled', 'false');
+            $('#efSubmit').removeClass('disabled');
+            $('#efSubmit').attr('disabled', 'false');
         } else {
-            $('#efDownload').addClass('disabled');
-            $('#efDownload').attr('disabled', 'true');
+            $('#efSubmit').addClass('disabled');
+            $('#efSubmit').attr('disabled', 'true');
         }
     }
 
     function isFormFilled() {
-        return $("#efName").val() !== '' && $("#efEmail").val() !== '';
+        return $("#efName").val().length > 6 && $("#efEmail").val().length > 6 && $('#efCheck').prop('checked');
     }
 });
 </script>
