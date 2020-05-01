@@ -67,7 +67,7 @@
     -->
 
     <div class="members">
-        <!--<h6 class="text-center text-muted pt-1 mb-0 px-2"><small>El gráfico es solo un diseño. Los valores expresados en el mismo no son actuales.</h6>-->
+        <h6 class="text-center text-muted pt-1 mb-0 px-2"><small><a href="#" id="bt_reload">Actualizar</a></small></h6>
         <h3 class="text-primary">DIVISAS - ACCIONES - ÍNDICES - FUTUROS - BONOS</h3>
         <h2>Somos miembros y participamos<br>
         de los mercados más importantes del mundo.</h2>
@@ -274,44 +274,58 @@
 <script src="js/symbols.js"></script>
 <script>
 $(function() {
-    let arr = [];
-    for(let i = 0; i < 7; i++) {
-        arr.push(symbols[Math.floor(Math.random() * symbols.length)]);
-    }
-    $.getJSON("https://financialmodelingprep.com/api/v3/quote/" + arr.join(','), function(data) {
 
-        let slideHtml = '';
+    bt();
 
-        data.forEach(company => {
-            let {name} = company;
-            if(name !== null) {
-                name = name.length > 25 ? name.substring(0, 25 - 3) + "..." : name;
-                let changesPercentage = parseFloat(company.changesPercentage);
-                let color = '#fff';
-                let chp = '<span style="color:' + color + '"> = ' + changesPercentage + '</span>';   
-                if(changesPercentage < 0) {
-                    changesPercentage *= -1;
-                    color = '#f65652';
-                    chp = '<span style="color:' + color + '"><i class="fa fa-angle-down"></i>' + changesPercentage + '%</span>';
-                } else if(changesPercentage > 0) {
-                    color = '#28b0a3';
-                    chp = '<span style="color:' + color + '"><i class="fa fa-angle-up"></i>' + changesPercentage + '%</span>';
-                }
-                slideHtml += '<li><div>' + name + '</div><div>' + chp + '<span style="color:' + color + '">' + company.price + '</span></div></li>';
-                
-            }
-            $('#bt').html(slideHtml);
-        });
-
-        $('#bt').removeClass('d-none');
-
-        $('#bt').infiniteslide({
-            speed: 20,
-            responsive: true,
-            pauseonhover: false,
-            clone: 2
-        });
+    $('#bt_reload').click(function() {
+        bt();
     });
+
+    function bt() {
+
+        let arr = [];
+
+        for(let i = 0; i < 7; i++) {
+            arr.push(symbols[Math.floor(Math.random() * symbols.length)]);
+        }
+
+        $.getJSON("https://financialmodelingprep.com/api/v3/quote/" + arr.join(','), function(data) {
+
+            $('#bt').html('');
+
+            let slideHtml = '';
+
+            data.forEach(company => {
+                let {name} = company;
+                if(name !== null) {
+                    name = name.length > 25 ? name.substring(0, 25 - 3) + "..." : name;
+                    let changesPercentage = parseFloat(company.changesPercentage);
+                    let color = '#fff';
+                    let chp = '<span style="color:' + color + '"> = ' + changesPercentage + '</span>';   
+                    if(changesPercentage < 0) {
+                        changesPercentage *= -1;
+                        color = '#f65652';
+                        chp = '<span style="color:' + color + '"><i class="fa fa-angle-down"></i>' + changesPercentage + '%</span>';
+                    } else if(changesPercentage > 0) {
+                        color = '#28b0a3';
+                        chp = '<span style="color:' + color + '"><i class="fa fa-angle-up"></i>' + changesPercentage + '%</span>';
+                    }
+                    slideHtml += '<li><div>' + name + '</div><div>' + chp + '<span style="color:' + color + '">' + company.price + '</span></div></li>';
+                    
+                }
+                $('#bt').html(slideHtml);
+            });
+
+            $('#bt').removeClass('d-none');
+            
+            $('#bt').infiniteslide({
+                speed: 20,
+                responsive: true,
+                pauseonhover: false,
+                clone: 2
+            });
+        });
+    }
 
     const $efName = $("#efName");
     const $efEmail = $("#efEmail");
