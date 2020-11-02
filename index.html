@@ -23,6 +23,9 @@
                         <a class="nav-link" href="#acerca">¿Quiénes somos?</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">¿Qu&eacute; hacemos?</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#respaldo">Respaldo</a>
                     </li>
                     <li class="nav-item active">
@@ -34,6 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Intranet</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -42,21 +48,30 @@
             <div class="row">
                 <div class="quote1 col-md-10 offset-md-1">
                     <img src="./img/quote1.png" class="img-fluid" alt="Sociedad de Bolsa">
-                    <h1 class="description"><span>Somos una Sociedad de Bolsa,</span> Solucionamos todas tus</span><br>necesidades financieras</h1>
+                    <h1 class="description"><div class="mb-1">Somos una Sociedad de Bolsa.</div>Somos miembros y participamos</span><br>de los mercados más importantes del mundo.</h1>
                 </div>
             </div>
-            <div id="respaldo" class="container-fluid">
-                <div class="text-center">
-                    <img src="./img/arrows.png" class="img-fluid arrows" alt="Arrows">
-                </div>
+            <div id="what">
+                <h3 class="text-primary">ACCIONES - BONOS - &Iacute;NDICES - FONDOS MUTUOS - OPCIONES - FUTUROS - DIVISAS</h3>
             </div>
+        </div>
+        <div class="text-center">
+            <div class="divider container"><hr></div>
         </div>
     </div>
 
-    <div class="text-center">
-        <div class="divider container"><hr></div>
+    <div class="members">
+        <!--
+        <h3 class="text-primary">ACCIONES - BONOS - &Iacute;NDICES - FONDOS MUTUOS - OPCIONES - FUTUROS - DIVISAS</h3>
+        <h2>Somos miembros y participamos<br>
+        de los mercados más importantes del mundo.</h2>
+        -->
+        <div class="container py-4">
+            <img src="./img/companies.png" class="img-fluid" alt="Companies">
+        </div>
     </div>
 
+    
     <div class="bt-container">
         <ul id="bt" class="d-none"></ul>
     </div>
@@ -67,13 +82,15 @@
     -->
 
     <div class="members">
+        <!--
         <h6 class="text-center text-muted pt-1 mb-0 px-2"><small><a href="#" id="bt_reload">Actualizar</a></small></h6>
-        <h3 class="text-primary">DIVISAS - ACCIONES - ÍNDICES - FUTUROS - BONOS</h3>
+        <h3 class="text-primary">ACCIONES - BONOS - &Iacute;NDICES - FONDOS MUTUOS - OPCIONES - FUTUROS - DIVISAS</h3>
         <h2>Somos miembros y participamos<br>
         de los mercados más importantes del mundo.</h2>
         <div class="container">
             <img src="./img/companies.png" class="img-fluid" alt="Companies">
         </div>
+        -->
     </div>
 
     <div id="invertir" class="invest">
@@ -244,7 +261,7 @@
                                 <input type="email" name="efEmail" id="efEmail" class="form-control" placeholder="Email" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="efPhone" id="efPhone" class="form-control" placeholder="Teléfono" maxlength="10">
+                                <input type="text" name="efPhone" id="efPhone" class="form-control" placeholder="Tel&eacute;fono" maxlength="10">
                             </div>
                             <div class="new">
                                 <div class="form-group">
@@ -266,6 +283,7 @@
         </div>
     </div>
 </div>
+-->
        
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -289,7 +307,7 @@ $(function() {
             arr.push(symbols[Math.floor(Math.random() * symbols.length)]);
         }
 
-        $.getJSON("https://financialmodelingprep.com/api/v3/quote/" + arr.join(','), function(data) {
+        $.getJSON("https://financialmodelingprep.com/api/v3/quote/" + arr.join(',') + "?apikey=c7860ceb5a07f96334049018b42eacc4", function(data) {
 
             $('#bt').html('');
 
