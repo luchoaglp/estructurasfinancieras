@@ -130,7 +130,7 @@ input[type=text], input[type=email] {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
 .about p span {
-    font-family: 'BambinoHS-Ligth', Helvetica, Arial, sans-serif;
+    font-weight: 900;
 }
 .consult {
     background: url(../img/consult.png) no-repeat center center; 
@@ -449,8 +449,8 @@ input[type=text], input[type=email] {
         width: 1rem;
         margin-left: 5px;
     }
-    .about {
-        padding-top: 150px;
+    .about .divider {
+        padding-bottom: 150px;
     }
     .about h2 {
         margin-bottom: 0.4em;
@@ -481,15 +481,6 @@ input[type=text], input[type=email] {
     .consult .btn img {
         width: 0.5rem;
         margin-left: 5px;
-    }
-    /*
-    .download .row > div > img {
-        width: 5em;
-        margin-bottom: 1.5em;
-    }
-    */
-    .download .row > div h3 {
-        /*margin-left: 1em;*/
     }
     .location h2 {
         margin-top: 2.5rem;
@@ -557,8 +548,7 @@ input[type=text], input[type=email] {
     }
     .download .row > div h4 {
         font-size: 1.1rem;
-        /*padding-left: .8em;*/
-        /*padding-right: .2em;*/
+        padding-top: 2em;
         margin-bottom: 0;
     }
     .download .download-links {
@@ -622,8 +612,8 @@ input[type=text], input[type=email] {
         margin-top: 30px;
         min-height: 250px;
     }
-    .about {
-        padding-top: 170px;
+    .about .divider {
+        padding-bottom: 170px;
     }
     .about h2 {
         margin-bottom: 0.4em;
@@ -710,6 +700,7 @@ input[type=text], input[type=email] {
     }
     .download .row > div h4 {
         font-size: 1.1rem;
+        padding-top: 0;
         padding-left: .8em;
         padding-right: .2em;
         margin-bottom: 0;
@@ -806,8 +797,8 @@ input[type=text], input[type=email] {
     .cards .card {
         min-height: 298px;
     }
-    .about {
-        padding-top: 160px;
+    .about .divider {
+        padding-bottom: 160px;
     }
     .about h2 {
         font-size: 2.5rem;
@@ -1008,8 +999,8 @@ input[type=text], input[type=email] {
     .cards .card {
         min-height: 316px;
     }
-    .about {
-        padding-top: 165px;
+    .about .divider {
+        padding-bottom: 165px;
     }
     .about h2 {
         font-size: 3.1rem;
@@ -1278,19 +1269,19 @@ input[type=text], input[type=email] {
         margin: 0.3em 2em 1.3em 2em;
         font-size: 1.4rem;
     }
-    .about {
-        padding-top: 212px;
+    .about .divider {
+        padding-bottom: 110px;
     }
     .about h2 {
-        font-size: 4.1rem;
-        margin-bottom: 0.2em;
+        font-size: 4rem;
+        margin-bottom: 0.5em;
     }
     .about p {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
         /*padding: 0 10.1em;*/
-        line-height: 38px;
+        line-height: 30px;
         /*margin-bottom: 2em;*/
-        padding: 0 9.5em 11em 9.5em;
+        padding: 0 7.3em 4em 7.3em;
     }
     .about img {
         width: 18%;
@@ -1317,9 +1308,6 @@ input[type=text], input[type=email] {
     .consult .btn img {
         width: 0.9rem;
         margin-left: 8.7px;
-    }
-    .download {
-        /*padding: 10em;*/
     }
     /*
     .download .row > div > img {
