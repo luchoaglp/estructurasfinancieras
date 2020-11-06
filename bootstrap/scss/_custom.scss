@@ -167,7 +167,7 @@ input[type=text], input[type=email] {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
 
-.location {
+.location, .contacto {
     background-color: #e0e0e0;
     text-align: center;
 }
@@ -184,13 +184,17 @@ input[type=text], input[type=email] {
 
 .location input[type=text], 
 .location input[type=email],
-.location textarea {
+.location textarea,
+.contacto input[type=text],
+.contacto input[type=email] {
     border-color: $primary;
 }
 
 .location input[type=text]::placeholder, 
 .location input[type=email]::placeholder,
-.location textarea::placeholder {
+.location textarea::placeholder,
+.contacto input[type=text]::placeholder,
+.contacto input[type=email]::placeholder {
     color: #0f1b29;
 }
 
@@ -345,10 +349,24 @@ input[type=text], input[type=email] {
 
 .banner-landing {
     color: white;
+    margin-bottom: 0;
 }
 
 .banner-landing h2 span {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+}
+
+.contacto button {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    border: none;
+    background-color: transparent;
+}
+
+.contacto button:hover {
+    opacity: .7;
+}
+.contacto i {
+    color: $primary;
 }
 
 /* 1 */
@@ -1459,5 +1477,8 @@ input[type=text], input[type=email] {
 
     .banner-landing h2 {
         font-size: 3.4rem;
+    }
+    .contacto input {
+        padding: 1.7rem 1rem;
     }
 }
