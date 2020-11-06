@@ -36,7 +36,6 @@ input[type=text], input[type=email] {
     -o-background-size: cover;
     background-size: cover;
 }
-
 .banner {
     margin-bottom: 0px;
 }
@@ -344,6 +343,14 @@ input[type=text], input[type=email] {
   }
 // End Slider BT
 
+.banner-landing {
+    color: white;
+}
+
+.banner-landing h2 span {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+}
+
 /* 1 */
 @include media-breakpoint-up(xs) {
     .btn {
@@ -564,6 +571,14 @@ input[type=text], input[type=email] {
     }
     .download .download-links .btn:nth-child(2) {
         letter-spacing: 1.3px;
+    }
+
+    .banner-landing {
+        background: url(../img/bull-small.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover; 
+        background-size: cover;
     }
 }
 
@@ -920,6 +935,13 @@ input[type=text], input[type=email] {
     }
     .download .download-links .btn:nth-child(2) {
         letter-spacing: 1.3px;
+    }
+    .banner-landing {
+        background: url(../img/bull.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover; 
+        background-size: cover;
     }
 }
 /* 4 */
@@ -1433,5 +1455,9 @@ input[type=text], input[type=email] {
     }
     .download .download-links .btn:nth-child(2) {
         letter-spacing: 1.3px;
+    }
+
+    .banner-landing h2 {
+        font-size: 3.4rem;
     }
 }
