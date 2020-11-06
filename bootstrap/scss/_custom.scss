@@ -158,6 +158,13 @@ input[type=text], input[type=email] {
     background-size: cover;
     margin-bottom: 0;
 }
+.invertir {
+    background: url(../img/invertir-landing.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 /*
 .download .row > div {
     text-align: center;
@@ -367,6 +374,13 @@ input[type=text], input[type=email] {
 }
 .contacto i {
     color: $primary;
+}
+
+.invertir h2 {
+    color: white;
+}
+.invertir h2 span {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
 
 /* 1 */
@@ -1480,5 +1494,29 @@ input[type=text], input[type=email] {
     }
     .contacto input {
         padding: 1.7rem 1rem;
+    }
+    /*
+    .invertir {
+        padding-bottom: 8em;
+    }
+    */
+    .invertir .divider {
+        margin-bottom: 8em;
+    }
+    .invertir .row {
+        margin-left: 4.5em;
+    }
+    .invertir .col-md-5 {
+        text-align: right;
+    }
+    .invertir h2 {
+        padding-top: .1em;
+        font-size: 2.4rem;
+    }
+    .invertir .col-md-6 {
+        padding-left: 0;
+    }
+    .invertir img {
+        width: 19%;
     }
 }
