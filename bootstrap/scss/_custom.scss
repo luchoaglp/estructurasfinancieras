@@ -173,7 +173,9 @@ input[type=text], input[type=email] {
 .download .row > div h3 span, .download .row > div h4 span { 
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
-
+.contacto {
+    color: #12202d;
+}
 .location, .contacto {
     background-color: #e0e0e0;
     text-align: center;
@@ -1532,5 +1534,8 @@ input[type=text], input[type=email] {
     }
     .invertir .col-md-7 img:hover {
         opacity: .7;
+    }
+    .contacto h1 {
+        font-size: 2.72em;
     }
 }
