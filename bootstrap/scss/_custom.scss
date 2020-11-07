@@ -178,6 +178,9 @@ input[type=text], input[type=email] {
     background-color: #e0e0e0;
     text-align: center;
 }
+.contacto h1 {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+}
 .location h2 {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     color: #0f1b29;
@@ -1495,11 +1498,10 @@ input[type=text], input[type=email] {
     .contacto input {
         padding: 1.7rem 1rem;
     }
-    /*
+
     .invertir {
-        padding-bottom: 8em;
+        margin-bottom: 0;
     }
-    */
     .invertir .divider {
         margin-bottom: 8em;
     }
