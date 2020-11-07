@@ -578,6 +578,7 @@ input[type=text], input[type=email] {
         font-size: 1.2rem;
     }
 
+    
     .download .row > div.col-md-2 {
         text-align: center;
         padding: 0 1em;
@@ -616,6 +617,40 @@ input[type=text], input[type=email] {
         -moz-background-size: cover;
         -o-background-size: cover; 
         background-size: cover;
+        text-align: center;
+    }
+    .invertir {
+        margin-bottom: 0;
+    }
+    .invertir .divider {
+        margin-bottom: 8em;
+    }
+    .invertir .first {
+        text-align: center;
+        padding-bottom: .5em;
+    }
+    .invertir .second {
+        text-align: center;
+        padding-bottom: 4em;
+    }
+    .invertir h2 {
+        padding-top: .05em;
+        padding-left: .4em;
+        font-size: 1.9rem;
+    }
+    .invertir .first img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 1em;
+    }
+    .invertir .second a {
+        padding-right: 0;
+    }
+    .invertir .second img {
+        width: 150px;
+    }
+    .invertir .second img:hover {
+        opacity: .7;
     }
 }
 
@@ -770,6 +805,40 @@ input[type=text], input[type=email] {
     }
     .download .download-links .btn:nth-child(2) {
         letter-spacing: 1.3px;
+    }
+    .invertir {
+        margin-bottom: 0;
+    }
+    .invertir .divider {
+        margin-bottom: 8em;
+    }
+    .invertir .first {
+        text-align: center;
+        /*padding-left: 4.5em;*/
+        padding-bottom: .5em;
+    }
+    .invertir .second {
+        text-align: center;
+        /*padding-left: 3.5em;*/
+        padding-bottom: 4em;
+    }
+    .invertir h2 {
+        padding-top: .05em;
+        padding-left: .4em;
+        font-size: 1.9rem;
+    }
+    .invertir .first img {
+        width: 75px;
+        height: 75px;
+    }
+    .invertir .second a {
+        padding-right: 0;
+    }
+    .invertir .second img {
+        width: 150px;
+    }
+    .invertir .second img:hover {
+        opacity: .7;
     }
 }
 
@@ -979,6 +1048,43 @@ input[type=text], input[type=email] {
         -moz-background-size: cover;
         -o-background-size: cover; 
         background-size: cover;
+        text-align: left;
+    }
+    .invertir {
+        margin-bottom: 0;
+    }
+    .invertir .divider {
+        margin-bottom: 8em;
+    }
+    .invertir .first {
+        text-align: left;
+        display: inline-flex;
+        padding-left: 4.5em;
+        padding-bottom: .5em;
+    }
+    .invertir .second {
+        text-align: left;
+        padding-left: 3.5em;
+        padding-bottom: 4em;
+    }
+    .invertir h2 {
+        padding-top: .05em;
+        padding-left: .4em;
+        font-size: 1.9rem;
+    }
+    .invertir .first img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 0;
+    }
+    .invertir .second a {
+        padding-right: 0;
+    }
+    .invertir .second img {
+        width: 150px;
+    }
+    .invertir .second img:hover {
+        opacity: .7;
     }
 }
 /* 4 */
@@ -1202,6 +1308,40 @@ input[type=text], input[type=email] {
     }
     .download .download-links .btn:nth-child(2) {
         letter-spacing: 1.3px;
+    }
+
+    .invertir {
+        margin-bottom: 0;
+    }
+    .invertir .divider {
+        margin-bottom: 8em;
+    }
+    .invertir .first {
+        display: inline-flex;
+        padding-left: 4.5em;
+        padding-bottom: .5em;
+    }
+    .invertir .second {
+        padding-left: 3.5em;
+        padding-bottom: 4em;
+    }
+    .invertir h2 {
+        padding-top: .05em;
+        padding-left: .4em;
+        font-size: 2.1rem;
+    }
+    .invertir .first img {
+        width: 88px;
+        height: 88px;
+    }
+    .invertir .second a {
+        padding-right: 0;
+    }
+    .invertir .second img {
+        width: 155px;
+    }
+    .invertir .second img:hover {
+        opacity: .7;
     }
 }
 
