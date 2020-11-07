@@ -1507,34 +1507,31 @@ input[type=text], input[type=email] {
     .invertir .divider {
         margin-bottom: 8em;
     }
-    .invertir .row {
-        margin-left: 4.5em;
+    .invertir .first {
+        display: inline-flex;
+        padding-left: 4.5em;
+        padding-bottom: .5em;
     }
-    .invertir .col-md-5 {
-        text-align: right;
+    .invertir .second {
+        padding-left: 3.5em;
+        padding-bottom: 4em;
     }
     .invertir h2 {
         padding-top: .05em;
+        padding-left: .4em;
         font-size: 2.4rem;
     }
-    .invertir .col-md-6 {
-        padding-left: 0;
-    }
-    .invertir img.ef-logo {
+    .invertir .first img {
         width: 88px;
+        height: 88px;
     }
-    .invertir .col-md-7 {
-        text-align: right;
-        padding-top: .8em;
-        padding-bottom: 4em;
-        margin-left: 5em;
+    .invertir .second img {
+        width: 155px;
     }
-    .invertir .col-md-7 img {
-        width: 160px;
-    }
-    .invertir .col-md-7 img:hover {
+    .invertir .second img:hover {
         opacity: .7;
     }
+    
     .contacto h1 {
         font-size: 2.72em;
     }
