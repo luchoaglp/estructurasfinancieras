@@ -210,15 +210,14 @@ input[type=text], input[type=email] {
     color: #0f1b29;
 }
 
-.footer {
+.footer, .footer-landing {
     background-color: #0f0f0f;
     text-align: center;
     color: #959595;
 }
-.footer p:last-child {
+.footer p:last-child, .footer-landing p:last-child {
     margin-bottom: 0;
 }
-
 #ef-form {
     color: $secondary;
 }
@@ -658,6 +657,13 @@ input[type=text], input[type=email] {
     .contacto h2 {
         font-size: 1.5em;
     }
+    .footer-landing p {
+        font-size: 0.6em;
+    }
+    .footer-landing img {
+        padding-bottom: 1.7em;
+        width: 40%;
+    }
 }
 
 /* 2 */
@@ -852,6 +858,13 @@ input[type=text], input[type=email] {
     .contacto h2 {
         font-size: 1.5em;
     }
+    .footer-landing p {
+        font-size: 0.45em;
+    }
+    .footer-landing img {
+        padding-bottom: 1.7em;
+        width: 20%;
+    }
 }
 
 /* 3 */
@@ -1021,6 +1034,13 @@ input[type=text], input[type=email] {
     .footer img {
         padding-bottom: 1.1em;
         width: 12%;
+    }
+    .footer-landing p {
+        font-size: 0.6em;
+    }
+    .footer-landing img {
+        padding-bottom: 1.7em;
+        width: 16%;
     }
 
     .download .row > div.col-md-2 {
@@ -1295,6 +1315,13 @@ input[type=text], input[type=email] {
     .footer img {
         padding-bottom: 1.1em;
         width: 10%;
+    }
+    .footer-landing p {
+        font-size: 0.7em;
+    }
+    .footer-landing img {
+        padding-bottom: 1.7em;
+        width: 19%;
     }
 
     .download .row > div.col-md-2 {
@@ -1599,6 +1626,13 @@ input[type=text], input[type=email] {
     .footer img {
         padding-bottom: 1.7em;
         width: 10%;
+    }
+    .footer-landing p {
+        font-size: 0.85em;
+    }
+    .footer-landing img {
+        padding-bottom: 1.7em;
+        width: 19%;
     }
 
     .bt-container {
