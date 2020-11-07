@@ -1510,13 +1510,25 @@ input[type=text], input[type=email] {
         text-align: right;
     }
     .invertir h2 {
-        padding-top: .1em;
+        padding-top: .05em;
         font-size: 2.4rem;
     }
     .invertir .col-md-6 {
         padding-left: 0;
     }
-    .invertir img {
-        width: 86px;
+    .invertir img.ef-logo {
+        width: 88px;
+    }
+    .invertir .col-md-8 {
+        text-align: right;
+        padding-top: .8em;
+        padding-bottom: 4em;
+        margin-left: 0;
+    }
+    .invertir .col-md-8 img {
+        width: 168px;
+    }
+    .invertir .col-md-8 img:hover {
+        opacity: .7;
     }
 }
