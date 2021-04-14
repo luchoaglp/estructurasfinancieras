@@ -165,6 +165,7 @@ input[type=text], input[type=email] {
     -o-background-size: cover;
     background-size: cover;
 }
+
 /*
 .download .row > div {
     text-align: center;
@@ -587,6 +588,9 @@ input[type=text], input[type=email] {
         font-size: 1.2rem;
     }
 
+    .download {
+        padding: 2.5rem 1.5rem;
+    }
     
     .download .row > div.col-md-2 {
         text-align: center;
@@ -1712,6 +1716,9 @@ input[type=text], input[type=email] {
         margin-left: 10px;
     }
 
+    .download {
+        padding: 2.7rem 1rem;
+    }
     .download .row > div.col-md-2 {
         padding: 0 2em;
     }
@@ -1798,5 +1805,14 @@ input[type=text], input[type=email] {
     }
 }
 
-.social-icon{text-decoration: none;}
+.social-icon{text-decoration: none; padding: 0 .4em; }
 .social-icon > img {width: 50px; margin-top: 20px;}
+
+.download-links a:nth-child(3) {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    background-color: #29445f;
+    color: $white;
+}
+.download-links a:nth-child(3):hover {
+    background-color: #1b334b;
+}
