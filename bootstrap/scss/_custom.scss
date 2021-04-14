@@ -9,7 +9,7 @@ input[type=text], input[type=email] {
 }
 
 .navbar {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
 }
 .btn {
     color: $white;
@@ -389,6 +389,16 @@ input[type=text], input[type=email] {
 
 /* 1 */
 @include media-breakpoint-up(xs) {
+    #navbar-ef {
+        text-align: center;
+    }
+    #navbar-ef ul li.nav-item {
+        padding: .5em 0 0 0;
+    }
+    #navbar-ef ul li.nav-item img {
+        /*margin-top: -60px;*/
+        width: 160px;
+    }
     .btn {
         padding: 0.5rem 0.75rem 0.25rem 0.75rem;
     }
@@ -671,6 +681,13 @@ input[type=text], input[type=email] {
 
 /* 2 */
 @include media-breakpoint-up(sm) {
+    #navbar-ef ul li.nav-item {
+        padding: .5em 0 0 0;
+    }
+    #navbar-ef ul li.nav-item img {
+        /*margin-top: -60px;*/
+        width: 160px;
+    }
     .quote1 img {
         width: 152px;
         margin-bottom: 39px;
@@ -875,6 +892,14 @@ input[type=text], input[type=email] {
 
 /* 3 */
 @include media-breakpoint-up(md) {
+    
+    #navbar-ef ul li.nav-item {
+        padding: .5em 0 0 0;
+    }
+    #navbar-ef ul li.nav-item img {
+        /*margin-top: -60px;*/
+        width: 160px;
+    }
     .quote1 img {
         width: 164px;
         margin-bottom: 39px;
@@ -1136,8 +1161,21 @@ input[type=text], input[type=email] {
 }
 /* 4 */
 @include media-breakpoint-up(lg) {
+
+    #navbar-ef {
+        display: flex;
+        justify-content: center;
+    }
     #navbar-ef ul li.nav-item {
-        width: 140px;
+        padding: 4em .42em 0 .42em;
+    }
+    #navbar-ef ul li.nav-item img {
+        margin-top: -60px;
+        width: 160px;
+    }
+    #navbar-ef ul li a.nav-link {
+        padding-right: 0;
+        padding-left: 0; 
     }
     .quote1 img {
         width: 220px;
@@ -1409,13 +1447,17 @@ input[type=text], input[type=email] {
 }
 
 @include media-breakpoint-up(xl) {
+    
     #navbar-ef ul li.nav-item {
-        width: 170px;
+        padding: 5em 1em 0 1em;
+        
     }
-    #navbar-ef ul li a.nav-link {
-        padding-right: 0;
-        padding-left: 0; 
+    #navbar-ef ul li.nav-item img {
+        margin-top: -90px;
+        margin-left: -20px;
+        width: 225px;
     }
+    
     .quote1 img {
         width: 268px;
         margin-bottom: 39px;
@@ -1755,3 +1797,6 @@ input[type=text], input[type=email] {
         font-size: 2.39em;
     }
 }
+
+.social-icon{text-decoration: none;}
+.social-icon > img {width: 50px; margin-top: 20px;}

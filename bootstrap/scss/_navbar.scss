@@ -16,13 +16,13 @@
 // other navbar variations.
 
 .navbar {
-  font-weight: bold;
+  /*font-weight: bold;*/
   position: relative;
   display: flex;
   flex-wrap: wrap; // allow us to do the line break for collapsing content
   align-items: center;
   justify-content: space-between; // space out brand from logo
-  padding: 1.5em $navbar-padding-x;
+  padding: 1.3em $navbar-padding-x 0 $navbar-padding-x;
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properties so that content nested within behave properly.
@@ -81,9 +81,11 @@
     padding-left: 0;
   }
 
+  /*
   .nav-link img {
-    width: 185px;
+    width: 225px;
   }
+  */
 
   .dropdown-menu {
     position: static;
@@ -192,7 +194,7 @@
           }
 
           .nav-link img {
-            margin-top: -25px;
+            /*margin-top: -25px;*/
           }
         }
 
