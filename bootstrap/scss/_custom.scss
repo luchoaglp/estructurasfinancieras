@@ -388,6 +388,19 @@ input[type=text], input[type=email] {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
 
+.productores {
+    background: url(../img/productores.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+.productores .productores-links span {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+}
+
 /* 1 */
 @include media-breakpoint-up(xs) {
     #navbar-ef {
@@ -1620,27 +1633,6 @@ input[type=text], input[type=email] {
         width: 0.9rem;
         margin-left: 8.7px;
     }
-    /*
-    .download .row > div > img {
-        width: 6.9em;
-        margin-left: 43%;
-        margin-bottom: 2em;
-    }
-    */
-    .download .row .social {
-        /*margin-left: 42.5%;*/
-    }
-    .download .row .social a {
-        /*
-        padding-left: 0;
-        padding-right: 10px;
-        */
-    }
-    /*
-    .download .row .social a img {
-        width: 130px;
-    }
-    */
     .location h2 {
         font-size: 2.4rem;
         margin-top: 4rem;
@@ -1803,16 +1795,37 @@ input[type=text], input[type=email] {
     .contacto h3 {
         font-size: 2.39em;
     }
+
+    .productores img {
+        width: 175px;
+        margin: 1.7em 1em 7em 1.2em;
+    }
+
+    .productores .productores-links .btn {
+        font-size: 1.83rem;
+        margin-bottom: 1.3em;
+        min-height: 95px;
+    }
+
+    .productores .productores-links .btn:nth-child(1) {
+        padding: 1em 0 0 0;
+    }
+
+    .productores .productores-links .btn:nth-child(2) {
+        padding: .35em .5em 0 .5em;
+    }
+
+
 }
 
 .social-icon{text-decoration: none; padding: 0 .4em; }
 .social-icon > img {width: 50px; margin-top: 20px;}
 
-.download-links a:nth-child(3) {
+.download .download-links a:nth-child(3) {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     background-color: #29445f;
     color: $white;
 }
-.download-links a:nth-child(3):hover {
+.download .download-links a:nth-child(3):hover {
     background-color: #1b334b;
 }
