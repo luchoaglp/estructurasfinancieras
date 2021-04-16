@@ -329,28 +329,16 @@ input[type=text], input[type=email] {
     list-style-type: none;
   }
   ul#bt li {
-    /*
-    padding: 5px 20px 0 20px;
-    min-width: 178px;
-    */
     border-left: 1px solid #353a46;
     border-right: 1px solid #353a46;
   }
  
   ul#bt li div:nth-child(2) {
     font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
-    /*padding-top: 3px;*/
     font-weight: 800;
   }
  
-  /*
-  ul#bt li div:nth-child(2) span:first-child {
-    font-size: 1.25rem;
-  }
-  */
-
   ul#bt li div:nth-child(2) span:first-child i {
-    /*font-size: 1.55rem;*/
     padding-right: 5px;
   }
 
@@ -399,6 +387,9 @@ input[type=text], input[type=email] {
 
 .productores .productores-links span {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+}
+.productores img {
+    width: 175px;
 }
 
 /* 1 */
@@ -591,9 +582,7 @@ input[type=text], input[type=email] {
         padding: 5px 5px 0 5px;
         min-width: 125px;
     }
-    ul#bt li div:nth-child(2) {
-        /*padding-top: 3px;*/
-    }
+    
     ul#bt li div:nth-child(2) span:first-child {
         font-size: 0.9rem;
     }
@@ -694,6 +683,25 @@ input[type=text], input[type=email] {
         padding-bottom: 1.7em;
         width: 40%;
     }
+
+    .productores .col-12 {
+        text-align: center;
+    }
+
+    .productores img {
+        margin: 1.7em 1em 7em 1.2em;
+    }
+    .productores .productores-links .btn {
+        font-size: 1.05rem;
+        margin-bottom: 1.3em;
+        min-height: 60px;
+    }
+    .productores .productores-links .btn:nth-child(1) {
+        padding: 1.1em 0 0 0;
+    }
+    .productores .productores-links .btn:nth-child(2) {
+        padding: .35em .1em 0 .1em;
+    }
 }
 
 /* 2 */
@@ -779,37 +787,11 @@ input[type=text], input[type=email] {
         width: 0.5rem;
         margin-left: 5px;
     }
-    .download .row > div {
-        /*text-align: left;*/
-    }
-    /*
-    .download .row > div > img {
-        width: 5em;
-        margin-left: 42%;
-        margin-bottom: 1.4em;
-    }
-    */
+    
     .download .row > div h3 {
         font-size: 1.3rem;
-        /*
-        margin-left: 42%;
-        margin-bottom: 0;
-        */
     }
-    .download .row .social {
-        /*margin-left: 42%;*/
-    }
-    .download .row .social a {
-        /*
-        padding-left: 0;
-        padding-right: 10px;
-        */
-    }
-    /*
-    .download .row .social a img {
-        width: 100px;
-    }
-    */
+   
     .location h4 { 
         font-size: 1.4rem;
         padding: 0 1rem;
@@ -863,12 +845,10 @@ input[type=text], input[type=email] {
     }
     .invertir .first {
         text-align: center;
-        /*padding-left: 4.5em;*/
         padding-bottom: .5em;
     }
     .invertir .second {
         text-align: center;
-        /*padding-left: 3.5em;*/
         padding-bottom: 4em;
     }
     .invertir h2 {
@@ -904,6 +884,24 @@ input[type=text], input[type=email] {
     .footer-landing img {
         padding-bottom: 1.7em;
         width: 20%;
+    }
+
+    .productores .col-12 {
+        text-align: left;
+    }
+    .productores img {
+        margin: 1.7em 1em 7em 1.2em;
+    }
+    .productores .productores-links .btn {
+        font-size: 1.4rem;
+        margin-bottom: 1.3em;
+        min-height: 72px;
+    }
+    .productores .productores-links .btn:nth-child(1) {
+        padding: 1em 0 0 0;
+    }
+    .productores .productores-links .btn:nth-child(2) {
+        padding: .35em 3.5em 0 3.5em;
     }
 }
 
@@ -1029,34 +1027,11 @@ input[type=text], input[type=email] {
         width: 0.7rem;
         margin-left: 5px;
     }
-    /*
-    .download .row > div > img {
-        width: 5em;
-        margin-left: 19em;
-        margin-bottom: 1.4em;
-    }
-    */
+   
     .download .row > div h3 {
         font-size: 1.5rem;
-        /*
-        margin-left: 12.8em;
-        margin-bottom: 0;
-        */
     }
-    .download .row .social {
-        /*margin-left: 19em;*/
-    }
-    .download .row .social a {
-        /*
-        padding-left: 0;
-        padding-right: 10px;
-        */
-    }
-    /*
-    .download .row .social a img {
-        width: 100px;
-    }
-    */
+    
     .location input[type=text], 
     .location input[type=email] {
         padding-top: 1.7em;
@@ -1174,6 +1149,21 @@ input[type=text], input[type=email] {
     }
     .contacto h3 {
         font-size: 1.9em;
+    }
+
+    .productores img {
+        margin: 1.7em 1em 7em 1.2em;
+    }
+    .productores .productores-links .btn {
+        font-size: 1.3rem;
+        margin-bottom: 1.3em;
+        min-height: 72px;
+    }
+    .productores .productores-links .btn:nth-child(1) {
+        padding: 1em 0 0 0;
+    }
+    .productores .productores-links .btn:nth-child(2) {
+        padding: .35em .5em 0 .5em;
     }
 }
 /* 4 */
@@ -1308,37 +1298,11 @@ input[type=text], input[type=email] {
         width: 0.7rem;
         margin-left: 5px;
     }
-    .download {
-        /*padding: 6em;*/
-    }
-    /*
-    .download .row > div > img {
-        width: 5em;
-        margin-left: 20.5em;
-        margin-bottom: 1.4em;
-    }
-    */
+    
     .download .row > div h3 {
         font-size: 1.7rem;
-        /*
-        margin-left: 12em;
-        margin-bottom: 0.2em;
-        */
     }
-    .download .row .social {
-        /*margin-left: 20.4em;*/
-    }
-    .download .row .social a {
-        /*
-        padding-left: 0;
-        padding-right: 10px;
-        */
-    }
-    /*
-    .download .row .social a img {
-        width: 100px;
-    }
-    */
+    
     .location h2 {
         font-size: 2.2rem;
     }
@@ -1461,6 +1425,21 @@ input[type=text], input[type=email] {
     .contacto h3 {
         font-size: 2.03em;
     }
+
+    .productores img {
+        margin: 1.7em 1em 7em 1.2em;
+    }
+    .productores .productores-links .btn {
+        font-size: 1.5rem;
+        margin-bottom: 1.3em;
+        min-height: 84px;
+    }
+    .productores .productores-links .btn:nth-child(1) {
+        padding: 1em 0 0 0;
+    }
+    .productores .productores-links .btn:nth-child(2) {
+        padding: .35em .5em 0 .5em;
+    }
 }
 
 @include media-breakpoint-up(xl) {
@@ -1504,13 +1483,6 @@ input[type=text], input[type=email] {
         font-size: 2.6rem;
         letter-spacing: 1.4px;
     }
-    /*
-    #what h3 {
-        font-size: 1.475rem;
-        letter-spacing: 1px;
-        padding: 4em 0 0 0;
-    }
-    */
     .invest {
         min-height: 550px;
     }
@@ -1560,7 +1532,6 @@ input[type=text], input[type=email] {
     }
     .cards {
         padding-bottom: 140px;
-        /*margin-top: 120px;*/
     }
 
     .cards .divider {
@@ -1602,9 +1573,7 @@ input[type=text], input[type=email] {
     }
     .about p {
         font-size: 1.45rem;
-        /*padding: 0 10.1em;*/
         line-height: 30px;
-        /*margin-bottom: 2em;*/
         padding: 0 7.3em 4em 7.3em;
     }
     .about img {
@@ -1797,24 +1766,19 @@ input[type=text], input[type=email] {
     }
 
     .productores img {
-        width: 175px;
         margin: 1.7em 1em 7em 1.2em;
     }
-
     .productores .productores-links .btn {
         font-size: 1.83rem;
         margin-bottom: 1.3em;
         min-height: 95px;
     }
-
     .productores .productores-links .btn:nth-child(1) {
         padding: 1em 0 0 0;
     }
-
     .productores .productores-links .btn:nth-child(2) {
         padding: .35em .5em 0 .5em;
     }
-
 
 }
 
