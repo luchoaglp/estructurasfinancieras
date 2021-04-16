@@ -79,7 +79,6 @@ input[type=text], input[type=email] {
     text-align: center;
 }
 #what h3 {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     font-weight: 600;
 }
 .start {
@@ -166,11 +165,6 @@ input[type=text], input[type=email] {
     background-size: cover;
 }
 
-/*
-.download .row > div {
-    text-align: center;
-}
-*/
 .download .row > div h3 span, .download .row > div h4 span { 
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
@@ -230,11 +224,7 @@ input[type=text], input[type=email] {
 #efModal .modal-title {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
-/*
-#efModal button {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-} 
-*/
+
 // MODAL
 #efModal .new {
     padding-top: 5px;
@@ -306,11 +296,6 @@ input[type=text], input[type=email] {
     transition-delay: 6s;
     color: white;
 }
-/*
-#efModal .modal-footer {
-    padding-top: 0;
-}
-*/
 
 // End MODAL
 
@@ -319,7 +304,6 @@ input[type=text], input[type=email] {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     max-height: 68px;
     overflow: hidden;
-    /*padding: 7px 0;*/
     margin: 0;
     color: #fff;
     background-color: #111420;
@@ -385,12 +369,25 @@ input[type=text], input[type=email] {
     height: 100vh;
 }
 
-.productores .productores-links span {
+.productor {
+    background: url(../img/productor.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.productores .productores-links span, .productor h1, .productor .productor-links a {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
-.productores img {
+.productores img, .productor img {
     width: 175px;
 }
+.productor .productor-links {
+    text-align: center;
+}
+
 
 /* 1 */
 @include media-breakpoint-up(xs) {
@@ -401,7 +398,6 @@ input[type=text], input[type=email] {
         padding: .5em 0 0 0;
     }
     #navbar-ef ul li.nav-item img {
-        /*margin-top: -60px;*/
         width: 160px;
     }
     .btn {
@@ -1765,7 +1761,7 @@ input[type=text], input[type=email] {
         font-size: 2.39em;
     }
 
-    .productores img {
+    .productores img, .productor img {
         margin: 1.7em 1em 7em 1.2em;
     }
     .productores .productores-links .btn {
@@ -1778,6 +1774,36 @@ input[type=text], input[type=email] {
     }
     .productores .productores-links .btn:nth-child(2) {
         padding: .35em .5em 0 .5em;
+    }
+
+    .productor h1 {
+        font-size: 3em;
+        padding: 0 1em;
+        margin-bottom: .45em;
+    }
+    .productor h2, .productor h3 {
+        font-size: 1.55em;
+    }
+    .productor h2  {
+        line-height: 1em;
+    }
+    .productor h3 {
+        margin: 1em 0 1.2em 0;
+    }
+    .productor .productor-links {
+        text-align: center;
+    }
+    .productor .productor-links a {
+        font-size: 1.3em;
+    }
+    .productor .productor-links a i {
+        font-size: 2em;
+    }
+    .productor .productor-links a:nth-child(1) {
+        padding: .6em .5em .3em .5em;
+    }
+    .productor .productor-links a:nth-child(2) {
+        padding: .16em .5em .04em .5em;
     }
 
 }
