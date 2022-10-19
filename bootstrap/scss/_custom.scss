@@ -9,7 +9,13 @@ input[type=text], input[type=email] {
 }
 
 .navbar {
-    font-size: 1.1rem;
+    font-size: .725rem;
+    font-weight: 700;
+}
+#navbar-ef .dropdown-toggle::after {
+    border-top: 0.4em solid;
+    border-right: 0.4em solid transparent;
+    border-left: 0.4em solid transparent;
 }
 .btn {
     color: $white;
@@ -23,11 +29,14 @@ input[type=text], input[type=email] {
     color: $white;
 }
 
-.divider hr {
+.divider {
     margin-top: 0;
     margin-bottom: 0;
-    border-top: none;
-    border-bottom: 15px $primary solid;
+    height: 12px;
+    /*border-top: none;*/
+    /*border-bottom: 15px $primary solid;*/
+    background: rgb(34,45,61);
+    background: linear-gradient(90deg, rgba(34,45,61,1) 0%, rgba(179,178,179,1) 50%, rgba(34,45,61,1) 100%);
 }
 .background-container {
     background: url(../img/background.png) no-repeat center center; 
@@ -39,20 +48,49 @@ input[type=text], input[type=email] {
 .banner {
     margin-bottom: 0px;
 }
-
 .banner h1 div {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
+.banner .col-md-4 .banner-options {
+    background-color: #212c3d;
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+    border: 2px solid #425675;
+}
+.banner .col-md-4:nth-child(2) div {    
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.banner .col-md-4:nth-child(2)  div:nth-child(1)  {
+    flex: 1;
+}
+.banner .col-md-4:nth-child(2) div:nth-child(2) {
+    text-align: right;
+    display: block;
+}
+.banner .col-md-4:nth-child(2) div:nth-child(2) a {
+    display: block;
+    background-color: $white;
+    color: $font-color;
+    margin: 2px;
+    border: 1px solid #79808c;
+    cursor: pointer;
+}
+.banner .col-md-4:nth-child(2) div:nth-child(2) a:hover {
+    opacity: .8;
+}
 
-.quote1 {
-    position: relative;
-}
 .description {
-    position: absolute;
+    font-weight: 600;
 }
+/*
 .arrows {
     margin: 13px 0;
 }
+*/
 
 .invest {
     background: url(../img/invest-banner.png) no-repeat center center; 
@@ -100,23 +138,25 @@ input[type=text], input[type=email] {
     text-align: center;
 }
 .cards .card {
-    background-color: $primary;
+    background-color: #d8dfe5;
     box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important;
+    opacity: .8;
 }
 .cards .card h5.card-title {
-    color: white;
-    text-align: left;
+    color: $font-color;
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
 .cards .card h5.card-title span {
     font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
 }
 .cards .card p.card-text {
-    color: white;
-    text-align: left;
+    color: $font-color;
+    font-weight: 700;
 }
 .cards .card a.btn {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    border: 2px solid #425675;
+    letter-spacing: 2px;
 }
 
 .about {
@@ -204,11 +244,25 @@ input[type=text], input[type=email] {
 .contacto input[type=email]::placeholder {
     color: #0f1b29;
 }
-
+.landing-video {
+    background-color: #222d3d !important;
+}
+.landing-video i {
+    color: red !important;
+}
 .footer, .footer-landing {
-    background-color: #0f0f0f;
+    background-color: #222d3d;
     text-align: center;
-    color: #959595;
+    color: $white;
+}
+.footer i {
+    color: $white;
+}
+.footer i:hover {
+    opacity: .8;
+}
+.footer div a {
+    color: #7689a6;
 }
 .footer p:last-child, .footer-landing p:last-child {
     margin-bottom: 0;
@@ -391,27 +445,56 @@ input[type=text], input[type=email] {
 
 /* 1 */
 @include media-breakpoint-up(xs) {
+
     #navbar-ef {
         text-align: center;
     }
+
+    .navbar-toggler {
+        margin-bottom: 1rem;
+    }
+
     #navbar-ef ul li.nav-item {
         padding: .5em 0 0 0;
     }
-    #navbar-ef ul li.nav-item img {
+    #navbar-ef img {
         width: 160px;
     }
-    .btn {
-        padding: 0.5rem 0.75rem 0.25rem 0.75rem;
-    }
-    .quote1 img {
-        width: 152px;
-        margin-bottom: 39px;
-    }
     .banner {
+        text-align: center;
         padding-bottom: 5px;
+    }
+    .banner .description {
+        padding-top: 3em;
+        line-height: 45px;
+        font-size: 1.7rem !important;
+        letter-spacing: 2px;
     }
     .banner .description div {
         padding-bottom: .2em;
+        line-height: 50px;
+        font-size: 2.5rem;
+        letter-spacing: .5px;
+    }
+    .banner .row:nth-child(2) {
+        font-size: 1.1rem;
+        padding: 2.75rem 0;
+    }
+    
+    .banner .col-md-4:nth-child(1) div  {
+        padding: .6em 0 .1em 0;
+        margin-bottom: 1em;
+    }
+    .banner .col-md-4:nth-child(2)  div:nth-child(1)  {
+        padding: .1em;
+    }
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a {
+        padding-right: .8em;
+        padding-left: .2rem;     
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a i {
         font-size: 1.2rem;
     }
     #what h3 {
@@ -500,6 +583,7 @@ input[type=text], input[type=email] {
         line-height: 1.3rem;
     }
     .cards .card a.btn {
+        padding-top: .5em;
         margin: 0 3em 1.5em 3em;
     }
     .cards .card a.btn img {
@@ -566,6 +650,10 @@ input[type=text], input[type=email] {
         font-size: 0.7em;
         padding: 1em;
     }
+    .footer i {
+        font-size: 2.75rem;
+        padding: .9em .5em;
+    }
     .footer img {
         padding-bottom: 1.1em;
         width: 20%;
@@ -618,7 +706,10 @@ input[type=text], input[type=email] {
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
-    .download .download-links .btn:nth-child(2) {
+    .download .download-links .row .col-md-6 .btn {
+        font-size: 1.2rem;
+    }
+    .download .download-links .btn:nth-child(4) {
         letter-spacing: 1.3px;
     }
 
@@ -732,28 +823,48 @@ input[type=text], input[type=email] {
 
 /* 2 */
 @include media-breakpoint-up(sm) {
+
     #navbar-ef ul li.nav-item {
         padding: .5em 0 0 0;
     }
-    #navbar-ef ul li.nav-item img {
-        width: 160px;
-    }
-    .quote1 img {
-        width: 152px;
-        margin-bottom: 39px;
-    }
     .banner {
-        padding-bottom: 5px;
+        text-align: left;
     }
     .banner .description {
-        top: 1.8em;
-        left: 2.2em;
-        font-size: 1.1rem;
+        font-size: 1.7rem;
+        padding-top: 3em;
+        line-height: 45px;
+        letter-spacing: 3px;
     }
     .banner .description div {
         padding-bottom: .2em;
-        font-size: 1.5rem;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
     }
+
+    .banner .row:nth-child(2) {
+        font-size: 1.1rem;
+        padding: 2.75rem 0;
+    }
+   
+    .banner .col-md-4:nth-child(1) div  {
+        padding: .6em 0 .1em 0;
+        margin-bottom: 1em;
+    }
+    .banner .col-md-4:nth-child(2)  div:nth-child(1)  {
+        padding: .1em;  
+    }
+   
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a {
+        padding-right: .8em;
+        padding-left: .2rem;     
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a i {
+        font-size: 1.2rem;
+    }
+   
     #what h3 {
         font-size: .8rem;
         letter-spacing: 1px;
@@ -783,6 +894,9 @@ input[type=text], input[type=email] {
     .cards .card {
         margin-top: 30px;
         min-height: 250px;
+    }
+    .cards .card a.btn {
+        padding-top: .5em;
     }
     .about .divider {
         padding-bottom: 170px;
@@ -859,7 +973,7 @@ input[type=text], input[type=email] {
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
-    .download .download-links .btn:nth-child(2) {
+    .download .download-links .btn:nth-child(4) {
         letter-spacing: 1.3px;
     }
     .invertir {
@@ -902,6 +1016,10 @@ input[type=text], input[type=email] {
     }
     .contacto h3 {
         font-size: 1.5em;
+    }
+    .footer i {
+        font-size: 2.75rem;
+        padding: .45em .5em;
     }
     .footer-landing p {
         font-size: 0.45em;
@@ -966,26 +1084,41 @@ input[type=text], input[type=email] {
     #navbar-ef ul li.nav-item {
         padding: .5em 0 0 0;
     }
-    #navbar-ef ul li.nav-item img {
-        /*margin-top: -60px;*/
-        width: 160px;
-    }
-    .quote1 img {
-        width: 164px;
-        margin-bottom: 39px;
-    }
-    .banner {
-        padding-bottom: 5px;
-    }
+   
+   
     .banner .description {
-        top: 1.8em;
-        left: 1.9em;
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+        padding-top: 3em;
+        line-height: 45px;
+        letter-spacing: 3px;
     }
     .banner .description div {
         padding-bottom: .2em;
-        font-size: 1.5rem;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
     }
+    .banner .row:nth-child(2) {
+        font-size: .75rem;
+        padding: 2.75rem 0;
+    }
+   
+    .banner .col-md-4:nth-child(1) div  {
+        padding: 1.3em 0 .8em 0;
+    }
+   
+    .banner .col-md-4:nth-child(2)  div:nth-child(1)  {
+        padding: .1em;
+    }
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a {
+        padding-right: .8em;
+        padding-left: .2rem;     
+        font-size: .7rem;
+        letter-spacing: 3px;
+    }
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a i {
+        font-size: 1rem;
+    }
+    
     #what h3 {
         font-size: .8rem;
         letter-spacing: 1px;
@@ -1045,7 +1178,7 @@ input[type=text], input[type=email] {
         width: 0.65rem;
     }
     .cards .card {
-        min-height: 298px;
+        min-height: 327px;
     }
     .about .divider {
         padding-bottom: 160px;
@@ -1109,9 +1242,9 @@ input[type=text], input[type=email] {
     .footer p {
         padding: 2.4em 1.4em;
     }
-    .footer img {
-        padding-bottom: 1.1em;
-        width: 12%;
+    .footer i {
+        font-size: 2.75rem;
+        padding: .45em .1em;
     }
     .footer-landing p {
         font-size: 0.6em;
@@ -1149,7 +1282,7 @@ input[type=text], input[type=email] {
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
-    .download .download-links .btn:nth-child(2) {
+    .download .download-links .btn:nth-child(4) {
         letter-spacing: 1.3px;
     }
     .banner-landing {
@@ -1259,32 +1392,54 @@ input[type=text], input[type=email] {
         justify-content: center;
     }
     #navbar-ef ul li.nav-item {
-        padding: 4em .42em 0 .42em;
-    }
-    #navbar-ef ul li.nav-item img {
-        margin-top: -60px;
-        width: 160px;
+        padding: 6em 1.5em 1em 1.5em;
     }
     #navbar-ef ul li a.nav-link {
         padding-right: 0;
         padding-left: 0; 
     }
-    .quote1 img {
-        width: 220px;
-        margin-bottom: 39px;
+    #navbar-ef img {
+        margin-top: -10px;
+        margin-left: -90px;
+        margin-right: 50px;
+        padding: 0 0 0 0;
+        width: 170px;
     }
-    .banner {
-        padding-bottom: 5px;
-    }
+   
     .banner .description {
-        top: 1.8em;
-        left: 1.9em;
-        font-size: 1.7rem;
+        font-size: 2rem;
+        padding-top: 3em;
+        line-height: 45px;
+        letter-spacing: 3px;
     }
     .banner .description div {
         padding-bottom: .2em;
-        font-size: 2rem;
+        font-size: 2.9rem;
+        letter-spacing: 1px;
     }
+
+    .banner .row:nth-child(2) {
+        font-size: 1rem;
+        padding: 2.75rem 0;
+    }
+    .banner .col-md-4:nth-child(1) div  {
+        padding: .45em 0 0 0;
+    }
+    
+    .banner .col-md-4:nth-child(2)  div:nth-child(1)  {
+        padding: .1em;
+    }
+    
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a {
+        padding-right: .8em;
+        padding-left: .2rem;     
+        font-size: .7rem;
+        letter-spacing: 3px;
+    }
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a i {
+        font-size: 1rem;
+    }
+   
     #what h3 {
         font-size: 1.2rem;
         letter-spacing: 1px;
@@ -1342,7 +1497,16 @@ input[type=text], input[type=email] {
         width: 0.7rem;
     }
     .cards .card {
-        min-height: 316px;
+        min-height: 380px;
+    }
+    .cards .card a.btn {
+        margin: 0.5em 2em 1.3em 2em;
+        font-size: 1rem;
+        padding-top: .5em;
+    }
+    .cards .card a.btn i {
+        font-size: 1rem;
+        font-weight: 700;
     }
     .about .divider {
         padding-bottom: 165px;
@@ -1425,9 +1589,9 @@ input[type=text], input[type=email] {
     .footer p {
         padding: 3.5em 11.5em;
     }
-    .footer img {
-        padding-bottom: 1.1em;
-        width: 10%;
+    .footer i {
+        font-size: 3rem;
+        padding: .45em .1em;
     }
     .footer-landing p {
         font-size: 0.7em;
@@ -1464,7 +1628,7 @@ input[type=text], input[type=email] {
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
-    .download .download-links .btn:nth-child(2) {
+    .download .download-links .btn:nth-child(4) {
         letter-spacing: 1.3px;
     }
 
@@ -1531,31 +1695,52 @@ input[type=text], input[type=email] {
 @include media-breakpoint-up(xl) {
     
     #navbar-ef ul li.nav-item {
-        padding: 5em 1em 0 1em;
-        
+        padding: 6em 1.5em 1em 1.5em;
     }
-    #navbar-ef ul li.nav-item img {
-        margin-top: -90px;
-        margin-left: -20px;
-        width: 225px;
+    #navbar-ef img {
+        margin-top: -10px;
+        margin-left: -90px;
+        margin-right: 50px;
+        padding: 0 0 0 0;
+        width: 170px;
     }
-    
-    .quote1 img {
-        width: 268px;
-        margin-bottom: 39px;
-    }
-    .banner {
-        padding-bottom: 5px;
-    }
+   
     .banner .description {
-        top: 1.8em;
-        left: 1.9em;
-        font-size: 2.2rem;
+        font-size: 1.9rem !important;
+        padding-top: 3em;
+        line-height: 45px;
+        letter-spacing: 2.8px;
     }
     .banner .description div {
         padding-bottom: .2em;
-        font-size: 2.8rem;
+        font-size: 2.9rem;
+        letter-spacing: 1px;
     }
+    .banner .row:nth-child(2) {
+        padding: 2.75rem 0;
+    }
+    .banner .col-md-4:nth-child(1) div  {
+        padding: .5em 0 .1rem 0;
+        letter-spacing: 1.1px;
+    }
+    .banner .col-md-4:nth-child(2) {
+        letter-spacing: 1px;
+    }
+    .banner .col-md-4:nth-child(2)  div:nth-child(1)  {
+        padding: .2em .1em .1em .1em;
+    }
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a {
+        padding-right: .7em;
+        padding-left: .1rem;
+        padding-top: .2rem;     
+        font-size: .7rem;
+        letter-spacing: 3px;
+    }
+    .banner .col-md-4:nth-child(2) div:nth-child(2) a i {
+        font-size: 1rem;
+        vertical-align: middle;
+    }
+
     #what h3 {
         font-size: 1.495rem;
         padding: 4em 0 0 0;
@@ -1625,14 +1810,16 @@ input[type=text], input[type=email] {
     }
  
     .cards .card {
-        min-height: 378px;
+        min-height: 377px;
     }
+    /*
     .cards .container .row .col-lg-4 {
         padding-right: 8px;
         padding-left: 8px;
     }
+    */
     .cards .card .card-body {
-        padding: 1em 2.75em 1em 2.75em;
+        padding: 0 1.9em 1em 1.9em;
     } 
     .cards .card .card-body > img {
         margin-bottom: 30px;
@@ -1643,12 +1830,15 @@ input[type=text], input[type=email] {
         font-size: 1.5rem;
     }
     .cards .card p.card-text {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         line-height: 1.5rem;
     }
     .cards .card a.btn {
-        margin: 0.3em 2em 1.3em 2em;
-        font-size: 1.4rem;
+        margin: 0.5em 2em 1.3em 2em;
+        font-size: 1.1rem;
+    }
+    .cards .card a.btn i {
+        font-size: 1rem;
     }
     .about .divider {
         padding-bottom: 110px;
@@ -1724,13 +1914,13 @@ input[type=text], input[type=email] {
     .location .btn img {
         width: 0.8rem;
     }
-    .footer p {
-        font-size: 0.8em;
-        padding: 3.5em 18em 4em 18em;
+    .footer i {
+        font-size: 3.5rem;
+        padding: .45em .1em;
     }
-    .footer img {
-        padding-bottom: 1.7em;
-        width: 10%;
+    .footer p {
+        font-size: 0.7em;
+        padding: 3.5em 25em 2.6em 25em;
     }
     .footer-landing p {
         font-size: 0.85em;
@@ -1739,7 +1929,6 @@ input[type=text], input[type=email] {
         padding-bottom: 1.7em;
         width: 19%;
     }
-
     .bt-container {
         padding: 7px 0;
     }
@@ -1796,7 +1985,7 @@ input[type=text], input[type=email] {
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
-    .download .download-links .btn:nth-child(2) {
+    .download .download-links .btn:nth-child(4) {
         letter-spacing: 1.3px;
     }
 
@@ -1871,11 +2060,11 @@ input[type=text], input[type=email] {
 .social-icon{text-decoration: none; padding: 0 .4em; }
 .social-icon > img {width: 50px; margin-top: 20px;}
 
-.download .download-links a:nth-child(3) {
+.download .download-links a:nth-child(4) {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     background-color: #29445f;
     color: $white;
 }
-.download .download-links a:nth-child(3):hover {
+.download .download-links a:nth-child(4):hover {
     background-color: #1b334b;
 }
