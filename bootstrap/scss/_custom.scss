@@ -212,7 +212,9 @@ input[type=text], input[type=email] {
     -o-background-size: cover;
     background-size: cover;
 }
-
+.download .row > div h3 span, .download .row > div h4 { 
+    text-align: left;
+}
 .download .row > div h3 span, .download .row > div h4 span { 
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
@@ -731,10 +733,9 @@ input[type=text], input[type=email] {
         font-size: 1.2rem;
     }
 
-    .download {
-        
+    .download .container:nth-child(2) {
+        padding: 5em 1em;
     }
-    
     .download .row > div.col-md-2 {
         text-align: center;
         padding: 0 1em;
@@ -743,32 +744,27 @@ input[type=text], input[type=email] {
         padding-bottom: 0;
     }
     .download .row > div.col-md-2 img {
-        width: 85%;
-        padding: 0;
+        width: 100%;
     }
-    .download .row > div h3 {
-        padding: 1em .5em .3em .5em;
-        font-size: 1.3rem;
-    }
+    
     .download .row > div h4 {
         font-size: 1.1rem;
-        padding-top: 2em;
-        margin-bottom: 0;
+        padding-top: 1em;
+        margin-bottom: 2em;
+        text-align: center;
     }
     .download .download-links {
         margin: 0 .1em;
     }
     .download .download-links .btn {
-        font-size: 1.1rem;
-        padding: .6em 0 .4em 0;
+        font-size: 1rem;
+        padding: 1.3em 1em .4em 1em;
+        height: 4em;
         margin-bottom: 1em;
     }
-    .download .download-links .row .col-md-6 .btn {
-        font-size: 1.2rem;
-    }
-    .download .download-links .btn:nth-child(4) {
-        letter-spacing: 1.3px;
-    }
+    .download .download-links .btn:nth-child(3), .download .download-links .btn:nth-child(4) {
+        padding-top: .5em;
+      }
 
     .banner-landing {
         background: url(../img/bull-small.png) no-repeat center center; 
@@ -987,10 +983,7 @@ input[type=text], input[type=email] {
         margin-left: 5px;
     }
     
-    .download .row > div h3 {
-        font-size: 1.3rem;
-    }
-   
+  
     /*
     .location h4 { 
         font-size: 1.4rem;
@@ -1016,9 +1009,10 @@ input[type=text], input[type=email] {
         width: 90%;
         padding: 0;
     }
-    .download .row > div h3 {
-        padding: 1em .5em .3em .5em;
-        font-size: 1.3rem;
+    .download .row > div h4 {
+        font-size: 1.5rem;
+        margin-top: 2em;
+        padding: 2em 0;
     }
     .download .row > div h4 {
         font-size: 1.1rem;
@@ -1031,13 +1025,15 @@ input[type=text], input[type=email] {
         margin: 0 4em;
     }
     .download .download-links .btn {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
+    /*
     .download .download-links .btn:nth-child(4) {
         letter-spacing: 1.3px;
     }
+    */
     .invertir {
         margin-bottom: 0;
     }
@@ -1280,7 +1276,7 @@ input[type=text], input[type=email] {
         margin-left: 5px;
     }
    
-    .download .row > div h3 {
+    .download .row > div h4 {
         font-size: 1.5rem;
     }
     
@@ -1317,37 +1313,34 @@ input[type=text], input[type=email] {
         width: 16%;
     }
 
-    .download .row > div.col-md-2 {
-        padding: 0 1em;
+    .download .container:nth-child(2) {
+        padding: 5em 1em;
     }
     .download .row > div.col-md-2 a {
         padding-bottom: 0;
     }
     .download .row > div.col-md-2 img {
         width: 100%;
-        padding: 0;
-    }
-    .download .row > div h3 {
-        padding: 1em .5em .3em .5em;
-        font-size: 2rem;
     }
     .download .row > div h4 {
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding-left: .1em;
         padding-right: 1em;
         margin-bottom: 0;
     }
     .download .download-links {
-        margin: 0 3.5em;
+        margin: 0 3em;
     }
     .download .download-links .btn {
-        font-size: 1.1rem;
+        font-size: .9rem;
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
+    /*
     .download .download-links .btn:nth-child(4) {
         letter-spacing: 1.3px;
     }
+    */
     .banner-landing {
         background: url(../img/bull.png) no-repeat center center; 
         -webkit-background-size: cover;
@@ -1451,7 +1444,6 @@ input[type=text], input[type=email] {
 @include media-breakpoint-up(lg) {
 
     #navbar-ef {
-       
         justify-content: center;
     }
     #navbar-landing-ef .container  {
@@ -1678,6 +1670,9 @@ input[type=text], input[type=email] {
         width: 19%;
     }
 
+    .download .container:nth-child(2) {
+        padding: 6em 1em;
+    }
     .download .row > div.col-md-2 {
         padding: 0 1em;
     }
@@ -1687,27 +1682,35 @@ input[type=text], input[type=email] {
     .download .row > div.col-md-2 img {
         padding: 0;
     }
-    .download .row > div h3 {
-        padding: 1em .5em .3em .5em;
-        font-size: 3rem;
-    }
     .download .row > div h4 {
-        font-size: 1.5rem;
-        padding-left: .1em;
-        padding-right: .7em;
-        margin-bottom: 0;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+   
+    .download .row > div.col-md-2 {
+        padding-right: 4em;
+    }
+    .download .row > div.col-md-2 a {
+        padding: 0;
+        margin-bottom: .4em;
+    }
+    .download .row > div.col-md-2 img {
+        padding: 0;
+    }
+    .download .row > div.col-md-2 img:hover {
+        opacity: .7;
     }
     .download .download-links {
         margin: 0 3.5em;
     }
     .download .download-links .btn {
-        font-size: 1.3rem;
-        padding: .6em 0 .4em 0;
+        font-size: 1rem;
+        padding: 1.2em 2em .8em 2em;
         margin-bottom: 1em;
     }
-    .download .download-links .btn:nth-child(4) {
-        letter-spacing: 1.3px;
-    }
+    .download .download-links .btn:nth-child(3), .download .download-links .btn:nth-child(4) {
+        padding-top: .5em;
+      }
 
     .invertir {
         margin-bottom: 0;
@@ -2032,12 +2035,15 @@ input[type=text], input[type=email] {
     ul#bt li div:nth-child(2) span:nth-child(2) {
         margin-left: 10px;
     }
-
+    .download .container:nth-child(2) {
+        padding: 7em 1em;
+    }
     .download .row > div.col-md-2 {
-        padding: 0 2em;
+        padding-right: 4em;
     }
     .download .row > div.col-md-2 a {
-        padding-bottom: 0;
+        padding: 0;
+        margin-bottom: .4em;
     }
     .download .row > div.col-md-2 img {
         padding: 0;
@@ -2047,7 +2053,7 @@ input[type=text], input[type=email] {
     }
 
     .download .row > div h4 {
-        font-size: 1.65rem;
+        font-size: 1rem;
         padding-left: .1em;
         padding-right: .5em;
         margin-bottom: 0;
@@ -2057,15 +2063,11 @@ input[type=text], input[type=email] {
     }
     .download .download-links .btn {
         font-size: 1rem;
-        padding: 1em 1em;
+        padding: 1.2em 6em .8em 6em;
         height: 4em;
-        margin-bottom: 1em;
+        margin-bottom: 1.3em;
     }
-    /*
-    .download .download-links .btn:nth-child(4) {
-        letter-spacing: 1.3px;
-    }
-    */
+   
 
     .banner-landing h2 {
         font-size: 3.4rem;
