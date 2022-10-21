@@ -228,13 +228,18 @@ input[type=text], input[type=email] {
 }
 .location h2 {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-    color: #0f1b29;
+    color: $font-color;
 }
 .location h4 {
     color: $primary;
 }
 .location .btn {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    background-color: $font-color;
+    border: 2px solid #5a6d8e;
+}
+.location .btn:hover {
+    opacity: .8;
 }
 
 .location input[type=text], 
@@ -242,7 +247,7 @@ input[type=text], input[type=email] {
 .location textarea,
 .contacto input[type=text],
 .contacto input[type=email] {
-    border-color: $primary;
+    border-color: #222d3d;
 }
 
 .location input[type=text]::placeholder, 
@@ -250,7 +255,7 @@ input[type=text], input[type=email] {
 .location textarea::placeholder,
 .contacto input[type=text]::placeholder,
 .contacto input[type=email]::placeholder {
-    color: #0f1b29;
+    color: $font-color;
 }
 .landing-video {
     background-color: #222d3d !important;
@@ -457,7 +462,10 @@ input[type=text], input[type=email] {
     #navbar-ef {
         text-align: center;
     }
-
+    #navbar-landing-ef .container  {
+        text-align: center;
+        display: block;
+    }
     .navbar-toggler {
         margin-bottom: 1rem;
     }
@@ -468,11 +476,14 @@ input[type=text], input[type=email] {
     #navbar-ef img {
         width: 160px;
     }
+    #navbar-landing-ef img {
+        width: 160px;
+    }
     .banner {
         text-align: center;
         padding-bottom: 5px;
     }
-    .banner .divider-full {
+    .divider-full {
         display: none;
     }
     .banner .description {
@@ -632,7 +643,6 @@ input[type=text], input[type=email] {
         margin-left: 5px;
     }
     .location h2 {
-        margin-top: 2.5rem;
         font-size: 1.75rem;
         padding: 0 1rem;
     }
@@ -644,7 +654,6 @@ input[type=text], input[type=email] {
         margin-top: 1.7em;
     }
     .location h2:nth-child(6) {
-        margin-bottom: 1em;
     }
     .location .btn {
         width: 100%;
@@ -683,7 +692,7 @@ input[type=text], input[type=email] {
     }
 
     .download {
-        padding: 2.5rem 1.5rem;
+        
     }
     
     .download .row > div.col-md-2 {
@@ -838,7 +847,7 @@ input[type=text], input[type=email] {
     .banner {
         text-align: left;
     }
-    .banner .divider-full {
+    .divider-full {
         display: none;
     }
     .banner .description {
@@ -1096,7 +1105,7 @@ input[type=text], input[type=email] {
         padding: .5em 0 0 0;
     }
    
-    .banner .divider-full {
+    .divider-full {
         display: none;
     }
     .banner .description {
@@ -1401,8 +1410,11 @@ input[type=text], input[type=email] {
 @include media-breakpoint-up(lg) {
 
     #navbar-ef {
-        display: flex;
+       
         justify-content: center;
+    }
+    #navbar-landing-ef .container  {
+        display: flex;
     }
     #navbar-ef ul li.nav-item {
         padding: 6em 1em 1em 1em;
@@ -1415,10 +1427,18 @@ input[type=text], input[type=email] {
         margin-top: -10px;
         margin-left: -55px;
         margin-right: 50px;
-        padding: 0 0 0 0;
+        padding: 0;
         width: 130px;
     }
-    .banner .divider-full {
+    
+    #navbar-landing-ef img {
+        margin-top: 15px;
+        margin-left: -21px;
+        margin-bottom: 25px;
+        padding: 0;
+        width: 130px;
+    }
+    .divider-full {
         display: block;
     }
     .banner .description {
@@ -1573,16 +1593,7 @@ input[type=text], input[type=email] {
     .location h4 {
         font-size: 1.56rem;
     }
-    .location h4:nth-child(4) {
-        margin-bottom: 0;
-    }
-    .location .row .col-md-6 {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    .location .row {
-        padding: 0 5em;
-    }
+   
     .location input[type=text], 
     .location input[type=email] {
         padding-top: 1.9em;
@@ -1716,10 +1727,16 @@ input[type=text], input[type=email] {
         margin-top: -10px;
         margin-left: -115px;
         margin-right: 55px;
-        padding: 0 0 0 0;
+        padding: 0;
         width: 162px;
     }
-   
+    #navbar-landing-ef img {
+        margin-top: 8px;
+        margin-left: -24px;
+        margin-bottom: 17.5px;
+        padding: 0;
+        width: 161.5px;
+    }
     .banner .description {
         font-size: 1.9rem !important;
         padding-top: 4.5em;
@@ -1827,12 +1844,7 @@ input[type=text], input[type=email] {
     .cards .card {
         min-height: 377px;
     }
-    /*
-    .cards .container .row .col-lg-4 {
-        padding-right: 8px;
-        padding-left: 8px;
-    }
-    */
+   
     .cards .card .card-body {
         padding: 0 1.9em 1em 1.9em;
     } 
@@ -1894,21 +1906,20 @@ input[type=text], input[type=email] {
         margin-left: 8.7px;
     }
     .location h2 {
-        font-size: 2.4rem;
-        margin-top: 4rem;
+        font-size: 2.3rem;
+        
     }
     .location h4 {
         font-size: 1.91rem;
     }
     .location h4:nth-child(4) {
-        margin-bottom: 0.6em;
+        
     }
     .location .row .col-md-6 {
-        padding-right: 10px;
-        padding-left: 10px;
+        
     }
     .location .row {
-        padding: 0 8em;
+        
     }
     .location input[type=text], 
     .location input[type=email] {
@@ -1920,9 +1931,9 @@ input[type=text], input[type=email] {
         height: 13.1em;
     }
     .location .btn {
-        font-size: 2rem;
-        width: 266px;
-        margin: 0.5em 0 4em 1em;
+        font-size: 1.6rem;
+        width: 180px;
+        margin: 0.75em 0 4em 1em;
         padding-top: 0.5em;
         padding-bottom: 0.3em;
     }
@@ -1971,7 +1982,7 @@ input[type=text], input[type=email] {
     }
 
     .download {
-        padding: 2.7rem 1rem;
+        
     }
     .download .row > div.col-md-2 {
         padding: 0 2em;
@@ -1985,10 +1996,7 @@ input[type=text], input[type=email] {
     .download .row > div.col-md-2 img:hover {
         opacity: .7;
     }
-    .download .row > div h3 {
-        padding: 1em .5em .3em .5em;
-        font-size: 3.6rem;
-    }
+
     .download .row > div h4 {
         font-size: 1.65rem;
         padding-left: .1em;
