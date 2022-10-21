@@ -216,10 +216,33 @@ input[type=text], input[type=email] {
 .download .row > div h3 span, .download .row > div h4 span { 
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
+.download .download-links .btn {
+    font-weight: 700;
+    border: 2px solid #5a6d8e;
+}
+
 .contacto {
     color: #12202d;
 }
-.location, .contacto {
+.location {
+    /*background-color: #e0e0e0;*/
+    background: url(../img/location.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+.location-data {
+    background: url(../img/location-data.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: $white;
+}
+.contacto {
     background-color: #e0e0e0;
     text-align: center;
 }
@@ -230,9 +253,11 @@ input[type=text], input[type=email] {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     color: $font-color;
 }
+/*
 .location h4 {
     color: $primary;
 }
+*/
 .location .btn {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     background-color: $font-color;
@@ -256,6 +281,12 @@ input[type=text], input[type=email] {
 .contacto input[type=text]::placeholder,
 .contacto input[type=email]::placeholder {
     color: $font-color;
+}
+.location-data h3 {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+}
+.location-data p {
+    font-weight: 700;
 }
 .landing-video {
     background-color: #222d3d !important;
@@ -646,22 +677,31 @@ input[type=text], input[type=email] {
         font-size: 1.75rem;
         padding: 0 1rem;
     }
-    .location h4 { 
-        font-size: 1.5rem;
-        padding: 0 1rem;
-    }
+    
     .location > img {
         margin-top: 1.7em;
     }
-    .location h2:nth-child(6) {
-    }
+   
     .location .btn {
         width: 100%;
-        margin: 1.5em 0 2.5em 0;
     }
     .location .btn img {
         width: 0.5rem;
         margin-left: 5px;
+    }
+    .location-data {
+        width: 92%;
+        margin: auto;
+        padding: 1.5em 0 2.5em 0;
+    }
+    .location-data h3 {
+        font-size: 1.3rem;
+        padding-bottom: .3em;
+    }
+    .location-data p {
+        letter-spacing: 1px;
+        line-height: 12px;
+        font-size: .7rem;
     }
     .footer p {
         font-size: 0.7em;
@@ -951,10 +991,12 @@ input[type=text], input[type=email] {
         font-size: 1.3rem;
     }
    
+    /*
     .location h4 { 
         font-size: 1.4rem;
         padding: 0 1rem;
     }
+    */
     .footer p {
         padding: 1.9em 1em;
     }
@@ -1254,7 +1296,6 @@ input[type=text], input[type=email] {
     .location .btn {
         font-size: 1.5rem;
         width: 190px;
-        margin: 0.4em 0 3em 0;
         padding-top: 0.4em;
         padding-bottom: 0.3em;
     }
@@ -1590,9 +1631,6 @@ input[type=text], input[type=email] {
     .location h2 {
         font-size: 2.2rem;
     }
-    .location h4 {
-        font-size: 1.56rem;
-    }
    
     .location input[type=text], 
     .location input[type=email] {
@@ -1605,12 +1643,25 @@ input[type=text], input[type=email] {
     }
     .location .btn {
         width: 200px;
-        margin: 0.5em 0 4em 2em;
         padding-top: 0.5em;
         padding-bottom: 0.3em;
     }
     .location .btn img {
         width: 0.65rem;
+    }
+    .location-data {
+        width: 86%;
+        margin: auto;
+        padding: 1.5em 0 2.5em 0;
+    }
+    .location-data h3 {
+        font-size: 2rem;
+        padding-bottom: .3em;
+    }
+    .location-data p {
+        letter-spacing: 1.5px;
+        line-height: 10px;
+        font-size: 1.2rem;
     }
     .footer p {
         padding: 3.5em 11.5em;
@@ -1907,20 +1958,9 @@ input[type=text], input[type=email] {
     }
     .location h2 {
         font-size: 2.3rem;
-        
     }
-    .location h4 {
-        font-size: 1.91rem;
-    }
-    .location h4:nth-child(4) {
-        
-    }
-    .location .row .col-md-6 {
-        
-    }
-    .location .row {
-        
-    }
+    
+    
     .location input[type=text], 
     .location input[type=email] {
         padding-top: 2em;
@@ -1933,12 +1973,24 @@ input[type=text], input[type=email] {
     .location .btn {
         font-size: 1.6rem;
         width: 180px;
-        margin: 0.75em 0 4em 1em;
         padding-top: 0.5em;
-        padding-bottom: 0.3em;
     }
     .location .btn img {
         width: 0.8rem;
+    }
+    .location-data {
+        width: 83%;
+        margin: auto;
+        padding: 1.5em 0 2.5em 0;
+    }
+    .location-data h3 {
+        font-size: 2rem;
+        padding-bottom: .3em;
+    }
+    .location-data p {
+        letter-spacing: 1.5px;
+        line-height: 10px;
+        font-size: 1.2rem;
     }
     .footer i {
         font-size: 3.5rem;
@@ -1981,9 +2033,6 @@ input[type=text], input[type=email] {
         margin-left: 10px;
     }
 
-    .download {
-        
-    }
     .download .row > div.col-md-2 {
         padding: 0 2em;
     }
@@ -2007,13 +2056,16 @@ input[type=text], input[type=email] {
         margin: 0 3.5em;
     }
     .download .download-links .btn {
-        font-size: 1.65rem;
-        padding: .6em 0 .4em 0;
+        font-size: 1rem;
+        padding: 1em 1em;
+        height: 4em;
         margin-bottom: 1em;
     }
+    /*
     .download .download-links .btn:nth-child(4) {
         letter-spacing: 1.3px;
     }
+    */
 
     .banner-landing h2 {
         font-size: 3.4rem;
@@ -2085,12 +2137,3 @@ input[type=text], input[type=email] {
 
 .social-icon{text-decoration: none; padding: 0 .4em; }
 .social-icon > img {width: 50px; margin-top: 20px;}
-
-.download .download-links a:nth-child(4) {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-    background-color: #29445f;
-    color: $white;
-}
-.download .download-links a:nth-child(4):hover {
-    background-color: #1b334b;
-}
