@@ -1307,18 +1307,19 @@ input[type=text], input[type=email] {
     }
 
     .download .container:nth-child(2) {
-        padding: 5em 1em;
+        padding: 1em;
     }
     .download .row > div.col-md-2 a {
-        padding-bottom: 0;
+        padding: 0;
     }
     .download .row > div.col-md-2 img {
         width: 100%;
     }
     .download .row > div h4 {
-        font-size: 1rem;
+        font-size: .8rem;
         padding-left: .1em;
         padding-right: 1em;
+        margin-top: 0;
         margin-bottom: 0;
         text-align: left;
     }
@@ -1330,11 +1331,7 @@ input[type=text], input[type=email] {
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
-    /*
-    .download .download-links .btn:nth-child(4) {
-        letter-spacing: 1.3px;
-    }
-    */
+    
     .banner-landing {
         background: url(../img/bull.png) no-repeat center center; 
         -webkit-background-size: cover;
@@ -1675,6 +1672,7 @@ input[type=text], input[type=email] {
     }
     .download .row > div.col-md-2 a {
         padding-bottom: 0;
+        margin-bottom: .4em;
     }
     .download .row > div.col-md-2 img {
         padding: 0;
@@ -1689,7 +1687,6 @@ input[type=text], input[type=email] {
     }
     .download .row > div.col-md-2 a {
         padding: 0;
-        margin-bottom: .4em;
     }
     .download .row > div.col-md-2 img {
         margin-top: 0;
@@ -2041,7 +2038,6 @@ input[type=text], input[type=email] {
     }
     .download .row > div.col-md-2 a {
         padding: 0;
-        margin-bottom: .4em;
     }
     .download .row > div.col-md-2 img {
         padding: 0;
