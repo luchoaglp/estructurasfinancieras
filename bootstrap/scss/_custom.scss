@@ -556,9 +556,7 @@ input[type=text], input[type=email] {
         text-align: center;
         padding: 4em 0 0 0;
     }
-    .banner  .description {
-        
-    }
+  
     .arrows {
         max-width: 50px;
     }
@@ -865,18 +863,20 @@ input[type=text], input[type=email] {
         font-size: .75rem;
     }
     .about .row:nth-child(3) > div > div img {
-        min-width: 116px;
-        max-width: 116px;
+        min-width: 80px;
+        max-width: 80px;
         padding-right: .5em;
+        padding-bottom: .5em;
     }
     .about .row:nth-child(3) > div p {
         margin-top: 0;
         margin-bottom: 4em;
     }
     .about .row:nth-child(5) > div > div img {
-        min-width: 116px;
-        max-width: 116px;
+        min-width: 80px;
+        max-width: 80px;
         padding-left: .5em;
+        padding-bottom: .5em;
     }
     .about .row:nth-child(5) > div p {
         margin-top: 0;
@@ -1128,12 +1128,13 @@ input[type=text], input[type=email] {
         font-size: 2.75rem;
     }
     .about p {
-        font-size: .75rem;
+        font-size: .7rem;
     }
     .about .row:nth-child(3) > div > div img {
         min-width: 180px;
         max-width: 180px;
         padding-right: 1em;
+        padding-bottom: 0;
     }
     .about .row:nth-child(3) > div p {
         margin-top: 0;
@@ -1143,6 +1144,7 @@ input[type=text], input[type=email] {
         min-width: 180px;
         max-width: 180px;
         padding-left: 1em;
+        padding-bottom: 0;
     }
     .about .row:nth-child(5) > div p {
         margin-top: 0;
