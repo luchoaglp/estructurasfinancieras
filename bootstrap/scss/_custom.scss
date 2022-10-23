@@ -169,12 +169,20 @@ input[type=text], input[type=email] {
     -o-background-size: cover;
     background-size: cover;
     text-align: center;
+    font-weight: 700;
 }
-.about h2 span {
+
+.about h2 strong {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
-.about p span {
-    font-weight: 900;
+.about p {
+    text-align: justify;
+}
+.about p strong {
+    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+}
+.about .row:nth-child(5) > div p {
+    text-align-last: right;
 }
 .consult {
     background: url(../img/consult.png) no-repeat center center; 
@@ -632,20 +640,7 @@ input[type=text], input[type=email] {
         width: 1rem;
         margin-left: 5px;
     }
-    .about .divider {
-        padding-bottom: 150px;
-    }
-    .about h2 {
-        margin-bottom: 0.4em;
-    }
-    .about p {
-        padding: 0 1em 8em 1em;
-        margin-bottom: 0;
-    }
-    .about img {
-        width: 40%;
-        margin-bottom: 4.75em;
-    }
+   
     .quote2 > img {
         width: 190px;
         margin-left: 0.9em;
@@ -862,6 +857,30 @@ input[type=text], input[type=email] {
     .productor .productor-links a:nth-child(2) {
         padding: .21em .5em .1em .5em;
     }
+
+    .about h2 {
+        font-size: 2.4rem;
+    }
+    .about p {
+        font-size: .75rem;
+    }
+    .about .row:nth-child(3) > div > div img {
+        min-width: 116px;
+        max-width: 116px;
+        padding-right: .5em;
+    }
+    .about .row:nth-child(3) > div p {
+        margin-top: 0;
+        margin-bottom: 4em;
+    }
+    .about .row:nth-child(5) > div > div img {
+        min-width: 116px;
+        max-width: 116px;
+        padding-left: .5em;
+    }
+    .about .row:nth-child(5) > div p {
+        margin-top: 0;
+    }
 }
 
 /* 2 */
@@ -944,16 +963,7 @@ input[type=text], input[type=email] {
     .cards .card a.btn {
         padding-top: .5em;
     }
-    .about .divider {
-        padding-bottom: 170px;
-    }
-    .about h2 {
-        margin-bottom: 0.4em;
-    }
-    .about img {
-        width: 30%;
-        margin-bottom: 5em;
-    }
+   
     .quote2 > img {
         margin-left: 29%;
         width: 190px;
@@ -973,13 +983,6 @@ input[type=text], input[type=email] {
         margin-left: 5px;
     }
     
-  
-    /*
-    .location h4 { 
-        font-size: 1.4rem;
-        padding: 0 1rem;
-    }
-    */
     .footer p {
         padding: 1.9em 1em;
     }
@@ -1019,11 +1022,7 @@ input[type=text], input[type=email] {
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
-    /*
-    .download .download-links .btn:nth-child(4) {
-        letter-spacing: 1.3px;
-    }
-    */
+  
     .invertir {
         margin-bottom: 0;
     }
@@ -1123,6 +1122,30 @@ input[type=text], input[type=email] {
     }
     .productor .productor-links a:nth-child(2) {
         padding: .16em .5em .04em .5em;
+    }
+
+    .about h2 {
+        font-size: 2.75rem;
+    }
+    .about p {
+        font-size: .75rem;
+    }
+    .about .row:nth-child(3) > div > div img {
+        min-width: 180px;
+        max-width: 180px;
+        padding-right: 1em;
+    }
+    .about .row:nth-child(3) > div p {
+        margin-top: 0;
+        margin-bottom: 4em;
+    }
+    .about .row:nth-child(5) > div > div img {
+        min-width: 180px;
+        max-width: 180px;
+        padding-left: 1em;
+    }
+    .about .row:nth-child(5) > div p {
+        margin-top: 0;
     }
 }
 
@@ -1233,21 +1256,7 @@ input[type=text], input[type=email] {
     .cards .card {
         min-height: 327px;
     }
-    .about .divider {
-        padding-bottom: 160px;
-    }
-    .about h2 {
-        font-size: 2.5rem;
-        margin-bottom: 0.1em;
-    }
-    .about p {
-        font-size: 1.1rem;
-        padding: 0 1em 10em 1em;
-    }
-    .about img {
-        width: 20%;
-        margin-bottom: 4.9em;
-    }
+   
     .quote2 > img {
         margin-left: 13.5em;
         width: 250px;
@@ -1430,6 +1439,24 @@ input[type=text], input[type=email] {
     .productor .productor-links a:nth-child(2) {
         padding: .16em .5em .04em .5em;
     }
+
+    .about h2 {
+        font-size: 3.1rem;
+    }
+    .about p {
+        font-size: .9rem;
+    }
+    .about .row:nth-child(3) > div > div img {
+        min-width: 175px;
+        max-width: 175px;
+        padding-right: 1em;
+    }
+    .about .row:nth-child(5) > div > div img {
+        min-width: 175px;
+        max-width: 175px;
+        padding-left: 1em;
+    }
+    
 }
 /* 4 */
 @include media-breakpoint-up(lg) {
@@ -1570,23 +1597,7 @@ input[type=text], input[type=email] {
         font-size: 1rem;
         font-weight: 700;
     }
-    .about .divider {
-        padding-bottom: 165px;
-    }
-    .about h2 {
-        font-size: 3.1rem;
-        margin-bottom: 0.1em;
-    }
-    .about p {
-        font-size: 1.1rem;
-        padding: 0 8.5em;
-        padding: 0 1em 11em 1em;
-        line-height: 30px;
-    }
-    .about img {
-        width: 18%;
-        margin-bottom: 5em;
-    }
+   
     .quote2 > img {
         margin-left: 18em;
         width: 340px;
@@ -1765,6 +1776,30 @@ input[type=text], input[type=email] {
         padding: .35em .5em 0 .5em;
     }
 
+    .about h2 {
+        font-size: 3.2rem;
+    }
+    .about p {
+        font-size: 1rem;
+    }
+    .about .row:nth-child(3) > div > div img {
+        min-width: 165px;
+        max-width: 165px;
+        padding-right: 1em;
+    }
+    .about .row:nth-child(3) > div p {
+        margin-top: .8em;
+        margin-bottom: 0;
+    }
+    .about .row:nth-child(5) > div > div img {
+        min-width: 160px;
+        max-width: 160px;
+        padding-left: 1em;
+    }
+    .about .row:nth-child(5) > div p {
+        margin-top: .5em;
+    }
+
 }
 
 @include media-breakpoint-up(xl) {
@@ -1916,22 +1951,7 @@ input[type=text], input[type=email] {
     .cards .card a.btn i {
         font-size: 1rem;
     }
-    .about .divider {
-        padding-bottom: 110px;
-    }
-    .about h2 {
-        font-size: 4rem;
-        margin-bottom: 0.5em;
-    }
-    .about p {
-        font-size: 1.45rem;
-        line-height: 30px;
-        padding: 0 7.3em 4em 7.3em;
-    }
-    .about img {
-        width: 18%;
-        margin-bottom: 6em;
-    }
+   
     .quote2 > img {
         margin-top: 2.2em;
         margin-left: 31.5%;
@@ -2128,6 +2148,25 @@ input[type=text], input[type=email] {
     .productores .productores-links .btn:nth-child(2) {
         padding: .35em .5em 0 .5em;
     }
+
+    .about h2 {
+        font-size: 3.5rem;
+    }
+    .about p {
+        font-size: 1.14rem;
+    }
+    .about .row:nth-child(3) > div > div img {
+        min-width: 168px;
+        max-width: 168px;
+        padding-right: 1em;
+    }
+   
+    .about .row:nth-child(5) > div > div img {
+        min-width: 168px;
+        max-width: 168px;
+        padding-left: 1em;
+    }
+    
 
 }
 
