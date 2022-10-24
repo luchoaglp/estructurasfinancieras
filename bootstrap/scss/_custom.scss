@@ -12,6 +12,9 @@ input[type=text], input[type=email] {
     font-size: .725rem;
     font-weight: 700;
 }
+#navbar-ef .dropdown-menu {
+    text-align: center;
+}
 #navbar-ef .dropdown-toggle::after {
     border-top: 0.4em solid;
     border-right: 0.4em solid transparent;
@@ -21,21 +24,11 @@ input[type=text], input[type=email] {
     color: $white;
 }
 
-.btn-invest1 {
-    background-color: #9a8864;
-}
-.btn-invest1:hover {
-    background-color: #877654;
-    color: $white;
-}
-
 .divider {
     margin-top: 0;
     margin-bottom: 0;
     height: 12px;
     width: 86.5%;
-    /*border-top: none;*/
-    /*border-bottom: 15px $primary solid;*/
     background: rgb(34,45,61);
     background: linear-gradient(90deg, rgba(34,45,61,1) 0%, rgba(179,178,179,1) 50%, rgba(34,45,61,1) 100%);
 }
@@ -54,45 +47,45 @@ input[type=text], input[type=email] {
     background-size: cover;
 }
 .banner {
-    margin-bottom: 0px;
-}
-.banner h1 div {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-}
-.banner .col-md-4 .banner-options {
-    background-color: #212c3d;
-    color: $white;
-    text-align: center;
-    font-weight: 700;
-    border: 2px solid #425675;
-}
-.banner .col-md-4:nth-child(2) div {    
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-.banner .col-md-4:nth-child(2)  div:nth-child(1)  {
-    flex: 1;
-}
-.banner .col-md-4:nth-child(2) div:nth-child(2) {
-    text-align: right;
-    display: block;
-}
-.banner .col-md-4:nth-child(2) div:nth-child(2) a {
-    display: block;
-    background-color: $white;
     color: $font-color;
-    margin: 2px;
-    border: 1px solid #79808c;
-    cursor: pointer;
-}
-.banner .col-md-4:nth-child(2) div:nth-child(2) a:hover {
-    opacity: .8;
-}
-
-.description {
-    font-weight: 600;
+    margin-bottom: 0px;
+    h1 div {
+        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    }
+    .description {
+        font-weight: 600;
+    }
+    .col-md-4 .banner-options {
+        background-color: #212c3d;
+        color: $white;
+        text-align: center;
+        font-weight: 700;
+        border: 2px solid #425675;
+    }
+    .col-md-4:nth-child(2) div {    
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .col-md-4:nth-child(2) div:nth-child(1)  {
+        flex: 1;
+    }
+    .col-md-4:nth-child(2) div:nth-child(2) {
+        text-align: right;
+        display: block;
+        a {
+            display: block;
+            background-color: $white;
+            color: $font-color;
+            margin: 2px;
+            border: 1px solid #79808c;
+            cursor: pointer;
+        }
+        a:hover {
+            opacity: .8;
+        }
+    }
 }
 
 .invest {
@@ -139,27 +132,26 @@ input[type=text], input[type=email] {
     -o-background-size: cover;
     background-size: cover;
     text-align: center;
-}
-.cards .card {
-    background-color: #d8dfe5;
-    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important;
-    opacity: .8;
-}
-.cards .card h5.card-title {
-    color: $font-color;
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-}
-.cards .card h5.card-title span {
-    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
-}
-.cards .card p.card-text {
-    color: $font-color;
-    font-weight: 700;
-}
-.cards .card a.btn {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-    border: 2px solid #425675;
-    letter-spacing: 2px;
+    .card {
+        box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important;
+        opacity: .8;
+        color: $font-color;
+        h5.card-title {
+            color: $font-color;
+            font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+        }
+        h5.card-title span {
+            font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+        }
+        p.card-text {
+            font-weight: 700;
+        }
+        a.btn {
+            font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+            border: 2px solid #425675;
+            letter-spacing: 2px;
+        }
+    }
 }
 
 .about {
@@ -288,6 +280,61 @@ input[type=text], input[type=email] {
 .location-data p {
     font-weight: 700;
 }
+.que-hacemos {
+    background: url(../img/que-hacemos.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h2 {
+        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+        color: $font-color;
+    }
+    p {
+        text-align: justify;
+        font-weight: 700;
+    }
+    p strong {
+        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    }
+    ul {
+        font-weight: 700;
+        list-style: none;
+        margin:0;
+        padding:0;
+        position: relative;
+        &:before {
+            content:"";
+            display: inline-block;
+            width: 1px;
+            background: #212c3d;
+            position: absolute;
+            left: 6px;
+            top: 5px;
+            height: calc(100% - 10px );
+        }
+        li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom:15px;
+            padding-left: 1.5em;
+            strong {
+                font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+            }
+            &:before{
+                content:"";
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                background: #212c3d;
+                position: absolute;
+                left: 0;
+                top: 3px;
+            }
+        }
+    }
+}
+
 .landing-video {
     background-color: #222d3d !important;
 }
@@ -383,6 +430,7 @@ input[type=text], input[type=email] {
     font-size: 1.3rem;
     margin-bottom: 12px;
     opacity: 1;
+    background-color: $font-color;
 }
 
 .btn-card {
@@ -2168,7 +2216,21 @@ input[type=text], input[type=email] {
         max-width: 168px;
         padding-left: 1em;
     }
-    
+    .que-hacemos {
+        h2 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 28px;
+        }
+        ul li {
+            padding-right: 4em;
+            strong {
+                font-size: 1.1rem;
+            }
+        }
+    }
 
 }
 
