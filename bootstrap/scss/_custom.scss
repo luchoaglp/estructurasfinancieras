@@ -55,13 +55,22 @@ input[type=text], input[type=email] {
     .description {
         font-weight: 600;
     }
-    .col-md-4 .banner-options {
-        background-color: #212c3d;
-        color: $white;
-        text-align: center;
-        font-weight: 700;
-        border: 2px solid #425675;
+    .col-md-4 {
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            opacity: .8;
+        }
+        .banner-options {
+            background-color: #212c3d;
+            color: $white;
+            text-align: center;
+            font-weight: 700;
+            border: 2px solid #425675;
+        }
     }
+    
     .col-md-4:nth-child(2) div {    
         padding: 0;
         display: flex;
