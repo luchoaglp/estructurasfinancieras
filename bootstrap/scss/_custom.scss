@@ -513,6 +513,9 @@ input[type=text], input[type=email] {
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
+    .productores-links span, .productor h1, .productor .productor-links a {
+        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    }
 }
 
 .productor {
@@ -524,12 +527,11 @@ input[type=text], input[type=email] {
     height: 100vh;
 }
 
-.productores .productores-links span, .productor h1, .productor .productor-links a {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-}
+/*
 .productores img, .productor img {
     width: 175px;
 }
+*/
 .productor .productor-links {
     text-align: center;
 }
@@ -855,23 +857,14 @@ input[type=text], input[type=email] {
         width: 40%;
     }
 
-    .productores .col-12, .productor .col-12:nth-child(1) {
-        text-align: center;
-    }
-
-    .productores img, .productor img {
-        margin: 1.7em 1em 7em 1.2em;
-    }
-    .productores .productores-links .btn {
-        font-size: 1.05rem;
-        margin-bottom: 1.3em;
-        min-height: 60px;
-    }
-    .productores .productores-links .btn:nth-child(1) {
-        padding: 1.1em 0 0 0;
-    }
-    .productores .productores-links .btn:nth-child(2) {
-        padding: .35em .1em 0 .1em;
+    .productores .productores-links {
+        padding-top: 7em;
+        .btn {
+            font-size: 1.6rem;
+            margin-bottom: 1.3em;
+            min-height: 95px;
+            padding: 1.2em 0 0 0;
+        }
     }
 
     .productor h1 {
@@ -1122,24 +1115,6 @@ input[type=text], input[type=email] {
     .footer-landing img {
         padding-bottom: 1.7em;
         width: 20%;
-    }
-
-    .productores .col-12, .productor .col-12:nth-child(1) {
-        text-align: left;
-    }
-    .productores img, .productor img {
-        margin: 1.7em 1em 7em 1.2em;
-    }
-    .productores .productores-links .btn {
-        font-size: 1.4rem;
-        margin-bottom: 1.3em;
-        min-height: 72px;
-    }
-    .productores .productores-links .btn:nth-child(1) {
-        padding: 1em 0 0 0;
-    }
-    .productores .productores-links .btn:nth-child(2) {
-        padding: .35em 3.5em 0 3.5em;
     }
 
     .productor h1 {
@@ -1443,21 +1418,6 @@ input[type=text], input[type=email] {
     }
     .contacto h3 {
         font-size: 1.9em;
-    }
-
-    .productores img, .productor img {
-        margin: 1.7em 1em 7em 1.2em;
-    }
-    .productores .productores-links .btn {
-        font-size: 1.3rem;
-        margin-bottom: 1.3em;
-        min-height: 72px;
-    }
-    .productores .productores-links .btn:nth-child(1) {
-        padding: 1em 0 0 0;
-    }
-    .productores .productores-links .btn:nth-child(2) {
-        padding: .35em .5em 0 .5em;
     }
 
     .productor h1 {
@@ -1811,21 +1771,7 @@ input[type=text], input[type=email] {
         font-size: 2.03em;
     }
 
-    .productores img, .productor img {
-        margin: 1.7em 1em 7em 1.2em;
-    }
-    .productores .productores-links .btn {
-        font-size: 1.5rem;
-        margin-bottom: 1.3em;
-        min-height: 84px;
-    }
-    .productores .productores-links .btn:nth-child(1) {
-        padding: 1em 0 0 0;
-    }
-    .productores .productores-links .btn:nth-child(2) {
-        padding: .35em .5em 0 .5em;
-    }
-
+  
     .about h2 {
         font-size: 3.2rem;
     }
@@ -2182,21 +2128,6 @@ input[type=text], input[type=email] {
     }
     .contacto h3 {
         font-size: 2.39em;
-    }
-
-    .productores img, .productor img {
-        margin: 1.7em 1em 7em 1.2em;
-    }
-    .productores .productores-links .btn {
-        font-size: 1.83rem;
-        margin-bottom: 1.3em;
-        min-height: 95px;
-    }
-    .productores .productores-links .btn:nth-child(1) {
-        padding: 1em 0 0 0;
-    }
-    .productores .productores-links .btn:nth-child(2) {
-        padding: .35em .5em 0 .5em;
     }
 
     .about h2 {
