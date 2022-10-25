@@ -42,7 +42,28 @@
                         <div class="download-links">
                             <a href="https://efire-web.aunesa.com/Irmo/" class="btn btn-block btn-primary" target="_blank">VISUALIZ&Aacute; TU PORTFOLIO</a>
                             <a href="https://www.estructurasfinancieras.com.ar/registrar_fisica?nombre=&telefono=&mail=" class="btn btn-block btn-primary">OPER&Aacute; ONLINE</a>
-                            <a href="#" class="btn btn-block btn-primary">SOLICIT&Aacute; TU USUARIO PARA OPERAR V&Iacute;A WEB Y APP</a>
+                            <a href="javascript: void(0)" id="solicitarUsuarioWebBtn" class="btn btn-block btn-primary">SOLICIT&Aacute; TU USUARIO PARA OPERAR V&Iacute;A WEB Y APP</a>
+
+                            <div id="solicitarUsuarioWebContainer" class="contacto mb-4" style="display: none;">
+                                <form action="solicitarUsuarioWeb" method="post" id="solicitarUsuarioWeb">
+                                    <div class="form-group">
+                                        <input type="text" name="efComitente" id="efComitente" class="form-control py-2" placeholder="Comitente" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="efEmail" id="efEmail" class="form-control py-2" placeholder="Email" required>
+                                    </div>
+                                    <div class="new">
+                                        <div class="form-group mb-0">
+                                            <input type="checkbox" name="efCheck" id="efCheck" value="Si" required="">
+                                            <label for="efCheck">Acepto los <a href="${cp}static/terminos_y_condiciones.pdf?v=${jpm.appversion}" target="_blank">t&eacute;rminos y condiciones <i class="fas fa-external-link-alt"></i></a></label>
+                                        </div>
+                                        <span>Al aceptar los T&eacute;rminos y Condiciones, el Comitente declara haber le&iacute;do exhaustivamente y comprendido el alcance de las Condiciones Generales de la Apertura de Cuenta Comitente, aceptando las mismas de plena conformidad.</span>
+                                    </div>
+                                    <hr class="mt-2 mb-3">
+                                    <button type="submit" id="efSubmit" class="btn">Solicitalo ahora!</button>
+                                </form>
+                            </div>
+
                             <a href="https://inversor.sba.com.ar/" target="_blank" class="btn btn-block btn-primary">VER TUS TENENCIAS EN CAJA DE VALORES</a>
                             <a href="https://estructurasfinancieras.com.ar/static/aranceles.pdf" target="_blank" class="btn btn-block btn-primary">ARANCELES</a>
                         </div>
@@ -72,6 +93,37 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+<script type="text/javascript">
+$(function () {
+    $("#solicitarUsuarioWebBtn").on("click", function () {
+        $("#solicitarUsuarioWebContainer").show("fast", function () {
+            $("#efComitente").trigger("focus");
+        });
+    });
+    /*
+    $('#solicitarUsuarioWeb').ajaxForm({
+        dataType: 'json',
+        beforeSubmit: function (arr, $form, options) {
+            jpmBlock();
+        },
+        success: function (data) {
+            jpmUnBlock();
+            $('#modalGenerarUsuario').modal('hide');
+            $.blockUI({
+                css: {backgroundColor: '#d4edda', color: '#155724', padding: '40px'},
+                message: 'Solicitud enviada correctamente'
+            });
+            setTimeout(function () {
+                jpmUnBlock();
+            }, 3000);
+        },
+        error: function (data) {
+            console.log(data);
+            alert("Error");
+        }
+    });
+    */
+});
+</script>
     </body>
 </html>

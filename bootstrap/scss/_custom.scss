@@ -208,6 +208,22 @@ input[type=text], input[type=email] {
     -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0;
+    #solicitarUsuarioWebContainer {
+        
+        span {
+            line-height: 0px;
+            font-size: 65%;
+        }
+        .btn {
+            padding: 0 1em;
+            max-height: 2.5em;
+            background-color: $primary;
+        }
+        .btn:hover {
+            color: white;
+            opacity: .8;
+        }
+    }
 }
 .invertir {
     background: url(../img/invertir-landing.png) no-repeat center center; 
@@ -514,7 +530,7 @@ input[type=text], input[type=email] {
 .invertir h2 span {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
-
+/*
 .productores {
     background: url(../img/productores.png) no-repeat center center; 
     -webkit-background-size: cover;
@@ -526,7 +542,7 @@ input[type=text], input[type=email] {
         font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     }
 }
-
+*/
 .productor {
     background: url(../img/productor.png) no-repeat center center; 
     -webkit-background-size: cover;
@@ -872,6 +888,7 @@ input[type=text], input[type=email] {
         width: 40%;
     }
 
+    /*
     .productores .productores-links {
         padding-top: 7em;
         .btn {
@@ -881,6 +898,7 @@ input[type=text], input[type=email] {
             padding: 1.2em 0 0 0;
         }
     }
+    */
 
     .productor h1 {
         font-size: 1.6em;
@@ -1740,7 +1758,7 @@ input[type=text], input[type=email] {
         padding: 1.2em 2em .8em 2em;
         margin-bottom: 1em;
     }
-    .download .download-links .btn:nth-child(3), .download .download-links .btn:nth-child(4) {
+    .download .download-links .btn:nth-child(3), .download .download-links .btn:nth-child(5) {
         padding-top: .5em;
       }
 
@@ -2094,7 +2112,6 @@ input[type=text], input[type=email] {
         margin-bottom: 1.3em;
     }
    
-
     .banner-landing h2 {
         font-size: 3.4rem;
     }
