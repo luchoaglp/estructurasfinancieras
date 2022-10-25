@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://www.estructurasfinancieras.com.ar/static/favicon.ico">
+    <title>Estructuras Financieras - Programa partner</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css" rel="stylesheet">
+    <link href="css/partner.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg">
+        <span class="navbar-brand"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-landing-ef" aria-controls="navbar-landing-ef" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-landing-ef">
+            <div class="container">
+                <a class="nav-link" href="./"><img src="./img/logo.png"></a>
+            </div>
+        </div>
+    </nav>
+  
+    <div class="partner">
+      <div class="container">
+          <div class="row ">
+              <div class="col-2">
+                  <div class="divider-full"></div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-8 offset-md-2 text-center">
+          <h1>
+              <img class="img-fluid" src="./img/e_f_white.png" alt="Estructuras Financieras">
+              PROGRAMA PARTNER
+          </h1>
+          <h2 class="my-3">Es una plataforma pensada para que el Partner incorpore soluciones<br> financieras a los servicios que le brinda a sus clientes.</h2>
+          <ul class="mb-5">
+              <li>A trav&eacute;s de un proceso sencillo se gestiona la titularidad de una cuenta comitente en Estructuras Financieras.</li>
+              <li>El proceso es gratuito, puede realizarse online y no demora m&aacute;s de 24-48hs h&aacute;biles.</li>
+              <li>El marco regulatorio es sumamente transparente y seguro.</li>
+              <li>El inversor es &uacute;nico titular de cada una de sus inversiones y &uacute;nicamente &eacute;l dispone de las mismas.</li>
+              <li class="li">Ning&uacute;n intermediario o agente burs&aacute;til puede realizar operaciones y movimientos por cuenta y orden de un inversor sin previo consentimiento.</li>
+              <li>Peri&oacute;dicamente Estructuras Financieras y Caja de Valores env&iacute;a res&uacute;menes de cuenta a todos los inversores del mercado.</li>
+          </ul>
+          <div class="row btn-container mb-5">
+              <div class="col-md-4 mb-3">
+                  <button type="button" id="btn1" class="btn btn-primary w-100">SERVICIOS AL PARTNER</button>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <button type="button" id="btn2" class="btn btn-primary w-100">INVERSIONES</button>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <button type="button" id="btn3" class="btn btn-primary w-100">FINANCIAMIENTO PYME</button>
+              </div>
+          </div>
+          <div class="row form">
+              <div class="col-md-10 offset-md-2">
+                  <h4><b>Hablemos.</b> Para fidelizar a sus clientes sumando soluciones financieras.</h4>
+              </div>
+          </div>
+          <div class="row form">
+              <div class="col-md-2 form-left">
+                  FORMULARIO DE CONTACTO
+              </div>
+              <div class="col-md-10">
+                  <div class="form-group mb-2">
+                      <input type="text" name="efName" id="efName" class="form-control" placeholder="Nombre y apellido" required="">
+                      <div class="form-control-info"></div>
+                  </div>
+                  <div class="row form-bottom">
+                      <div class="col-md-4">
+                          <div class="form-group mb-2">
+                              <input type="text" name="efPhone" id="efPhone" class="form-control" placeholder="Teléfono" maxlength="10">
+                              <div class="form-control-info"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-8">
+                          <div class="form-group mb-2">
+                              <input type="email" name="efEmail" id="efEmail" class="form-control" placeholder="Email" required="">
+                              <div class="form-control-info"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 text-right text-primary mb-5">
+                  <button type="button" id="submit" class="submit">ENVIAR &#9658;</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+       
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+<script>
+    $(function () {
+
+        const $btn1 = $('#btn1');
+        const $btn2 = $('#btn2');
+        const $btn3 = $('#btn3');
+
+        $btn1.click(function () {
+            $.alert({
+                title: false,
+                columnClass: 'col-md-6',
+                animation: 'rotateYR',
+                closeAnimation: 'rotateYR',
+                content: `<b>- Los funcionarios de la empresa estar&aacute;n a disposici&oacute;n para asistir y asesorar financieramente al cliente referenciado por el Partner, con todas las herramientas que dispone Estructuras Financieras<br>
+      - Dise&ntilde;o de informes especiales a medida para la base de clientes del Partner.<br>- Acompa&ntilde;amiento en reuniones presenciales o virtuales con clientes.</b>`,
+                closeIcon: true,
+                buttons: false
+            });
+        });
+
+        $btn2.click(function () {
+            $.alert({
+                title: false,
+                columnClass: 'col-md-6',
+                animation: 'rotateYR',
+                closeAnimation: 'rotateYR',
+                content: `<b>Administraci&oacute;n de carteras de inversi&oacute;n<br>
+      Corto plazo: Busca obtener rentabilidad de los recursos de corto plazo, atendiendo a las necesidades operativas.
+      Mediano/Largo plazo: Busca conservar el valor real de la cartera, superando incrementos de precios de la econom&iacute;a.<br><br>
+      Asesoramiento transaccional<br>
+      Busca dar respuesta inmediata a las necesidades transaccionales de nuestros clientes sin importar en absoluto el monto o plazo requerido por estos para realizar las operaciones.</b>`,
+                closeIcon: true,
+                buttons: false
+            });
+        });
+
+        $btn3.click(function () {
+            $.alert({
+                title: false,
+                columnClass: 'col-md-6',
+                animation: 'rotateYR',
+                closeAnimation: 'rotateYR',
+                content: `<b>Conseguimos la mejor financiaci&oacute;n a empresas PYME a trav&eacute;s del Mercado de Capitales<br><br>
+      CPD (Cheques de Pago Diferido) / PAGAR&Eacute; de proveedores<br>
+      CPD/ PAGAR&Eacute; de clientes<br>
+      CPD/ PAGAR&Eacute; propios<br>
+      Obligaciones Negociables PYME Garantizadas<br>
+      Fideicomisos Financieros<br>
+      PAGAR&Eacute; propios + fideicomisos Garant&iacute;a</b>`,
+                closeIcon: true,
+                buttons: false
+            });
+        });
+
+        const $efName = $('#efName');
+        const $efPhone = $('#efPhone');
+        const $efEmail = $('#efEmail');
+        const $submit = $('#submit');
+
+        const data = {};
+        const formData = new FormData();
+
+        $submit.click(function () {
+            if (validate()) {
+
+                for (const key in data) {
+                    formData.append(key, data[key]);
+                }
+
+                $.ajax({
+                    url: "${cp}suscribirAnalisis",
+                    method: "POST",
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                }).done(function (res) {
+                    $.alert({
+                        title: false,
+                        content: '<h5 class="text-center text-success"><b>Tu solicitud fue recibida exitosamente.<br>Te contactaremos a la brevedad.</b></h5>',
+                        closeIcon: false,
+                        buttons: {
+                            aceptar: {
+                                btnClass: 'btn-blue',
+                                action: function () {
+                                    window.location.replace("${cp}");
+                                }
+                            }
+                        }
+                    });
+                });
+            }
+        });
+
+        function validate() {
+
+            let res = true;
+
+            data.efName = $efName.val().trim();
+            data.efPhone = $efPhone.val().trim();
+            data.efEmail = $efEmail.val().trim();
+
+            if (data.efName.length < 1) {
+                $efName.addClass('form-invalid').next().text('Obligatorio').css("color", "red");
+                res = false;
+            } else {
+                $efName.removeClass('form-invalid').next().text('');
+            }
+
+            if (data.efPhone.length < 10) {
+                $efPhone.addClass('form-invalid').next().text('Obligatorio 10 caracteres').css("color", "red");
+                res = false;
+            } else {
+                $efPhone.removeClass('form-invalid').next().text('');
+            }
+
+            if (data.efEmail === '') {
+                $efEmail.addClass('form-invalid').next().text('Obligatorio').css("color", "red");
+                res = false;
+            } else if (!validateEmail(data.efEmail)) {
+                $efEmail.addClass('form-invalid').next().text('Email invalido').css("color", "red");
+                res = false;
+            } else {
+                $efEmail.removeClass('form-invalid').next().text('');
+            }
+            return res;
+        }
+
+        function validateEmail(email) {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+    });
+</script>
+
+    </body>
+</html>
