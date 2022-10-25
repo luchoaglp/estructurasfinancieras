@@ -99,138 +99,137 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 <script>
-    $(function () {
+$(function () {
 
-        const $btn1 = $('#btn1');
-        const $btn2 = $('#btn2');
-        const $btn3 = $('#btn3');
+    const $btn1 = $('#btn1');
+    const $btn2 = $('#btn2');
+    const $btn3 = $('#btn3');
 
-        $btn1.click(function () {
-            $.alert({
-                title: false,
-                columnClass: 'col-md-6',
-                animation: 'rotateYR',
-                closeAnimation: 'rotateYR',
-                content: `<b>- Los funcionarios de la empresa estar&aacute;n a disposici&oacute;n para asistir y asesorar financieramente al cliente referenciado por el Partner, con todas las herramientas que dispone Estructuras Financieras<br>
-      - Dise&ntilde;o de informes especiales a medida para la base de clientes del Partner.<br>- Acompa&ntilde;amiento en reuniones presenciales o virtuales con clientes.</b>`,
-                closeIcon: true,
-                buttons: false
-            });
+    $btn1.click(function () {
+        $.alert({
+            title: false,
+            columnClass: 'col-md-6',
+            animation: 'rotateYR',
+            closeAnimation: 'rotateYR',
+            content: `<b>- Los funcionarios de la empresa estar&aacute;n a disposici&oacute;n para asistir y asesorar financieramente al cliente referenciado por el Partner, con todas las herramientas que dispone Estructuras Financieras<br>- Dise&ntilde;o de informes especiales a medida para la base de clientes del Partner.<br>- Acompa&ntilde;amiento en reuniones presenciales o virtuales con clientes.</b>`,
+            closeIcon: true,
+            buttons: false
         });
+    });
 
-        $btn2.click(function () {
-            $.alert({
-                title: false,
-                columnClass: 'col-md-6',
-                animation: 'rotateYR',
-                closeAnimation: 'rotateYR',
-                content: `<b>Administraci&oacute;n de carteras de inversi&oacute;n<br>
-      Corto plazo: Busca obtener rentabilidad de los recursos de corto plazo, atendiendo a las necesidades operativas.
-      Mediano/Largo plazo: Busca conservar el valor real de la cartera, superando incrementos de precios de la econom&iacute;a.<br><br>
-      Asesoramiento transaccional<br>
-      Busca dar respuesta inmediata a las necesidades transaccionales de nuestros clientes sin importar en absoluto el monto o plazo requerido por estos para realizar las operaciones.</b>`,
-                closeIcon: true,
-                buttons: false
-            });
+    $btn2.click(function () {
+        $.alert({
+            title: false,
+            columnClass: 'col-md-6',
+            animation: 'rotateYR',
+            closeAnimation: 'rotateYR',
+            content: `<b>Administraci&oacute;n de carteras de inversi&oacute;n<br>
+            Corto plazo: Busca obtener rentabilidad de los recursos de corto plazo, atendiendo a las necesidades operativas.
+            Mediano/Largo plazo: Busca conservar el valor real de la cartera, superando incrementos de precios de la econom&iacute;a.<br><br>
+            Asesoramiento transaccional<br>
+            Busca dar respuesta inmediata a las necesidades transaccionales de nuestros clientes sin importar en absoluto el monto o plazo requerido por estos para realizar las operaciones.</b>`,
+            closeIcon: true,
+            buttons: false
         });
+    });
 
-        $btn3.click(function () {
-            $.alert({
-                title: false,
-                columnClass: 'col-md-6',
-                animation: 'rotateYR',
-                closeAnimation: 'rotateYR',
-                content: `<b>Conseguimos la mejor financiaci&oacute;n a empresas PYME a trav&eacute;s del Mercado de Capitales<br><br>
-      CPD (Cheques de Pago Diferido) / PAGAR&Eacute; de proveedores<br>
-      CPD/ PAGAR&Eacute; de clientes<br>
-      CPD/ PAGAR&Eacute; propios<br>
-      Obligaciones Negociables PYME Garantizadas<br>
-      Fideicomisos Financieros<br>
-      PAGAR&Eacute; propios + fideicomisos Garant&iacute;a</b>`,
-                closeIcon: true,
-                buttons: false
-            });
+    $btn3.click(function () {
+        $.alert({
+            title: false,
+            columnClass: 'col-md-6',
+            animation: 'rotateYR',
+            closeAnimation: 'rotateYR',
+            content: `<b>Conseguimos la mejor financiaci&oacute;n a empresas PYME a trav&eacute;s del Mercado de Capitales<br><br>
+            CPD (Cheques de Pago Diferido) / PAGAR&Eacute; de proveedores<br>
+            CPD/ PAGAR&Eacute; de clientes<br>
+            CPD/ PAGAR&Eacute; propios<br>
+            Obligaciones Negociables PYME Garantizadas<br>
+            Fideicomisos Financieros<br>
+            PAGAR&Eacute; propios + fideicomisos Garant&iacute;a</b>`,
+            closeIcon: true,
+            buttons: false
         });
+    });
 
-        const $efName = $('#efName');
-        const $efPhone = $('#efPhone');
-        const $efEmail = $('#efEmail');
-        const $submit = $('#submit');
+    const $efName = $('#efName');
+    const $efPhone = $('#efPhone');
+    const $efEmail = $('#efEmail');
+    const $submit = $('#submit');
 
-        const data = {};
-        const formData = new FormData();
+    const data = {};
+    const formData = new FormData();
 
-        $submit.click(function () {
-            if (validate()) {
+    $submit.click(function () {
+        if (validate()) {
 
-                for (const key in data) {
-                    formData.append(key, data[key]);
-                }
+            for (const key in data) {
+                formData.append(key, data[key]);
+            }
 
-                $.ajax({
-                    url: "${cp}suscribirAnalisis",
-                    method: "POST",
-                    data: formData,
-                    cache: false,
-                    contentType: false,
-                    processData: false
-                }).done(function (res) {
-                    $.alert({
-                        title: false,
-                        content: '<h5 class="text-center text-success"><b>Tu solicitud fue recibida exitosamente.<br>Te contactaremos a la brevedad.</b></h5>',
-                        closeIcon: false,
-                        buttons: {
-                            aceptar: {
-                                btnClass: 'btn-blue',
-                                action: function () {
-                                    window.location.replace("${cp}");
-                                }
+            $.ajax({
+                url: "${cp}suscribirAnalisis",
+                method: "POST",
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false
+            }).done(function (res) {
+                $.alert({
+                    title: false,
+                    content: '<h5 class="text-center text-success"><b>Tu solicitud fue recibida exitosamente.<br>Te contactaremos a la brevedad.</b></h5>',
+                    closeIcon: false,
+                    buttons: {
+                        aceptar: {
+                            btnClass: 'btn-blue',
+                            action: function () {
+                                window.location.replace("${cp}");
                             }
                         }
-                    });
+                    }
                 });
-            }
-        });
-
-        function validate() {
-
-            let res = true;
-
-            data.efName = $efName.val().trim();
-            data.efPhone = $efPhone.val().trim();
-            data.efEmail = $efEmail.val().trim();
-
-            if (data.efName.length < 1) {
-                $efName.addClass('form-invalid').next().text('Obligatorio').css("color", "red");
-                res = false;
-            } else {
-                $efName.removeClass('form-invalid').next().text('');
-            }
-
-            if (data.efPhone.length < 10) {
-                $efPhone.addClass('form-invalid').next().text('Obligatorio 10 caracteres').css("color", "red");
-                res = false;
-            } else {
-                $efPhone.removeClass('form-invalid').next().text('');
-            }
-
-            if (data.efEmail === '') {
-                $efEmail.addClass('form-invalid').next().text('Obligatorio').css("color", "red");
-                res = false;
-            } else if (!validateEmail(data.efEmail)) {
-                $efEmail.addClass('form-invalid').next().text('Email invalido').css("color", "red");
-                res = false;
-            } else {
-                $efEmail.removeClass('form-invalid').next().text('');
-            }
-            return res;
-        }
-
-        function validateEmail(email) {
-            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(String(email).toLowerCase());
+            });
         }
     });
+
+    function validate() {
+
+        let res = true;
+
+        data.efName = $efName.val().trim();
+        data.efPhone = $efPhone.val().trim();
+        data.efEmail = $efEmail.val().trim();
+
+        if (data.efName.length < 1) {
+            $efName.addClass('form-invalid').next().text('Obligatorio').css("color", "red");
+            res = false;
+        } else {
+            $efName.removeClass('form-invalid').next().text('');
+        }
+
+        if (data.efPhone.length < 10) {
+            $efPhone.addClass('form-invalid').next().text('Obligatorio 10 caracteres').css("color", "red");
+            res = false;
+        } else {
+            $efPhone.removeClass('form-invalid').next().text('');
+        }
+
+        if (data.efEmail === '') {
+            $efEmail.addClass('form-invalid').next().text('Obligatorio').css("color", "red");
+            res = false;
+        } else if (!validateEmail(data.efEmail)) {
+            $efEmail.addClass('form-invalid').next().text('Email invalido').css("color", "red");
+            res = false;
+        } else {
+            $efEmail.removeClass('form-invalid').next().text('');
+        }
+        return res;
+    }
+
+    function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+});
 </script>
 
     </body>
