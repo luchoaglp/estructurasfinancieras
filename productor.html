@@ -49,15 +49,33 @@
                 </h3>
             </div>
         </div>
-        <!--
-        <div class="row">
-            <div class="col-12">
-                <div class="productor-links">
-                    <a href="https://api.whatsapp.com/send?phone=541150321684&text=Estoy interesado en ser Productor de Estructuras Financieras" class="btn btn-primary" target="_blank">HABLEMOS POR WHATSAPP!</a> <a href="https://api.whatsapp.com/send?phone=541150321684&text=Estoy interesado en ser Productor de Estructuras Financieras" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <form action="#" method="post"  enctype="multipart/form-data">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <input type="text" name="efName" id="efName" class="form-control" placeholder="* Nombre" required>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <input type="email" name="efEmail" id="efEmail" class="form-control py-2" placeholder="* E-mail" required>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" onclick="document.getElementById('getFile').click()">CARGAR CV</button>
+                            <input type='file' name="efCv" id="getFile" style="display: none">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 offset-md-5">
+                        <button type="submit" class="btn btn-primary">ENVIAR <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
                 </div>
             </div>
-        </div>
-        -->
+        </form>
     </div>
        
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

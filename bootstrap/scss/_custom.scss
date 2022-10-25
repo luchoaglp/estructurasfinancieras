@@ -171,20 +171,17 @@ input[type=text], input[type=email] {
     background-size: cover;
     text-align: center;
     font-weight: 700;
+    h2 strong {
+        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    }
+    p {
+        text-align: justify;
+    }
+    .row:nth-child(5) > div p {
+        text-align-last: right;
+    }
 }
 
-.about h2 strong {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-}
-.about p {
-    text-align: justify;
-}
-.about p strong {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-}
-.about .row:nth-child(5) > div p {
-    text-align-last: right;
-}
 .consult {
     background: url(../img/consult.png) no-repeat center center; 
     -webkit-background-size: cover;
@@ -288,7 +285,9 @@ input[type=text], input[type=email] {
 .location input[type=email],
 .location textarea,
 .contacto input[type=text],
-.contacto input[type=email] {
+.contacto input[type=email],
+.productor input[type=text],
+.productor input[type=email] {
     border-color: #222d3d;
 }
 
@@ -296,7 +295,9 @@ input[type=text], input[type=email] {
 .location input[type=email]::placeholder,
 .location textarea::placeholder,
 .contacto input[type=text]::placeholder,
-.contacto input[type=email]::placeholder {
+.contacto input[type=email]::placeholder,
+.productor input[type=text]::placeholder,
+.productor input[type=email]::placeholder {
     color: $font-color;
 }
 .location-data h3 {
@@ -554,6 +555,15 @@ input[type=text], input[type=email] {
         font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     }
     h3 strong {
+        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    }
+    button {
+        padding-top: .5em;
+    }
+    button[type=button] {
+        width: 100%;
+    }
+    button[type=submit] {
         font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
     }
 }
@@ -929,7 +939,9 @@ input[type=text], input[type=email] {
     .productor .productor-links a:nth-child(2) {
         padding: .21em .5em .1em .5em;
     }
-
+    .productor button[type=submit] {
+        width: 100%;
+    }
     .about h2 {
         font-size: 2.4rem;
     }
@@ -1467,7 +1479,7 @@ input[type=text], input[type=email] {
     .productor h3 {
         margin: 1em 0 1.2em 0;
     }
-    /*
+
     .productor .productor-links {
         text-align: center;
     }
@@ -1483,7 +1495,6 @@ input[type=text], input[type=email] {
     .productor .productor-links a:nth-child(2) {
         padding: .16em .5em .04em .5em;
     }
-    */
     .about h2 {
         font-size: 3.1rem;
     }
@@ -1500,7 +1511,7 @@ input[type=text], input[type=email] {
         max-width: 175px;
         padding-left: 1em;
     }
-    
+
 }
 /* 4 */
 @include media-breakpoint-up(lg) {
@@ -1805,7 +1816,6 @@ input[type=text], input[type=email] {
         font-size: 2.03em;
     }
 
-  
     .about h2 {
         font-size: 3.2rem;
     }
@@ -1829,7 +1839,6 @@ input[type=text], input[type=email] {
     .about .row:nth-child(5) > div p {
         margin-top: .5em;
     }
-
 }
 
 @include media-breakpoint-up(xl) {
@@ -2180,6 +2189,7 @@ input[type=text], input[type=email] {
         max-width: 168px;
         padding-left: 1em;
     }
+    
     .que-hacemos {
         h2 {
             font-size: 2.5rem;
