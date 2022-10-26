@@ -1793,7 +1793,7 @@ input[type=text], input[type=email] {
     }
     .download .download-links .btn:nth-child(3), .download .download-links .btn:nth-child(5) {
         padding-top: .5em;
-      }
+    }
 
     .invertir {
         margin-bottom: 0;
@@ -2144,6 +2144,10 @@ input[type=text], input[type=email] {
         padding: 1.2em 2.5em .8em 2.5em;
         height: 4em;
         margin-bottom: 1.3em;
+    }
+
+    .download .download-links .btn:nth-child(5) {
+        padding-top: 1.2em;
     }
    
     .banner-landing h2 {
