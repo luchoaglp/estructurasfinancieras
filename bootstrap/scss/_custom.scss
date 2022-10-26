@@ -176,6 +176,9 @@ input[type=text], input[type=email] {
     }
     p {
         text-align: justify;
+        strong {
+            font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+        }
     }
     .row:nth-child(5) > div p {
         text-align-last: right;
@@ -308,8 +311,8 @@ input[type=text], input[type=email] {
 .location-data p {
     font-weight: 700;
 }
-.que-hacemos {
-    background: url(../img/que-hacemos.png) no-repeat center center; 
+.mision-vision {
+    background: url(../img/mision-vision.png) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2210,7 +2213,7 @@ input[type=text], input[type=email] {
         padding-left: 1em;
     }
     
-    .que-hacemos {
+    .mision-vision {
         h2 {
             font-size: 2.5rem;
         }
