@@ -155,6 +155,7 @@ input[type=text], input[type=email] {
             font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
         }
         p.card-text {
+            color: $font-color;
             font-weight: 700;
         }
         a.btn {
@@ -212,8 +213,10 @@ input[type=text], input[type=email] {
     -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0;
+    .col-md-2 a img {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
     #solicitarUsuarioWebContainer {
-        
         span {
             line-height: 0px;
             font-size: 65%;
