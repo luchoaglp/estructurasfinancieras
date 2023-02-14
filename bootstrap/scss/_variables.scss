@@ -1,22 +1,4 @@
-@font-face {
-  font-family: 'BambinoHS-Heavy';
-  src: url('../fonts/BambinoHS-Heavy.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/BambinoHS-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/BambinoHS-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/BambinoHS-Heavy.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/BambinoHS-Heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/BambinoHS-Heavy.svg#BambinoHS-Heavy') format('svg'); /* Legacy iOS */
-}
-@font-face {
-  font-family: 'BambinoHS-Light';
-  src: url('../fonts/BambinoHS-Light.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/BambinoHS-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/BambinoHS-Light.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/BambinoHS-Light.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/BambinoHS-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/BambinoHS-Light.svg#BambinoHS-Light') format('svg'); /* Legacy iOS */
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -24,7 +6,7 @@
 
 // Color system
 
-$font-color: #212c3d;
+$font-color: #0e1a28;
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -86,7 +68,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       #212c3d !default;
+$primary:       #1d4289 !default;
 $secondary:     #252525 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -300,7 +282,7 @@ $embed-responsive-aspect-ratios: join(
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            'BambinoHS-Light', Helvetica, Arial, sans-serif !default;
+$font-family-base:            'Figtree', sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
@@ -767,7 +749,7 @@ $navbar-light-color:                $font-color !default;
 $navbar-light-hover-color:          theme-color-level(secondary, -3) !default;
 $navbar-light-active-color:         theme-color-level(secondary, -3) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
-$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$white}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: rgba($black, .1) !default;
 
 $navbar-light-brand-color:                $navbar-light-active-color !default;
