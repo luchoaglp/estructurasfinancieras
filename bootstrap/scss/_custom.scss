@@ -663,10 +663,10 @@ input[type=text], input[type=email] {
         .col-md-4:nth-child(2) {
             padding-left: 1.1em;
             padding-right: 1.1em;
-            font-size: 1.13rem;
+            font-size: 1rem;
         }
         .col-md-4:nth-child(1) div.banner-options {    
-            padding: 1.1em 0 1em 0;
+            padding: 1em 0 1em 0;
         }
         .col-md-4:nth-child(2) a:nth-child(1) div.banner-options   {    
             padding: .8em 0 .6em 0;
@@ -786,7 +786,7 @@ input[type=text], input[type=email] {
     }
     .cards .card {
         margin-top: 15px;
-        min-height: 300px;
+        min-height: 150px;
     }
     .cards .card .card-body {
         padding: 1em 2.7em 1em 3.25em;
@@ -1093,11 +1093,11 @@ input[type=text], input[type=email] {
             padding-right: 6em;
             font-size: 1rem;
             letter-spacing: .1em;
-            margin-bottom: 1em;
+            margin-bottom: 1.25em;
         }
         .col-md-4:nth-child(2) {
-            padding-left: 6em;
-            padding-right: 6em;
+            padding-left: 6.5em;
+            padding-right: 6.5em;
             font-size: .9rem;
         }
         .col-md-4:nth-child(1) div.banner-options {    
@@ -1381,15 +1381,15 @@ input[type=text], input[type=email] {
             }
         }
         .col-md-4:nth-child(1) {
-            padding-left: 5em;
+            padding-left: 3em;
             padding-right: .5em;
-            font-size: .55rem;
+            font-size: .7rem;
             letter-spacing: .1em;
         }
         .col-md-4:nth-child(2) {
             padding-left: .5em;
-            padding-right: 4em;
-            font-size: .55rem;
+            padding-right: 2em;
+            font-size: .6rem;
         }
         .col-md-4:nth-child(1) div.banner-options {    
             padding: .5em 0 .4em 0;
@@ -1750,7 +1750,7 @@ input[type=text], input[type=email] {
         .col-md-4:nth-child(1) {
             padding-left: 5.5em;
             padding-right: .5em;
-            font-size: .7rem;
+            font-size: .75rem;
             letter-spacing: .1em;
         }
         .col-md-4:nth-child(2) {
@@ -1768,7 +1768,7 @@ input[type=text], input[type=email] {
             padding: .3em 0;
         }
     }
-    /*
+    
     .divider-full {
         display: block;
     }
@@ -2121,7 +2121,7 @@ input[type=text], input[type=email] {
             font-size: .85rem;
         }
         .col-md-4:nth-child(1) div.banner-options {    
-            padding: .5em 0 .4em 0;
+            padding: .55em 0 .4em 0;
         }
         .col-md-4:nth-child(2) a:nth-child(1) div.banner-options   {    
             padding: .3em 0 .1em 0;
