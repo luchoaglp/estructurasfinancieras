@@ -796,20 +796,20 @@ input[type=text], input[type=email] {
     }
     .cards .card {
         margin-top: 15px;
-        min-height: 150px;
+        min-height: 290px;
     }
     .cards .card .card-body {
-        padding: 1em 2.7em 1em 3.25em;
+        padding: .5em 2.5em 1em 2.5em;
     } 
     .cards .card .card-body > img {
         height: 105px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         margin-top: 10px;
-        width: 37%;
-        height: 37%;
+        width: 35%;
+        height: 35%;
     }
     .cards .card h5.card-title {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     .cards .card p.card-text {
         font-size: 1.1rem;
@@ -992,7 +992,7 @@ input[type=text], input[type=email] {
             margin-top: 3em;
             text-align: center;
             img {
-                width: 7.5em;
+                width: 7em;
             }
         }        
         .col-md-6 {
@@ -1012,7 +1012,7 @@ input[type=text], input[type=email] {
         }
         p:nth-child(5) {
             padding-top: 2em;
-            padding-bottom: 2em;
+            padding-bottom: 3em;
             font-size: 0.6em;
             color: #aaa;
         }
@@ -1351,7 +1351,7 @@ input[type=text], input[type=email] {
         }
         p:nth-child(5) {
             padding-top: 2em;
-            padding-bottom: 2em;
+            padding-bottom: 3em;
             font-size: 0.6em;
         }
     }
@@ -1660,7 +1660,7 @@ input[type=text], input[type=email] {
         }
         p:nth-child(5) {
             padding-top: 2em;
-            padding-bottom: 2em;
+            padding-bottom: 3em;
             font-size: 0.6em;
         }
     }
