@@ -391,19 +391,29 @@ input[type=text], input[type=email] {
 .landing-video i {
     color: red !important;
 }
+.footer {
+    a {
+        i {
+            color: $white;
+        }
+        :hover {
+            opacity: .8;
+        }
+    }
+    div {
+        text-align: center;
+        a {
+            color: #7689a6;
+            text-decoration: none;
+        }
+    }
+    p:nth-child(3), p:nth-child(5) {
+        text-align: center;
+    }
+}
 .footer, .footer-landing {
     background-color: #222d3d;
-    text-align: center;
     color: $white;
-}
-.footer i {
-    color: $white;
-}
-.footer i:hover {
-    opacity: .8;
-}
-.footer div a {
-    color: #7689a6;
 }
 .footer p:last-child, .footer-landing p:last-child {
     margin-bottom: 0;
@@ -865,6 +875,7 @@ input[type=text], input[type=email] {
         line-height: 12px;
         font-size: .7rem;
     }
+    /*
     .footer p {
         font-size: 0.7em;
         padding: 1em;
@@ -877,7 +888,7 @@ input[type=text], input[type=email] {
         padding-bottom: 1.1em;
         width: 20%;
     }
-
+    */
     ul#bt {
         font-size: 0.5rem;
     }
@@ -975,6 +986,36 @@ input[type=text], input[type=email] {
     }
     .contacto h3 {
         font-size: 1.5em;
+    }
+    .footer {
+        .col-md-5 {
+            margin-top: 3em;
+            text-align: center;
+            img {
+                width: 7.5em;
+            }
+        }        
+        .col-md-6 {
+            padding: 1.4em;
+            text-align: center;
+            font-size: 1.5em;
+            a {
+                padding: 0 .8em 0 0;
+                i {
+                    font-size: 2.51rem;
+                }
+            }
+        }
+        p:nth-child(3) {
+            font-size: 0.7em;
+            padding: 0;
+        }
+        p:nth-child(5) {
+            padding-top: 2em;
+            padding-bottom: 2em;
+            font-size: 0.6em;
+            color: #aaa;
+        }
     }
     .footer-landing p {
         font-size: 0.6em;
@@ -1202,7 +1243,7 @@ input[type=text], input[type=email] {
         width: 0.5rem;
         margin-left: 5px;
     }
-    
+    /*
     .footer p {
         padding: 1.9em 1em;
     }
@@ -1210,7 +1251,7 @@ input[type=text], input[type=email] {
         padding-bottom: 1.1em;
         width: 15%;
     }
-
+    */
     .download .row > div.col-md-2 {
         text-align: center;
         padding: 0 1em;
@@ -1284,6 +1325,37 @@ input[type=text], input[type=email] {
     .contacto h3 {
         font-size: 1.5em;
     }
+
+    .footer {
+        .col-md-5 {
+            margin-top: 3em;
+            text-align: center;
+            img {
+                width: 8em;
+            }
+        }        
+        .col-md-6 {
+            padding: 1.4em;
+            text-align: center;
+            font-size: 1.5em;
+            a {
+                padding: 0 .8em 0 0;
+                i {
+                    font-size: 2.51rem;
+                }
+            }
+        }
+        p:nth-child(3) {
+            font-size: 0.7em;
+            padding: 0;
+        }
+        p:nth-child(5) {
+            padding-top: 2em;
+            padding-bottom: 2em;
+            font-size: 0.6em;
+        }
+    }
+    /*
     .footer i {
         font-size: 2.75rem;
         padding: .45em .5em;
@@ -1291,6 +1363,7 @@ input[type=text], input[type=email] {
     .footer-landing p {
         font-size: 0.45em;
     }
+    */
     .footer-landing img {
         padding-bottom: 1.7em;
         width: 20%;
@@ -1553,6 +1626,45 @@ input[type=text], input[type=email] {
     .location .btn img {
         width: 0.65rem;
     }
+
+    .footer {
+        .col-md-5 {
+            margin-top: 3em;
+            text-align: right;
+            img {
+                padding-right: 2em;
+                width: 8.8em;
+            }
+        }
+        .col-md-1 {
+            max-width: 50px;
+            margin-top: 3.1em;
+            max-height: 3.8em;
+            border-left: 2px solid $white;
+        }
+        .col-md-6 {
+            padding: 1.4em;
+            padding-left: 0;
+            text-align: left;
+            font-size: 1.5em;
+            a {
+                padding: 0 .8em 0 0;
+                i {
+                    font-size: 2.51rem;
+                }
+            }
+        }
+        p:nth-child(3) {
+            font-size: 0.7em;
+            padding: 3.5em 25em .6em 25em;
+        }
+        p:nth-child(5) {
+            padding-top: 2em;
+            padding-bottom: 2em;
+            font-size: 0.6em;
+        }
+    }
+    /*
     .footer p {
         padding: 2.4em 1.4em;
     }
@@ -1560,6 +1672,7 @@ input[type=text], input[type=email] {
         font-size: 2.75rem;
         padding: .45em .1em;
     }
+    */
     .footer-landing p {
         font-size: 0.6em;
     }
@@ -1945,6 +2058,8 @@ input[type=text], input[type=email] {
         line-height: 10px;
         font-size: 1.2rem;
     }
+  
+    /*
     .footer p {
         padding: 3.5em 11.5em;
     }
@@ -1952,6 +2067,7 @@ input[type=text], input[type=email] {
         font-size: 3rem;
         padding: .45em .1em;
     }
+    */
     .footer-landing p {
         font-size: 0.7em;
     }
@@ -2327,17 +2443,8 @@ input[type=text], input[type=email] {
         line-height: 10px;
         font-size: 1.2rem;
     }
-    .footer i {
-        font-size: 3.5rem;
-        padding: .45em .1em;
-    }
-    .footer p {
-        font-size: 0.7em;
-        padding: 3.5em 25em 2.6em 25em;
-    }
-    .footer img {
-        width: 15%;
-    }
+  
+
     .footer-landing p {
         font-size: 0.85em;
     }
