@@ -1,29 +1,5 @@
-@font-face {
-  font-family: 'BambinoHS-Heavy';
-  src: url('../fonts/BambinoHS-Heavy.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/BambinoHS-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('../fonts/BambinoHS-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
-      url('../fonts/BambinoHS-Heavy.woff') format('woff'), /* Pretty Modern Browsers */
-      url('../fonts/BambinoHS-Heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('../fonts/BambinoHS-Heavy.svg#BambinoHS-Heavy') format('svg'); /* Legacy iOS */
-}
-@font-face {
-  font-family: 'BambinoHS-Light';
-  src: url('../fonts/BambinoHS-Light.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/BambinoHS-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('../fonts/BambinoHS-Light.woff2') format('woff2'), /* Super Modern Browsers */
-      url('../fonts/BambinoHS-Light.woff') format('woff'), /* Pretty Modern Browsers */
-      url('../fonts/BambinoHS-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-      url('../fonts/BambinoHS-Light.svg#BambinoHS-Light') format('svg'); /* Legacy iOS */
-}
-html,
-body {
-  font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-  position: relative;
-  
-}
 .partner {
-  background: url(../img/partner.png) no-repeat center center, #dce1eb;
+  background: url(../img/partner.png) no-repeat center center, #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,12 +8,13 @@ body {
 }
 .jconfirm-box {
   border-radius: 0 !important;
-  background-color: #212c3d !important;
+  background-color: #1d4289 !important;
+  border-radius: 10px !important;
 }
 .jconfirm-content {
-  font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
   text-align: left;
-  font-size: .72rem;
+  font-size: .8rem;
+  font-weight: 300;
   padding-top: 14px;
   color: white;
 }
@@ -50,79 +27,77 @@ body {
   color: white;
 }
 h1 {
-  background-color: #212c3d;
+  background-color: #1d4289;
   color: white;
-  margin-top: .75em;
-  padding: .3em .5em 0 .5em;
+  margin-top: 1.4em;
+  font-weight: 700;
+  padding: .05em .5em 0 .5em;
+  border-radius: 50em;
+  font-size: 1.75rem;
 }
-
 h1 img {
-  width: 8%;
+  width: 1.15em;
   vertical-align: top;
-  padding-top: .12em;
+  padding-top: .2em;
 }
-
 h1 a {
   text-decoration: none;
 }
-
 h2 {
-  color: #212c3d;
-  font-size: 1.26rem;
-  line-height: 28px;
+  color: #000;
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 29px;
+  padding-bottom: 1em;
 }
-
-ul {
-  font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+.partner ul {
   text-align: left;
-  color: #2b2c2e;
-  font-weight: bold;
-  font-size: .75rem;
+  color: #000;
+  font-weight: 400;
+  font-size: .88rem;
   list-style-image: url("../img/list-icon.png");
   margin-left: 3px;
 }
-
-ul li {
-  margin-bottom: 1em;
+.partner ul li {
+  margin-bottom: .75em;
 }
-
 button.btn {
-  border-radius: 0;
-  background-color: #212c3d;
-  padding: .2em 0 0 0;
-  font-size: .85rem;
+  border: 2px #1d4289 solid;
+  border-radius: 50px;
+  background-color: #fff;
+  font-weight: 600;
+  color: #1d4289;
+  padding: .21em 0 0 0;
+  font-size: .78rem;
 }
-
 button.btn:hover, button.btn:focus {
   opacity: .8;
 }
-
 .form {
   text-align: left;
 }
-
 .form-left {
-  font-size: .85rem;
+  font-size: .88rem;
+  color: #1d4289;
+  font-weight: 700;
 }
-
 h4 {
-  font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
-  font-size: .85rem;
+  font-size: .95rem;
   margin-bottom: 5px;
+  color: #000;
 }
-
 input[type=text], input[type=email] {
-  font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
   background-color: transparent;
-  border-radius: 0;
-  font-size: .8rem;
-  border-color: #535E6E;
+  font-size: .75rem;
+  border-color: #1d4289;
+  border-radius: 5px;
 }
-
 input[type=text]:hover, input[type=email]:hover {
-  border-color: #5a6f8e;
+  border-color: #1b499e;
 }
-
+input[type=text]::placeholder, input[type=email]::placeholder {
+  color: #54595f;
+}
 .form-invalid {
   box-shadow: 0 0 0 0.1rem rgb(255 0 0 / 80%);
 }
@@ -131,67 +106,65 @@ input[type=text]:hover, input[type=email]:hover {
   margin-top: 3px;
 }
 .submit {
-  font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+  margin-top: 2em;
   border: none;
+  border-radius: 50px;
   font-weight: bold;
-  color: #2b2c2e;
-  background-color: transparent;
+  color: #fff;
+  background-color: #1d4289;
+  padding: .3em 1.65em .3em 1.65em;
 }
 .submit:hover {
   opacity: .8;
 }
 
 @media only screen and (min-width: 600px) {
-
   h1 img {
-      vertical-align: top;
-      padding-top: .1em;
+    width: 1.09em;
+    padding-top: .23em;
   }
-
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-  h1 img {
-      width: 7%;
+  h1 {
+    font-size: 2rem;
   }
-
+  h1 img {
+    padding-top: .23em;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-
-
+  h1 img {
+    padding-top: .23em;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
   h1 {
-      /*background-color: #5a6f8e;*/
-      font-size: 3.51rem;
+      font-size: 3.9rem;
   }
-
   h1 img {
-      width: 8.9%;
-      padding-top: .125em;
+      padding-top: .23em;
   }
-
+  .btn-container {
+    padding: 0 .3em;
+  }
   .btn-container div:first-child {
-      padding-right: 3em;
+      padding-right: 5em;
   }
   .btn-container div:nth-child(2) {
-      padding-right: 1.5em;
-      padding-left: 1.5em;
+      padding-right: 2.5em;
+      padding-left: 2.5em;
   }
   .btn-container div:last-child {
-      padding-left: 3em;
+      padding-left: 5em;
   }
-
   .form-bottom div:first-child {
-      padding-right: 2px;
+      padding-right: 1px;
   }
   .form-bottom div:last-child {
-      padding-left: 2px;
+      padding-left: 1px;
   }
-
 }
