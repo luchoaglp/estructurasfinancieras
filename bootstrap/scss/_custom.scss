@@ -309,19 +309,15 @@ input[type=text], input[type=email] {
 .location input[type=email],
 .location textarea,
 .contacto input[type=text],
-.contacto input[type=email],
-.productor input[type=text],
-.productor input[type=email] {
-    border-color: #222d3d;
+.contacto input[type=email] {
+    border-color: $primary;
 }
 
 .location input[type=text]::placeholder, 
 .location input[type=email]::placeholder,
 .location textarea::placeholder,
 .contacto input[type=text]::placeholder,
-.contacto input[type=email]::placeholder,
-.productor input[type=text]::placeholder,
-.productor input[type=email]::placeholder {
+.contacto input[type=email]::placeholder {
     color: $font-color;
 }
 .location-data h3 {
@@ -564,19 +560,6 @@ input[type=text], input[type=email] {
 .invertir h2 span {
     font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
 }
-/*
-.productores {
-    background: url(../img/productores.png) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-    .productores-links span, .productor h1, .productor .productor-links a {
-        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
-    }
-}
-*/
 .productor {
     background: url(../img/productor.png) no-repeat center center; 
     -webkit-background-size: cover;
@@ -585,20 +568,46 @@ input[type=text], input[type=email] {
     background-size: cover;
     height: 100vh;
     h1 {
-        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        span {
+            font-weight: 900;
+            color: $primary;
+        }
     }
-    h3 strong {
-        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    h2 {
+        font-weight: 400;
+    }
+    h3 {
+        font-weight: 400;
+        padding-bottom: .85em;
+        strong {
+            font-weight: 700;
+        }
+    }
+    input[type=text], input[type=email] {
+        border-color: $primary;
+        border-radius: 5px;
+        padding: 1.45em 1em;
+    }
+    input[type=text]::placeholder,
+    input[type=email]::placeholder {
+        color: #bbb;
     }
     button {
-        padding-top: .4em;
-        padding-bottom: .2em;
+        padding-top: .7em;
+        padding-bottom: .6em;
+        font-weight: 700;
+        border-radius: 50px;
     }
     button[type=button] {
+        border: 2px solid $primary;
         width: 100%;
+        background-color: transparent;
+        color: $primary;
+        margin-bottom: 1.2em;
     }
     button[type=submit] {
-        font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+
     }
 }
 
@@ -1761,35 +1770,41 @@ input[type=text], input[type=email] {
         font-size: 1.9em;
     }
 
-    .productor h1 {
-        font-size: 3em;
-        padding: 0 1em;
-        margin-bottom: .45em;
-    }
-    .productor h2, .productor h3 {
-        font-size: 1.55em;
-    }
-    .productor h2  {
-        line-height: 1em;
-    }
-    .productor h3 {
-        margin: 1em 0 1.2em 0;
-    }
-
-    .productor .productor-links {
-        text-align: center;
-    }
-    .productor .productor-links a {
-        font-size: 1.3em;
-    }
-    .productor .productor-links a i {
-        font-size: 2em;
-    }
-    .productor .productor-links a:nth-child(1) {
-        padding: .6em .5em .3em .5em;
-    }
-    .productor .productor-links a:nth-child(2) {
-        padding: .16em .5em .04em .5em;
+    .productor {
+        h1 {
+            font-size: 3.15em;
+            padding: 1.1em 1em 0 1em;
+            margin-bottom: .45em;
+            line-height: 55px;
+            letter-spacing: 1.5px;
+        }
+    
+        h2,  h3 {
+            font-size: 1.65em;
+        }
+        h2  {
+            line-height: 1em;
+        }
+        h3 {
+            margin: 1em 0 1.2em 0;
+        }
+        /*
+        .productor-links {
+            text-align: center;
+        }
+        .productor-links a {
+            font-size: 1.4em;
+        }
+        .productor-links a i {
+            font-size: 2em;
+        }
+        .productor-links a:nth-child(1) {
+            padding: 1em .5em .3em .5em;
+        }
+        .productor-links a:nth-child(2) {
+            padding: .16em .5em .04em .5em;
+        }
+        */
     }
     .about h2 {
         font-size: 3.1rem;
