@@ -1079,6 +1079,53 @@ input[type=text], input[type=email] {
         width: 40%;
     }
 
+    .about {
+        .about-container {
+            padding: 0 .9em;
+            .col-md-2 {
+                text-align: center;
+                img {
+                    margin: .3em;
+                    max-width: 8em;
+                }
+            }
+        }
+        h2 {
+            text-align: center;
+            margin-top: .5em;
+            margin-bottom: .5em;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 1.12rem;
+            text-align: center;
+        }
+        .divider-about1 {
+            display: none;
+        }
+        .divider-about2 {
+            display: none;
+        }
+        .row:nth-child(3) .col-md-10 {
+            padding-left: 0;
+            padding-top: .3em;
+            font-size: 1.4rem;
+            line-height: 22px;
+            text-align: center;
+        }
+        .row:nth-child(5) .col-md-10 {
+            padding-right: 0;
+            padding-top: .5em;
+            font-size: 1.4rem;
+            line-height: 22px;
+            text-align: center;
+            p {
+                text-align: center;
+            }
+        }
+    }
+    /*
     .about h2 {
         font-size: 2.4rem;
     }
@@ -1104,6 +1151,7 @@ input[type=text], input[type=email] {
     .about .row:nth-child(5) > div p {
         margin-top: 0;
     }
+    */
 }
 
 /* 2 */
@@ -1410,6 +1458,54 @@ input[type=text], input[type=email] {
         width: 20%;
     }
 
+    .about {
+        .about-container {
+            padding: 0 1em;
+            .col-md-2 {
+                text-align: center;
+                img {
+                    margin: 1em;
+                    max-width: 7em;
+                }
+            }
+        }
+        h2 {
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: .2em;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 1.12rem;
+            text-align: center;
+        }
+        .divider-about1 {
+            display: none;
+        }
+        .divider-about2 {
+            display: none;
+        }
+        .row:nth-child(3) .col-md-10 {
+            padding-left: 0;
+            padding-top: .1em;
+            font-size: 1.2rem;
+            line-height: 22px;
+            text-align: center;
+        }
+        .row:nth-child(5) .col-md-10 {
+            padding-right: 0;
+            padding-top: .3em;
+            font-size: 1.2rem;
+            line-height: 22px;
+            text-align: center;
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    /*
     .about h2 {
         font-size: 2.75rem;
     }
@@ -1435,6 +1531,7 @@ input[type=text], input[type=email] {
     .about .row:nth-child(5) > div p {
         margin-top: 0;
     }
+    */
 }
 
 /* 3 */
@@ -1802,6 +1899,58 @@ input[type=text], input[type=email] {
         font-size: 1.9em;
     }
 
+    .about {
+        .about-container {
+            padding: 0 7.1em;
+            .col-md-2 {
+                text-align: left;
+                img {
+                    margin: 0;
+                    max-width: 100%;
+                }
+            }
+        }
+        h2 {
+            text-align: center;
+            margin-top: 1.1em;
+            margin-bottom: .5em;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 1.12rem;
+        }
+        .divider-about1 {
+            display: block;
+            width: 8.3em;
+            margin-top: .4em;
+        }
+        .divider-about2 {
+            display: block;
+            width: 8.3em;
+            margin-top: .4em;
+            margin-left: 14em;
+        }
+        .row:nth-child(3) .col-md-10 {
+            padding-left: .2em;
+            padding-top: .1em;
+            font-size: 1.2rem;
+            line-height: 22px;
+            text-align: left;
+        }
+        .row:nth-child(5) .col-md-10 {
+            padding-right: .1em;
+            padding-top: .3em;
+            font-size: 1.2rem;
+            line-height: 22px;
+            text-align: right;
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    /*
     .about h2 {
         font-size: 3.1rem;
     }
@@ -1818,7 +1967,7 @@ input[type=text], input[type=email] {
         max-width: 175px;
         padding-left: 1em;
     }
-
+    */
 }
 /* 4 */
 @include media-breakpoint-up(lg) {
@@ -2199,6 +2348,54 @@ input[type=text], input[type=email] {
         font-size: 2.03em;
     }
 
+    .about {
+        .about-container {
+            padding: 0 7.1em;
+            img {
+                margin: 0;
+                max-width: 100%;
+            }
+        }
+        h2 {
+            text-align: left;
+            margin-top: 1.1em;
+            margin-bottom: .5em;
+            font-size: 2.4rem;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 1.15rem;
+            text-align: left;
+        }
+        .divider-about1 {
+            width: 8.3em;
+            margin-top: .4em;
+        }
+        .divider-about2 {
+            width: 8.3em;
+            margin-top: .4em;
+            margin-left: 16.2em;
+        }
+        .row:nth-child(3) .col-md-10 {
+            padding-left: .2em;
+            padding-top: 1.1em;
+            font-size: 1.6rem;
+            line-height: 27px;
+            text-align: left;
+        }
+        .row:nth-child(5) .col-md-10 {
+            padding-right: .1em;
+            padding-top: 1.4em;
+            font-size: 1.6rem;
+            line-height: 27px;
+            text-align: right;
+        }
+        .row:nth-child(6) .col-12 p {
+            text-align: right;
+        }
+    }
+
+    /*
     .about h2 {
         font-size: 3.2rem;
     }
@@ -2222,6 +2419,7 @@ input[type=text], input[type=email] {
     .about .row:nth-child(5) > div p {
         margin-top: .5em;
     }
+    */
 }
 
 @include media-breakpoint-up(xl) {
@@ -2632,6 +2830,10 @@ input[type=text], input[type=email] {
     .about {
         .about-container {
             padding: 0 7.1em;
+            img {
+                margin: 0;
+                max-width: 100%;
+            }
         }
         h2 {
             margin-top: 1.1em;
@@ -2656,12 +2858,16 @@ input[type=text], input[type=email] {
             padding-top: 2.15em;
             font-size: 1.6rem;
             line-height: 27px;
+            text-align: left;
         }
         .row:nth-child(5) .col-md-10 {
             padding-right: .1em;
             padding-top: 2.4em;
             font-size: 1.6rem;
             line-height: 27px;
+            text-align: right;
+        }
+        .row:nth-child(6) .col-12 p {
             text-align: right;
         }
     }
