@@ -1320,6 +1320,28 @@ input[type=text], input[type=email] {
            max-width: 100%;
         }
     }
+
+    .mision-vision {
+        .mision-vision-container {
+            padding: 0;
+        }
+        h2 {
+            padding-top: .1em;
+            font-size: 2.2rem;
+        }
+        .divider-mv {
+            width: 12em;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 28px;
+            padding: 0;
+        }
+        ul li {
+            font-size: 1.1rem;
+            padding-right: 0;
+        }
+    }
     /*
     .quote2 > img {
         margin-left: 29%;
@@ -1618,6 +1640,29 @@ input[type=text], input[type=email] {
          }
         button[type=submit] {
            max-width: 100%;
+        }
+    }
+
+    .mision-vision {
+        .mision-vision-container {
+            padding: 0 .5em;
+        }
+        h2 {
+            padding-top: .5em;
+            font-size: 2.3rem;
+        }
+        .divider-mv {
+            width: 12em;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 28px;
+            padding: 0 1em 0 0;
+        }
+        ul li {
+            font-size: 1.1rem;
+            padding-right: 1em;
+            
         }
     }
     /*
@@ -2083,6 +2128,29 @@ input[type=text], input[type=email] {
     
     .divider-full {
         display: block;
+    }
+
+    .mision-vision {
+        .mision-vision-container {
+            padding: 0 3em;
+        }
+        h2 {
+            padding-top: .6em;
+            font-size: 2.4rem;
+        }
+        .divider-mv {
+            width: 13em;
+        }
+        p {
+            font-size: 1.15rem;
+            line-height: 28px;
+            padding: 0 1.5em 0 0;
+        }
+        ul li {
+            font-size: 1.15rem;
+            padding-right: 2em;
+            
+        }
     }
     /*
     .banner .description {
@@ -2657,13 +2725,7 @@ input[type=text], input[type=email] {
     .cards .card a.btn i {
         font-size: 1rem;
     }
-    /*
-    .quote2 > img {
-        margin-top: 2.2em;
-        margin-left: 31.5%;
-        width: 410px;
-    }
-    */
+    
     .consult .description {
         top: 2.1em;
         left: 37.5%;
@@ -2684,7 +2746,6 @@ input[type=text], input[type=email] {
     .location h2 {
         font-size: 2.3rem;
     }
-    
     
     .location input[type=text], 
     .location input[type=email] {
@@ -2884,6 +2945,7 @@ input[type=text], input[type=email] {
             padding: 0 3.4em;
         }
         h2 {
+            padding-top: .6em;
             font-size: 2.5rem;
         }
         .divider-mv {
