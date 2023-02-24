@@ -311,17 +311,15 @@ input[type=text], input[type=email] {
     text-align: center;
 }
 .contacto h1 {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
+
 }
 .location h2 {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     font-weight: 800;
     color: $primary;
 }
 
 .location .btn {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
-    font-family: 700;
+    font-family: 800;
     background-color: $primary;
     /*border: 2px solid #5a6d8e;*/
     border-radius: 50px;
@@ -332,7 +330,12 @@ input[type=text], input[type=email] {
 
 .location input[type=text], 
 .location input[type=email],
-.location textarea,
+.location textarea {
+    background-color: $white;
+    border-color: $primary;
+    border-radius: 5px;
+}
+
 .contacto input[type=text],
 .contacto input[type=email] {
     border-color: $primary;
@@ -347,8 +350,12 @@ input[type=text], input[type=email] {
     color: #bbb;
 }
 .location-data h3 {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
-    font-weight: 700;
+    font-weight: 600;
+}
+.divider-location {
+    height: 6px;
+    background: rgb(34,45,61);
+    background: linear-gradient(90deg, rgba(34,45,61,1) 0%, rgba(179,178,179,1) 50%, rgba(34,45,61,1) 100%);
 }
 .location-data p {
     font-weight: 400;
@@ -2749,40 +2756,46 @@ input[type=text], input[type=email] {
         width: 0.9rem;
         margin-left: 8.7px;
     }
-    .location h2 {
-        font-size: 2.3rem;
-    }
-    
-    .location input[type=text], 
-    .location input[type=email] {
-        padding-top: 2em;
-        padding-bottom: 1.6em;
-    }
-    .location textarea {
-        padding: 1.3em;
-        height: 13.1em;
-    }
-    .location .btn {
-        font-size: 1.6rem;
-        width: 180px;
-        padding-top: 0.5em;
-    }
-    .location .btn img {
-        width: 0.8rem;
-    }
-    .location-data {
-        width: 83%;
-        margin: auto;
-        padding: 1.5em 0 2.5em 0;
-    }
-    .location-data h3 {
-        font-size: 2rem;
-        padding-bottom: .3em;
-    }
-    .location-data p {
-        letter-spacing: 1.5px;
-        line-height: 10px;
-        font-size: 1.3rem;
+    .location {
+        h2 {
+            font-size: 2.5rem;
+            padding-top: 1.9em;
+            padding-bottom: .6em;
+        }
+        input[type=text], 
+        input[type=email] {
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+        }
+        textarea {
+            padding: 1em;
+            height: 11.4em;
+        }
+        .btn {
+            font-size: 1.1rem;
+            width: 7.5em;
+            padding: .7em 0 .6em 0;
+        }
+        .btn img {
+            width: 0.5rem;
+        }
+        .location-data {
+            
+        }
+        .location-data h3 {
+            font-size: 2.3rem;
+            padding-bottom: 0;
+        }
+        .location-data .divider-location {
+            width: 51em;
+            margin: auto;
+            margin-bottom: 1.5em;
+        }
+        .location-data p {
+            letter-spacing: 1.3px;
+            line-height: 18px;
+            font-size: 1.39rem;
+        }
     }
 
     .footer-landing p {
