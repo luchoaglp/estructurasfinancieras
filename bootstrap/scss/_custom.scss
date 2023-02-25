@@ -461,11 +461,11 @@ input[type=text], input[type=email] {
 }
 
 #efModal .modal-content {
-    background-color: #e0e0e0;
+    background-color: #f1f5fe;
 }
 
 #efModal .modal-title {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    font-weight: 700;
 }
 
 // MODAL
@@ -495,7 +495,7 @@ input[type=text], input[type=email] {
   content:'';
   -webkit-appearance: none;
   background-color: transparent;
-  border: 2px solid #5a6d8e;
+  border: 2px solid $primary;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 10px;
   display: inline-block;
@@ -512,7 +512,7 @@ input[type=text], input[type=email] {
   left: 9px;
   width: 6px;
   height: 14px;
-  border: solid #5a6d8e;
+  border: solid $primary;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -523,12 +523,12 @@ input[type=text], input[type=email] {
 }
 
 #efModal .location button.btn {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 12px;
     opacity: 1;
-    background-color: $font-color;
+    background-color: $primary;
 }
 
 .btn-card {
