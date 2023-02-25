@@ -920,6 +920,51 @@ input[type=text], input[type=email] {
         width: 0.5rem;
         margin-left: 5px;
     }
+
+    .location {
+        h2 {
+            margin: auto;
+            font-size: 2.3rem;
+            padding-top: .8em;
+            padding-bottom: .8em;
+        }
+        input[type=text], 
+        input[type=email] {
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+        }
+        textarea {
+            padding: 1em;
+            height: 11.4em;
+        }
+        .btn {
+            font-size: 1.1rem;
+            width: 7.5em;
+            padding: .7em 0 .6em 0;
+        }
+        .btn img {
+            width: 0.5rem;
+        }
+        .location-data {
+            
+        }
+        .location-data h3 {
+            font-size: 1.4rem;
+            padding-bottom: 0;
+        }
+        .location-data .divider-location {
+            width: 21em;
+            margin: auto;
+            margin-bottom: 1.4em;
+        }
+        .location-data p {
+            letter-spacing: .7px;
+            line-height: 10px;
+            font-size: 1rem;
+        }
+    }
+
+    /*
     .location h2 {
         font-size: 1.75rem;
         padding: 0 1rem;
@@ -950,6 +995,7 @@ input[type=text], input[type=email] {
         line-height: 12px;
         font-size: .7rem;
     }
+    */
     /*
     .footer p {
         font-size: 0.7em;
@@ -1361,6 +1407,50 @@ input[type=text], input[type=email] {
         width: 190px;
     }
     */
+
+    .location {
+        h2 {
+            margin: auto;
+            font-size: 2.5rem;
+            padding-top: 1.9em;
+            padding-bottom: .6em;
+        }
+        input[type=text], 
+        input[type=email] {
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+        }
+        textarea {
+            padding: 1em;
+            height: 11.4em;
+        }
+        .btn {
+            font-size: 1.1rem;
+            width: 7.5em;
+            padding: .7em 0 .6em 0;
+        }
+        .btn img {
+            width: 0.5rem;
+        }
+        .location-data {
+            
+        }
+        .location-data h3 {
+            font-size: 1.75rem;
+            padding-bottom: 0;
+        }
+        .location-data .divider-location {
+            width: 39em;
+            margin: auto;
+            margin-bottom: 1.5em;
+        }
+        .location-data p {
+            letter-spacing: 1px;
+            line-height: 15px;
+            font-size: 1.2rem;
+        }
+    }
+
     .consult .description {
         top: 1.6em;
         left: 35%;
@@ -1814,6 +1904,7 @@ input[type=text], input[type=email] {
 
     .location {
         h2 {
+            margin: 0;
             font-size: 2.5rem;
             padding-top: 1.9em;
             padding-bottom: .6em;
@@ -1839,16 +1930,16 @@ input[type=text], input[type=email] {
             
         }
         .location-data h3 {
-            font-size: 2.3rem;
+            font-size: 2rem;
             padding-bottom: 0;
         }
         .location-data .divider-location {
-            width: 51em;
+            width: 44em;
             margin: auto;
             margin-bottom: 1.5em;
         }
         .location-data p {
-            letter-spacing: 1.3px;
+            letter-spacing: 1.2px;
             line-height: 18px;
             font-size: 1.39rem;
         }
