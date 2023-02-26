@@ -260,6 +260,7 @@ input[type=text], input[type=email] {
             padding: 0 1em;
             max-height: 2.5em;
             background-color: $primary;
+            border-radius: 50px;
         }
         .btn:hover {
             color: white;
@@ -275,14 +276,16 @@ input[type=text], input[type=email] {
     background-size: cover;
 }
 .download .row > div h3 span, .download .row > div h4 { 
-    text-align: left;
+    text-align: center;
+    color: $primary;
 }
 .download .row > div h3 span, .download .row > div h4 span { 
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    font-weight: 800;
 }
 .download .download-links .btn {
-    font-weight: 700;
-    border: 2px solid #5a6d8e;
+    font-weight: 600;
+    border-radius: 50px;
+    /*border: 2px solid #5a6d8e;*/
 }
 
 .contacto {
@@ -584,7 +587,7 @@ input[type=text], input[type=email] {
 }
 
 .contacto button {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     border: none;
     background-color: transparent;
 }
@@ -1025,6 +1028,7 @@ input[type=text], input[type=email] {
         font-size: 1.2rem;
     }
 
+    /*
     .download .container:nth-child(2) {
         padding: 5em 1em;
     }
@@ -1057,6 +1061,7 @@ input[type=text], input[type=email] {
     .download .download-links .btn:nth-child(3), .download .download-links .btn:nth-child(5) {
         padding-top: .5em;
       }
+    */
 
     .banner-landing {
         background: url(../img/bull-small.png) no-repeat center center; 
@@ -1474,6 +1479,7 @@ input[type=text], input[type=email] {
         width: 15%;
     }
     */
+    /*
     .download .row > div.col-md-2 {
         text-align: center;
         padding: 0 1em;
@@ -1505,7 +1511,7 @@ input[type=text], input[type=email] {
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
-  
+    */
     .invertir {
         margin-bottom: 0;
     }
@@ -1898,10 +1904,11 @@ input[type=text], input[type=email] {
         margin-left: 5px;
     }
    
+    /*
     .download .row > div h4 {
         font-size: 1.5rem;
     }
-
+    */
     .location {
         h2 {
             margin: 0;
@@ -2019,6 +2026,7 @@ input[type=text], input[type=email] {
         width: 16%;
     }
 
+    /*
     .download .container:nth-child(2) {
         padding: 1em;
     }
@@ -2044,7 +2052,7 @@ input[type=text], input[type=email] {
         padding: .6em 0 .4em 0;
         margin-bottom: 1em;
     }
-    
+    */
     .banner-landing {
         background: url(../img/bull.png) no-repeat center center; 
         -webkit-background-size: cover;
@@ -2427,11 +2435,11 @@ input[type=text], input[type=email] {
         width: 0.7rem;
         margin-left: 5px;
     }
-    
+    /*
     .download .row > div h3 {
         font-size: 1.7rem;
     }
-
+    */
     .location {
         h2 {
             font-size: 2.5rem;
@@ -2528,6 +2536,7 @@ input[type=text], input[type=email] {
         width: 19%;
     }
 
+    /*
     .download .container:nth-child(2) {
         padding: 6em 1em;
     }
@@ -2570,7 +2579,7 @@ input[type=text], input[type=email] {
     .download .download-links .btn:nth-child(3), .download .download-links .btn:nth-child(5) {
         padding-top: .5em;
     }
-
+    */
     .invertir {
         margin-bottom: 0;
     }
@@ -2963,9 +2972,46 @@ input[type=text], input[type=email] {
     ul#bt li div:nth-child(2) span:nth-child(2) {
         margin-left: 10px;
     }
-    .download .container:nth-child(2) {
-        padding: 7em 1em;
+    .download {
+        padding-bottom: 3.5em;
+        .container:nth-child(2) {
+            padding: 7em 1em;
+        }
+        .row > div.col-md-2 {
+            padding-right: 2.8em;
+            a {
+                padding: .1em;
+            }
+            img:hover {
+                opacity: .7;
+            }
+            h4 {
+                padding-top: .2em;
+                font-size: 1.13rem;
+                /*
+                padding-left: .1em;
+                padding-right: .5em;
+                */
+                margin-bottom: 0;
+            }
+        }
+        .download-links {
+            margin: 0 3.5em;
+            padding: 0 3.75em;
+            .btn {
+                font-size: 1.1rem;
+                padding: .85em 1.5em .8em 1.5em;
+                height: 3em;
+                margin-bottom: 1.3em;
+                line-height: 20px;
+            }
+            .btn:nth-child(3), .btn:nth-child(5) {
+                padding-top: .3em;
+            }
+        }
     }
+    /*
+  
     .download .row > div.col-md-2 {
         padding-right: 4em;
     }
@@ -2998,6 +3044,7 @@ input[type=text], input[type=email] {
     .download .download-links .btn:nth-child(5) {
         padding-top: 1.2em;
     }
+    */
    
     .banner-landing h2 {
         font-size: 3.4rem;
