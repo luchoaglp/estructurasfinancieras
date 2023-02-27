@@ -1028,6 +1028,59 @@ input[type=text], input[type=email] {
         font-size: 1.2rem;
     }
 
+    .download {
+        .download-web {
+            display: none;
+        }
+        padding-bottom: 1em;
+        .container:nth-child(2) {
+            padding: 5em 1em;
+        }
+        .row > div.col-md-2 {
+            padding-right: 2em;
+            a {
+                padding: .1em;
+            }
+            img:hover {
+                opacity: .7;
+            }
+            h4 {
+                padding-top: .2em;
+                font-size: 1.13rem;
+                /*
+                padding-left: .1em;
+                padding-right: .5em;
+                */
+                margin-bottom: 0;
+            }
+        }
+        .download-links {
+            margin: 0 .5em;
+            padding: 0 0 2.5em 0;
+            .btn {
+                font-size: 1rem;
+                padding: 1.1em 1em .8em 1em;
+                height: 3.6em;
+                margin-bottom: 1.3em;
+                line-height: 23px;
+            }
+            .btn:nth-child(3), .btn:nth-child(5) {
+                padding-top: .3em;
+            }
+        }
+        .download-mobile {
+            padding: 0 3em;
+            text-align: center;
+            a {
+                padding-bottom: .1em;
+            }
+            h4 {
+                padding: .5em 2em 2em 2em;
+            }
+        }
+    }
+
+
     /*
     .download .container:nth-child(2) {
         padding: 5em 1em;
@@ -1479,6 +1532,59 @@ input[type=text], input[type=email] {
         width: 15%;
     }
     */
+
+    .download {
+        .download-web {
+            display: none;
+        }
+        padding-bottom: 3.5em;
+        .container:nth-child(2) {
+            padding: 7em 1em;
+        }
+        .row > div.col-md-2 {
+            padding-right: 2em;
+            a {
+                padding: .1em;
+            }
+            img:hover {
+                opacity: .7;
+            }
+            h4 {
+                padding-top: .2em;
+                font-size: 1.13rem;
+                /*
+                padding-left: .1em;
+                padding-right: .5em;
+                */
+                margin-bottom: 0;
+            }
+        }
+        .download-links {
+            margin: 0 .5em;
+            padding: 0 0 4.5em 0;
+            .btn {
+                font-size: 1.11rem;
+                padding: 1.1em .2em .8em .2em;
+                height: 3.6em;
+                margin-bottom: 1.3em;
+                line-height: 23px;
+            }
+            .btn:nth-child(3), .btn:nth-child(5) {
+                padding-top: 1.1em;
+            }
+        }
+        .download-mobile {
+            padding: 0 3em;
+            text-align: center;
+            a {
+                padding-bottom: .1em;
+            }
+            h4 {
+                padding: 0 4em;
+            }
+        }
+    }
+
     /*
     .download .row > div.col-md-2 {
         text-align: center;
@@ -2026,6 +2132,58 @@ input[type=text], input[type=email] {
         width: 16%;
     }
 
+    .download {
+        .download-web {
+            display: none;
+        }
+        padding-bottom: 3.5em;
+        .container:nth-child(2) {
+            padding: 7em 1em;
+        }
+        .row > div.col-md-2 {
+            padding-right: 2em;
+            a {
+                padding: .1em;
+            }
+            img:hover {
+                opacity: .7;
+            }
+            h4 {
+                padding-top: .2em;
+                font-size: 1.13rem;
+                /*
+                padding-left: .1em;
+                padding-right: .5em;
+                */
+                margin-bottom: 0;
+            }
+        }
+        .download-links {
+            margin: 0 .5em;
+            padding: 0 0 7em 0;
+            .btn {
+                font-size: 1.11rem;
+                padding: 1.1em 1em .8em 1em;
+                height: 3.6em;
+                margin-bottom: 1.3em;
+                line-height: 23px;
+            }
+            .btn:nth-child(3), .btn:nth-child(5) {
+                padding-top: .4em;
+            }
+        }
+        .download-mobile {
+            padding: 0;
+            text-align: center;
+            a {
+                padding-bottom: .1em;
+            }
+            h4 {
+                padding: 0 3em;
+            }
+        }
+    }
+
     /*
     .download .container:nth-child(2) {
         padding: 1em;
@@ -2536,6 +2694,51 @@ input[type=text], input[type=email] {
         width: 19%;
     }
 
+    .download {
+        .download-web {
+            display: block;
+        }
+        padding-bottom: 3.5em;
+        .container:nth-child(2) {
+            padding: 7em 1em;
+        }
+        .row > div.col-md-2 {
+            padding-right: 2em;
+            a {
+                padding: .1em;
+            }
+            img:hover {
+                opacity: .7;
+            }
+            h4 {
+                padding-top: .2em;
+                font-size: 1.13rem;
+                /*
+                padding-left: .1em;
+                padding-right: .5em;
+                */
+                margin-bottom: 0;
+            }
+        }
+        .download-links {
+            margin: 0 3.5em;
+            padding: 0 1em;
+            .btn {
+                font-size: 1.1rem;
+                padding: .85em 1.5em .8em 1.5em;
+                height: 3em;
+                margin-bottom: 1.3em;
+                line-height: 20px;
+            }
+            .btn:nth-child(3), .btn:nth-child(5) {
+                padding-top: .3em;
+            }
+        }
+        .download-mobile {
+            display: none;
+        }
+    }
+
     /*
     .download .container:nth-child(2) {
         padding: 6em 1em;
@@ -3008,6 +3211,9 @@ input[type=text], input[type=email] {
             .btn:nth-child(3), .btn:nth-child(5) {
                 padding-top: .3em;
             }
+        }
+        .download-mobile {
+            display: none;
         }
     }
     /*
