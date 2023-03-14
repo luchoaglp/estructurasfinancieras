@@ -692,7 +692,10 @@ input[type=text], input[type=email] {
         width: 160px;
     }
     .banner {
-        padding-bottom: 9em;
+        padding-bottom: 1.5em;
+        img {
+            display: none;
+        }
         h1.description {
             text-align: center;
             font-size: 3.25rem;
@@ -703,7 +706,7 @@ input[type=text], input[type=email] {
         h2.description {
             text-align: center;
             font-size: 2rem;
-            margin-bottom: 1.5em;
+            margin-bottom: 1.75em;
             padding-left: 0em;
             letter-spacing: .02em;
         }
@@ -1300,7 +1303,7 @@ input[type=text], input[type=email] {
         display: none;
     }
     .banner {
-        padding-bottom: 10em;
+        padding-bottom: 3em;
         h1.description {
             text-align: center;
             font-size: 2.75rem;
@@ -1794,7 +1797,13 @@ input[type=text], input[type=email] {
         padding: .5em 0 0 0;
     }
     .banner {
-        padding-bottom: 10em;
+        padding-bottom: 5em;
+        img {
+            display: block;
+            left: 1em;
+            top: 5.75em;
+            width: 26em;
+        }
         h1.description {
             text-align: left;
             font-size: 2.5rem;
@@ -2375,7 +2384,7 @@ input[type=text], input[type=email] {
         width: 130px;
     }
     .banner {
-        padding-bottom: 10em;
+        padding-bottom: 7em;
         h1.description {
             font-size: 3.5rem;
             padding-top: 2.5em;
@@ -2926,11 +2935,6 @@ input[type=text], input[type=email] {
     }
     .banner {
         padding-bottom: 10em;
-        img {
-            left: 1em;
-            top: 5.75em;
-            width: 26em;
-        }
         h1.description {
             font-size: 3.75rem;
             padding-top: 2.5em;
