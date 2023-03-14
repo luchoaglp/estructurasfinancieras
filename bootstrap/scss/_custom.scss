@@ -49,6 +49,9 @@ input[type=text], input[type=email] {
 }
 .banner { 
     margin-bottom: 0px;
+    img {
+        position: absolute;
+    }
     h1.description {
         font-weight: 700;
         span {
@@ -160,6 +163,7 @@ input[type=text], input[type=email] {
             font-weight: 700;
         }
         p.card-text {
+            text-align: justify;
             color: $font-color;
             font-weight: 500;
         }
@@ -176,6 +180,10 @@ input[type=text], input[type=email] {
         a.btn-a {
             color: $white;
             background-color: $primary;
+        }
+        a.btn-a:hover {
+            background-color: $white;
+            color: $primary;
         }
     }
 }
@@ -381,7 +389,7 @@ input[type=text], input[type=email] {
         margin-bottom: .75em;
     }
     p {
-        text-align: left;
+        text-align: justify;
         font-weight: 400;
         strong {
             font-weight: 700;
@@ -539,8 +547,8 @@ input[type=text], input[type=email] {
     color: $primary;
 }
 .btn-card:hover {
-    opacity: .9;
-    background-color: #ddd;
+    background-color: $primary;
+    color: $white;
 }
 
 // End MODAL
@@ -652,8 +660,8 @@ input[type=text], input[type=email] {
         margin-bottom: 1.2em;
     }
     button[type=button]:hover {
-        opacity: .9;
-        background-color: #ddd;
+        background-color: $primary;
+        color: $white;
     }
     button[type=submit] {
         margin-bottom: 8em;
@@ -2621,9 +2629,6 @@ input[type=text], input[type=email] {
         .btn img {
             width: 0.5rem;
         }
-        .location-data {
-            
-        }
         .location-data h3 {
             font-size: 2.3rem;
             padding-bottom: 0;
@@ -2843,7 +2848,7 @@ input[type=text], input[type=email] {
         }
         p {
             font-size: 1.15rem;
-            text-align: left;
+            text-align: justify;
         }
         .divider-about1 {
             width: 8.3em;
@@ -2921,6 +2926,11 @@ input[type=text], input[type=email] {
     }
     .banner {
         padding-bottom: 10em;
+        img {
+            left: 1em;
+            top: 5.75em;
+            width: 26em;
+        }
         h1.description {
             font-size: 3.75rem;
             padding-top: 2.5em;
