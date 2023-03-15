@@ -121,7 +121,7 @@ input[type=text], input[type=email] {
     text-align: center;
 }
 .invest h2 span {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+
 }
 
 .invest div.invest-links a, .links div.navigation-links {
@@ -140,10 +140,10 @@ input[type=text], input[type=email] {
     background-color: #dfdfdf;
 }
 .start h3 {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
 }
 .start .btn {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
 }
 
 .cards {
@@ -237,7 +237,7 @@ input[type=text], input[type=email] {
 }
 */
 .consult .btn {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     position: absolute;
 }
 
@@ -547,7 +547,7 @@ input[type=text], input[type=email] {
 
 // Slider BT
 .bt-container {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     max-height: 68px;
     overflow: hidden;
     margin: 0;
@@ -564,7 +564,7 @@ input[type=text], input[type=email] {
   }
  
   ul#bt li div:nth-child(2) {
-    font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;
+    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
     font-weight: 800;
   }
  
@@ -583,7 +583,7 @@ input[type=text], input[type=email] {
 }
 
 .banner-landing h2 span {
-    font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;
+    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
 }
 
 .contacto button {
@@ -1090,42 +1090,6 @@ input[type=text], input[type=email] {
         }
     }
 
-
-    /*
-    .download .container:nth-child(2) {
-        padding: 5em 1em;
-    }
-    .download .row > div.col-md-2 {
-        text-align: center;
-        padding: 0 1em;
-    }
-    .download .row > div.col-md-2 a {
-        padding-bottom: 0;
-    }
-    .download .row > div.col-md-2 img {
-        width: 100%;
-    }
-    
-    .download .row > div h4 {
-        font-size: 1.1rem;
-        padding-top: 1em;
-        margin-bottom: 2em;
-        text-align: center;
-    }
-    .download .download-links {
-        margin: 0 .1em;
-    }
-    .download .download-links .btn {
-        font-size: 1rem;
-        padding: 1.3em .5em .4em .5em;
-        height: 4em;
-        margin-bottom: 1em;
-    }
-    .download .download-links .btn:nth-child(3), .download .download-links .btn:nth-child(5) {
-        padding-top: .5em;
-      }
-    */
-
     .banner-landing {
         background: url(../img/bull-small.png) no-repeat center center; 
         -webkit-background-size: cover;
@@ -1602,39 +1566,6 @@ input[type=text], input[type=email] {
         }
     }
 
-    /*
-    .download .row > div.col-md-2 {
-        text-align: center;
-        padding: 0 1em;
-    }
-    .download .row > div.col-md-2 a {
-        padding-bottom: 0;
-    }
-    .download .row > div.col-md-2 img {
-        width: 90%;
-        padding: 0;
-    }
-    .download .row > div h4 {
-        font-size: 1.5rem;
-        margin-top: 2em;
-        padding: 2em 0;
-    }
-    .download .row > div h4 {
-        font-size: 1.1rem;
-        padding-top: 0;
-        padding-left: .8em;
-        padding-right: .2em;
-        margin-bottom: 0;
-    }
-    .download .download-links {
-        margin: 0 4em;
-    }
-    .download .download-links .btn {
-        font-size: 1.1rem;
-        padding: .6em 0 .4em 0;
-        margin-bottom: 1em;
-    }
-    */
     .invertir {
         margin-bottom: 0;
     }
@@ -2033,11 +1964,6 @@ input[type=text], input[type=email] {
         margin-left: 5px;
     }
    
-    /*
-    .download .row > div h4 {
-        font-size: 1.5rem;
-    }
-    */
     .location {
         h2 {
             margin: 0;
@@ -2213,33 +2139,6 @@ input[type=text], input[type=email] {
         }
     }
 
-    /*
-    .download .container:nth-child(2) {
-        padding: 1em;
-    }
-    .download .row > div.col-md-2 a {
-        padding: 0;
-    }
-    .download .row > div.col-md-2 img {
-        width: 100%;
-    }
-    .download .row > div h4 {
-        font-size: .8rem;
-        padding-left: .1em;
-        padding-right: 1em;
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: left;
-    }
-    .download .download-links {
-        margin: 0 3em;
-    }
-    .download .download-links .btn {
-        font-size: .9rem;
-        padding: .6em 0 .4em 0;
-        margin-bottom: 1em;
-    }
-    */
     .banner-landing {
         background: url(../img/bull.png) no-repeat center center; 
         -webkit-background-size: cover;
@@ -2622,11 +2521,7 @@ input[type=text], input[type=email] {
         width: 0.7rem;
         margin-left: 5px;
     }
-    /*
-    .download .row > div h3 {
-        font-size: 1.7rem;
-    }
-    */
+    
     .location {
         h2 {
             font-size: 2.5rem;
@@ -2754,10 +2649,8 @@ input[type=text], input[type=email] {
             }
         }
         .download-links {
-            
             margin: 0 3.5em;
             padding: 0;
-            
             .btn {
                 margin-top: 1.75em;
                 font-size: 1.1rem;
@@ -2775,50 +2668,6 @@ input[type=text], input[type=email] {
         }
     }
 
-    /*
-    .download .container:nth-child(2) {
-        padding: 6em 1em;
-    }
-    .download .row > div.col-md-2 {
-        padding: 0 1em;
-    }
-    .download .row > div.col-md-2 a {
-        padding-bottom: 0;
-        margin-bottom: .4em;
-    }
-    .download .row > div.col-md-2 img {
-        padding: 0;
-    }
-    .download .row > div h4 {
-        margin-top: 0;
-        font-size: .75rem;
-    }
-   
-    .download .row > div.col-md-2 {
-        padding-right: 4em;
-    }
-    .download .row > div.col-md-2 a {
-        padding: 0;
-    }
-    .download .row > div.col-md-2 img {
-        margin-top: 0;
-        padding: 0;
-    }
-    .download .row > div.col-md-2 img:hover {
-        opacity: .7;
-    }
-    .download .download-links {
-        margin: 0 3.5em;
-    }
-    .download .download-links .btn {
-        font-size: 1rem;
-        padding: 1.2em 1.25em .8em 1.25em;
-        margin-bottom: 1em;
-    }
-    .download .download-links .btn:nth-child(3), .download .download-links .btn:nth-child(5) {
-        padding-top: .5em;
-    }
-    */
     .invertir {
         margin-bottom: 0;
     }
@@ -3258,41 +3107,6 @@ input[type=text], input[type=email] {
             display: none;
         }
     }
-    /*
-  
-    .download .row > div.col-md-2 {
-        padding-right: 4em;
-    }
-    .download .row > div.col-md-2 a {
-        padding: 0;
-    }
-    .download .row > div.col-md-2 img {
-        padding: 0;
-    }
-    .download .row > div.col-md-2 img:hover {
-        opacity: .7;
-    }
-
-    .download .row > div h4 {
-        font-size: 1rem;
-        padding-left: .1em;
-        padding-right: .5em;
-        margin-bottom: 0;
-    }
-    .download .download-links {
-        margin: 0 3.5em;
-    }
-    .download .download-links .btn {
-        font-size: 1rem;
-        padding: 1.2em 2.5em .8em 2.5em;
-        height: 4em;
-        margin-bottom: 1.3em;
-    }
-
-    .download .download-links .btn:nth-child(5) {
-        padding-top: 1.2em;
-    }
-    */
    
     .banner-landing h2 {
         font-size: 3.4rem;
