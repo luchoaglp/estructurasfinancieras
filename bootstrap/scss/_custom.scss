@@ -177,14 +177,6 @@ input[type=text], input[type=email] {
             border-radius: 50px;
             width: 50%;
         }
-        a.btn-a {
-            color: $white;
-            background-color: $primary;
-        }
-        a.btn-a:hover {
-            background-color: $white;
-            color: $primary;
-        }
     }
 }
 
@@ -1043,14 +1035,21 @@ input[type=text], input[type=email] {
         .download-web {
             display: none;
         }
-        padding-bottom: 1em;
+        .col-md-4 { 
+            padding: 0 0 3em 0;
+            text-align: center;
+            img {
+                width: 15em;
+            }
+        }
+        padding-bottom: .1em;
         .container:nth-child(2) {
-            padding: 5em 1em;
+            padding: 4em 1em;
         }
         .row > div.col-md-2 {
             padding-right: 2em;
             a {
-                padding: .1em;
+                padding: 0;
             }
             img:hover {
                 opacity: .7;
@@ -1548,9 +1547,16 @@ input[type=text], input[type=email] {
         .download-web {
             display: none;
         }
-        padding-bottom: 3.5em;
+        .col-md-4 { 
+            padding: 0 0 3em 0;
+            text-align: center;
+            img {
+                width: 16em;
+            }
+        }
+        padding-bottom: .5em;
         .container:nth-child(2) {
-            padding: 7em 1em;
+            padding: 4em 1em;
         }
         .row > div.col-md-2 {
             padding-right: 2em;
@@ -2153,7 +2159,13 @@ input[type=text], input[type=email] {
         .download-web {
             display: none;
         }
-        padding-bottom: 3.5em;
+        .col-md-4 { 
+            padding: 0;
+            img {
+                width: 30em;
+            }
+        }
+        padding-bottom: .5em;
         .container:nth-child(2) {
             padding: 7em 1em;
         }
@@ -2177,7 +2189,7 @@ input[type=text], input[type=email] {
         }
         .download-links {
             margin: 0 .5em;
-            padding: 0 0 7em 0;
+            padding: 0 0 5em 0;
             .btn {
                 font-size: 1.11rem;
                 padding: 1.1em 0 .8em 0;
@@ -2709,10 +2721,17 @@ input[type=text], input[type=email] {
     }
 
     .download {
+        .col-md-4 { 
+            padding: .2em;
+            img {
+                width: 30em;
+            }
+        }
         .download-web {
+            padding-top: 2em;
             display: block;
         }
-        padding-bottom: 3.5em;
+        padding-bottom: 1em;
         .container:nth-child(2) {
             padding: 7em 1em;
         }
@@ -2735,9 +2754,12 @@ input[type=text], input[type=email] {
             }
         }
         .download-links {
+            
             margin: 0 3.5em;
-            padding: 0 1em;
+            padding: 0;
+            
             .btn {
+                margin-top: 1.75em;
                 font-size: 1.1rem;
                 padding: .85em 0 .8em 0;
                 height: 3em;
@@ -3190,9 +3212,15 @@ input[type=text], input[type=email] {
         margin-left: 10px;
     }
     .download {
-        padding-bottom: 3.5em;
+        padding-bottom: .5em;
+        .col-md-4 { 
+            padding: .1em;
+            img {
+                width: 30em;
+            }
+        }
         .container:nth-child(2) {
-            padding: 7em 1em;
+            padding: 5em 1em;
         }
         .row > div.col-md-2 {
             padding-right: 2.8em;
