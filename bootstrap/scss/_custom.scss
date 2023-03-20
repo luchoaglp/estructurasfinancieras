@@ -2767,36 +2767,8 @@ input[type=text], input[type=email] {
             line-height: 27px;
             text-align: right;
         }
-        .row:nth-child(6) .col-12 p {
-            text-align: right;
-        }
     }
 
-    /*
-    .about h2 {
-        font-size: 3.2rem;
-    }
-    .about p {
-        font-size: 1rem;
-    }
-    .about .row:nth-child(3) > div > div img {
-        min-width: 165px;
-        max-width: 165px;
-        padding-right: 1em;
-    }
-    .about .row:nth-child(3) > div p {
-        margin-top: .8em;
-        margin-bottom: 0;
-    }
-    .about .row:nth-child(5) > div > div img {
-        min-width: 160px;
-        max-width: 160px;
-        padding-left: 1em;
-    }
-    .about .row:nth-child(5) > div p {
-        margin-top: .5em;
-    }
-    */
 }
 
 @include media-breakpoint-up(xl) {
@@ -3217,7 +3189,7 @@ input[type=text], input[type=email] {
             text-align: right;
         }
         .row:nth-child(6) .col-12 p {
-            text-align: right;
+            text-align: justify;
         }
     }
     
