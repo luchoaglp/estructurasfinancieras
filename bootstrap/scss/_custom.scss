@@ -58,7 +58,6 @@ input[type=text], input[type=email] {
         height: 7px;
         background: rgb(34,45,61);
         background: linear-gradient(90deg, rgba(34,45,61,1) 0%, rgb(216, 215, 215) 60%, rgba(34,45,61,1) 100%);
-        
     }
     h1.description {
         font-weight: 700;
@@ -125,12 +124,6 @@ input[type=text], input[type=email] {
 }
 .start {
     background-color: #dfdfdf;
-}
-.start h3 {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
-}
-.start .btn {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
 }
 
 .cards {
@@ -224,7 +217,6 @@ input[type=text], input[type=email] {
 }
 */
 .consult .btn {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     position: absolute;
 }
 
@@ -235,6 +227,13 @@ input[type=text], input[type=email] {
     -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0;
+    .divider-download {
+        position: absolute;
+        z-index: -999;
+        height: 7px;
+        background: rgb(34,45,61);
+        background: linear-gradient(90deg, rgba(34,45,61,1) 0%, rgb(216, 215, 215) 60%, rgba(34,45,61,1) 100%);
+    }
     .col-md-2 a img {
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     }
@@ -254,6 +253,7 @@ input[type=text], input[type=email] {
             opacity: .8;
         }
     }
+    
 }
 .invertir {
     background: url(../img/invertir-landing.png) no-repeat center center; 
@@ -299,9 +299,6 @@ input[type=text], input[type=email] {
 .contacto {
     background-color: #e0e0e0;
     text-align: center;
-}
-.contacto h1 {
-
 }
 .location h2 {
     font-weight: 800;
@@ -513,7 +510,6 @@ input[type=text], input[type=email] {
 }
 
 #efModal .location button.btn {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     color: #fff;
     font-size: 1.2rem;
     margin-bottom: 12px;
@@ -534,7 +530,6 @@ input[type=text], input[type=email] {
 
 // Slider BT
 .bt-container {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     max-height: 68px;
     overflow: hidden;
     margin: 0;
@@ -551,7 +546,6 @@ input[type=text], input[type=email] {
   }
  
   ul#bt li div:nth-child(2) {
-    /*font-family: 'BambinoHS-Light', Helvetica, Arial, sans-serif;*/
     font-weight: 800;
   }
  
@@ -569,12 +563,7 @@ input[type=text], input[type=email] {
     margin-bottom: 0;
 }
 
-.banner-landing h2 span {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
-}
-
 .contacto button {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
     border: none;
     background-color: transparent;
 }
@@ -589,9 +578,7 @@ input[type=text], input[type=email] {
 .invertir h2 {
     color: white;
 }
-.invertir h2 span {
-    /*font-family: 'BambinoHS-Heavy', Helvetica, Arial, sans-serif;*/
-}
+
 .productor {
     background: url(../img/productor.png) no-repeat center center; 
     -webkit-background-size: cover;
@@ -672,6 +659,9 @@ input[type=text], input[type=email] {
     }
     .banner {
         padding-bottom: 1.5em;
+        .divider-banner {
+            display: none;
+        }
         img {
             display: none;
         }
@@ -722,29 +712,9 @@ input[type=text], input[type=email] {
             padding: .7em 0;
         }
     }
-    /*
-    .banner {
-        text-align: center;
-        padding-bottom: 5px;
-    }
-    */
     .divider-full {
         display: none;
     }
-    /*
-    .banner .description {
-        padding-top: 3em;
-        line-height: 45px;
-        font-size: 1.7rem;
-        letter-spacing: 2px;
-    }
-    .banner .description div {
-        padding-bottom: .2em;
-        line-height: 50px;
-        font-size: 2.5rem;
-        letter-spacing: .5px;
-    }
-    */
     /*
     .banner .row:nth-child(2) {
         font-size: 1.1rem;
@@ -860,7 +830,6 @@ input[type=text], input[type=email] {
         width: 1rem;
         margin-left: 5px;
     }
-
     .productor {
         h1 {
             font-size: 2.75em;
@@ -892,12 +861,6 @@ input[type=text], input[type=email] {
         }
     }
    
-    /*
-    .quote2 > img {
-        width: 190px;
-        margin-left: 0.9em;
-    }
-    */
     .consult .description {
         top: 1.6em;
         left: 2.3em;
@@ -938,9 +901,6 @@ input[type=text], input[type=email] {
         .btn img {
             width: 0.5rem;
         }
-        .location-data {
-            
-        }
         .location-data h3 {
             font-size: 1.4rem;
             padding-bottom: 0;
@@ -962,11 +922,9 @@ input[type=text], input[type=email] {
         font-size: 1.75rem;
         padding: 0 1rem;
     }
-    
     .location > img {
         margin-top: 1.7em;
     }
-   
     .location .btn {
         width: 100%;
     }
@@ -1022,11 +980,16 @@ input[type=text], input[type=email] {
         .download-web {
             display: none;
         }
+        .divider-download {
+            top: -2.75em;
+            left: 14em;
+            width: 9em;
+        }
         .col-md-4 { 
-            padding: 0 0 3em 0;
+            /*padding: 0 0 3em 0;*/
             text-align: center;
             img:nth-child(1) {
-                width: 15em;
+                
             }
             img:nth-child(2) {
                 padding-top: 3em;
@@ -1038,22 +1001,14 @@ input[type=text], input[type=email] {
             padding: 4em 1em;
         }
         .row > div.col-md-2 {
-            padding-right: 2em;
+            /*padding-right: 2em;*/
             a {
                 padding: 0;
             }
             img:hover {
                 opacity: .7;
             }
-            h4 {
-                padding-top: .2em;
-                font-size: 1.13rem;
-                /*
-                padding-left: .1em;
-                padding-right: .5em;
-                */
-                margin-bottom: 0;
-            }
+            
         }
         .download-links {
             margin: 0 .5em;
@@ -1070,13 +1025,23 @@ input[type=text], input[type=email] {
             }
         }
         .download-mobile {
-            padding: 0 3em;
+            padding: .5em;
             text-align: center;
+            .col-8 {
+                img {
+                    width: 15em;
+                }
+            }
+            .col-4 {
+                padding-left: 0;
+                padding-top: 9em;
+            }
             a {
                 padding-bottom: .1em;
             }
             h4 {
-                padding: .5em 2em 2em 2em;
+                font-size: .75rem;
+                padding: 0;
             }
         }
     }
@@ -1258,6 +1223,9 @@ input[type=text], input[type=email] {
     }
     .banner {
         padding-bottom: 3em;
+        .divider-banner {
+            display: none;
+        }
         h1.description {
             text-align: center;
             font-size: 2.75rem;
@@ -1455,9 +1423,6 @@ input[type=text], input[type=email] {
         .btn img {
             width: 0.5rem;
         }
-        .location-data {
-            
-        }
         .location-data h3 {
             font-size: 1.75rem;
             padding-bottom: 0;
@@ -1502,12 +1467,19 @@ input[type=text], input[type=email] {
         .download-web {
             display: none;
         }
+        .divider-download {
+            top: -2.2em;
+            left: 20em;
+            width: 14.2em;
+        }
         .col-md-4 { 
             padding: 0 0 3em 0;
             text-align: center;
+            /*
             img:nth-child(1) {
-                width: 16em;
+                width: 20em;
             }
+            */
             img:nth-child(2) {
                 padding-top: 3em;
                 width: 100%;
@@ -1527,7 +1499,7 @@ input[type=text], input[type=email] {
             }
             h4 {
                 padding-top: .2em;
-                font-size: 1.13rem;
+                /*font-size: 1.13rem;*/
                 /*
                 padding-left: .1em;
                 padding-right: .5em;
@@ -1537,7 +1509,7 @@ input[type=text], input[type=email] {
         }
         .download-links {
             margin: 0 .5em;
-            padding: 0 0 4.5em 0;
+            padding: 0;
             .btn {
                 font-size: 1.11rem;
                 padding: 1.1em 0 .8em 0;
@@ -1550,13 +1522,22 @@ input[type=text], input[type=email] {
             }
         }
         .download-mobile {
-            padding: 0 3em;
+            padding: 0;
             text-align: center;
+            .col-8 {
+                img {
+                    width: 19em;
+                }
+            }
+            .col-4 {
+                padding-top: 14em;
+            }
             a {
                 padding-bottom: .1em;
             }
             h4 {
-                padding: 0 4em;
+                font-size: 1.1rem;
+                padding: 0;
             }
         }
     }
@@ -1731,6 +1712,7 @@ input[type=text], input[type=email] {
     .banner {
         padding-bottom: 5em;
         .divider-banner {
+            display: block;
             top: .2em;
             left: 15em;
             width: 31.1em;
@@ -1989,9 +1971,6 @@ input[type=text], input[type=email] {
         .btn img {
             width: 0.5rem;
         }
-        .location-data {
-            
-        }
         .location-data h3 {
             font-size: 2rem;
             padding-bottom: 0;
@@ -2086,6 +2065,11 @@ input[type=text], input[type=email] {
         .download-web {
             display: none;
         }
+        .divider-download {
+            top: -2.2em;
+            left: 25em;
+            width: 21em;
+        }
         .col-md-4 { 
             padding: 0;
             img:nth-child(1) {
@@ -2134,11 +2118,20 @@ input[type=text], input[type=email] {
         .download-mobile {
             padding: 0;
             text-align: center;
+            .col-8 {
+                img {
+                    width: 22em;
+                }
+            }
+            .col-4 {
+                padding-top: 13em;
+            }
             a {
                 padding-bottom: .1em;
             }
             h4 {
-                padding: 0 3em;
+                font-size: 1.5rem;
+                padding: 0 1.5em;
             }
         }
     }
@@ -2399,7 +2392,6 @@ input[type=text], input[type=email] {
         ul li {
             font-size: 1.15rem;
             padding-right: 2em;
-            
         }
     }
     
@@ -2587,6 +2579,11 @@ input[type=text], input[type=email] {
     }
 
     .download {
+        .divider-download {
+            top: -2.2em;
+            left: 19em;
+            width: 41.5em;
+        }
         .col-md-4 { 
             padding: .2em;
             img:nth-child(1) {
@@ -2756,7 +2753,6 @@ input[type=text], input[type=email] {
             top: 5.5em;
             left: 24em;
             width: 51.7em;
-
         }
         h1.description {
             font-size: 3.75rem;
@@ -2961,6 +2957,11 @@ input[type=text], input[type=email] {
     }
     .download {
         padding-bottom: .5em;
+        .divider-download {
+            top: -4.3em;
+            left: 23.4em;
+            width: 52.3em;
+        }
         .col-md-4 { 
             padding: .1em;
             img:nth-child(1) {
